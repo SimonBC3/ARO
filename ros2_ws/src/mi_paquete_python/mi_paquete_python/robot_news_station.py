@@ -4,7 +4,7 @@ from rclpy.node import Node
 from std_msgs.msg import String 
 
 
-class RobotNews(Node): 
+class RobotNews(Node):
     def __init__(self):
         super().__init__("RobotNews") 
         self.publisher_ = self.create_publisher(String, "robot_news", 10)
