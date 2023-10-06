@@ -1,0 +1,24 @@
+[2.380s] Invoking command in '/home/simon/Documents/ARO/ros2_ws/build/mi_paquete_python': PYTHONPATH=/home/simon/Documents/ARO/ros2_ws/build/mi_paquete_python/prefix_override:/home/simon/Documents/ARO/ros2_ws/install/mi_paquete_python/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/simon/Documents/ARO/ros2_ws/build/mi_paquete_python/build --no-deps install_data
+[2.716s] running develop
+[2.916s] running egg_info
+[2.917s] creating mi_paquete_python.egg-info
+[2.917s] writing mi_paquete_python.egg-info/PKG-INFO
+[2.917s] writing dependency_links to mi_paquete_python.egg-info/dependency_links.txt
+[2.917s] writing entry points to mi_paquete_python.egg-info/entry_points.txt
+[2.917s] writing requirements to mi_paquete_python.egg-info/requires.txt
+[2.917s] writing top-level names to mi_paquete_python.egg-info/top_level.txt
+[2.917s] writing manifest file 'mi_paquete_python.egg-info/SOURCES.txt'
+[2.920s] reading manifest file 'mi_paquete_python.egg-info/SOURCES.txt'
+[2.921s] writing manifest file 'mi_paquete_python.egg-info/SOURCES.txt'
+[2.923s] running build_ext
+[2.923s] Creating /home/simon/Documents/ARO/ros2_ws/install/mi_paquete_python/lib/python3.10/site-packages/mi-paquete-python.egg-link (link to .)
+[2.924s] Installing robot_news_station script to /home/simon/Documents/ARO/ros2_ws/install/mi_paquete_python/lib/mi_paquete_python
+[2.924s] 
+[2.924s] Installed /home/simon/Documents/ARO/ros2_ws/build/mi_paquete_python
+[2.925s] running install_data
+[2.925s] creating /home/simon/Documents/ARO/ros2_ws/install/mi_paquete_python/share/ament_index
+[2.925s] creating /home/simon/Documents/ARO/ros2_ws/install/mi_paquete_python/share/ament_index/resource_index
+[2.925s] creating /home/simon/Documents/ARO/ros2_ws/install/mi_paquete_python/share/ament_index/resource_index/packages
+[2.925s] copying resource/mi_paquete_python -> /home/simon/Documents/ARO/ros2_ws/install/mi_paquete_python/share/ament_index/resource_index/packages
+[2.925s] copying package.xml -> /home/simon/Documents/ARO/ros2_ws/install/mi_paquete_python/share/mi_paquete_python
+[3.046s] Invoked command in '/home/simon/Documents/ARO/ros2_ws/build/mi_paquete_python' returned '0': PYTHONPATH=/home/simon/Documents/ARO/ros2_ws/build/mi_paquete_python/prefix_override:/home/simon/Documents/ARO/ros2_ws/install/mi_paquete_python/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/simon/Documents/ARO/ros2_ws/build/mi_paquete_python/build --no-deps install_data

@@ -1,0 +1,17 @@
+[0.627s] Invoking command in '/home/simon/Documents/ARO/ros2_ws/src/mi_paquete_python/build/mi_paquete_python': PYTHONPATH=/home/simon/Documents/ARO/ros2_ws/src/mi_paquete_python/build/mi_paquete_python/prefix_override:/home/simon/Documents/ARO/ros2_ws/src/mi_paquete_python/install/mi_paquete_python/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/simon/Documents/ARO/ros2_ws/src/mi_paquete_python/build/mi_paquete_python/build --no-deps install_data
+[0.849s] running develop
+[0.969s] running egg_info
+[0.970s] writing mi_paquete_python.egg-info/PKG-INFO
+[0.970s] writing dependency_links to mi_paquete_python.egg-info/dependency_links.txt
+[0.970s] writing entry points to mi_paquete_python.egg-info/entry_points.txt
+[0.970s] writing requirements to mi_paquete_python.egg-info/requires.txt
+[0.970s] writing top-level names to mi_paquete_python.egg-info/top_level.txt
+[0.971s] reading manifest file 'mi_paquete_python.egg-info/SOURCES.txt'
+[0.979s] writing manifest file 'mi_paquete_python.egg-info/SOURCES.txt'
+[0.981s] running build_ext
+[0.981s] Creating /home/simon/Documents/ARO/ros2_ws/src/mi_paquete_python/install/mi_paquete_python/lib/python3.10/site-packages/mi-paquete-python.egg-link (link to .)
+[0.982s] 
+[0.982s] Installed /home/simon/Documents/ARO/ros2_ws/src/mi_paquete_python/build/mi_paquete_python
+[0.982s] running install_data
+[0.982s] copying package.xml -> /home/simon/Documents/ARO/ros2_ws/src/mi_paquete_python/install/mi_paquete_python/share/mi_paquete_python
+[1.053s] Invoked command in '/home/simon/Documents/ARO/ros2_ws/src/mi_paquete_python/build/mi_paquete_python' returned '0': PYTHONPATH=/home/simon/Documents/ARO/ros2_ws/src/mi_paquete_python/build/mi_paquete_python/prefix_override:/home/simon/Documents/ARO/ros2_ws/src/mi_paquete_python/install/mi_paquete_python/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/simon/Documents/ARO/ros2_ws/src/mi_paquete_python/build/mi_paquete_python/build --no-deps install_data

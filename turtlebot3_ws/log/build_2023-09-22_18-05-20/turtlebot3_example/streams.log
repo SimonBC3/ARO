@@ -1,0 +1,27 @@
+[1.002s] Invoking command in '/home/simon/Documents/ARO/turtlebot3_ws/build/turtlebot3_example': AMENT_PREFIX_PATH=/home/simon/Documents/ARO/turtlebot3_ws/install/turtlebot3_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/simon/Documents/ARO/turtlebot3_ws/install/turtlebot3_msgs LD_LIBRARY_PATH=/home/simon/Documents/ARO/turtlebot3_ws/install/turtlebot3_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/simon/Documents/ARO/turtlebot3_ws/build/turtlebot3_example/prefix_override:/home/simon/Documents/ARO/turtlebot3_ws/install/turtlebot3_example/lib/python3.10/site-packages:/home/simon/Documents/ARO/turtlebot3_ws/install/turtlebot3_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/simon/Documents/ARO/turtlebot3_ws/build/turtlebot3_example/build --no-deps install_data
+[1.364s] running develop
+[1.546s] running egg_info
+[1.546s] creating turtlebot3_example.egg-info
+[1.546s] writing turtlebot3_example.egg-info/PKG-INFO
+[1.546s] writing dependency_links to turtlebot3_example.egg-info/dependency_links.txt
+[1.546s] writing entry points to turtlebot3_example.egg-info/entry_points.txt
+[1.547s] writing requirements to turtlebot3_example.egg-info/requires.txt
+[1.547s] writing top-level names to turtlebot3_example.egg-info/top_level.txt
+[1.547s] writing manifest file 'turtlebot3_example.egg-info/SOURCES.txt'
+[1.550s] reading manifest file 'turtlebot3_example.egg-info/SOURCES.txt'
+[1.551s] writing manifest file 'turtlebot3_example.egg-info/SOURCES.txt'
+[1.552s] running build_ext
+[1.553s] Creating /home/simon/Documents/ARO/turtlebot3_ws/install/turtlebot3_example/lib/python3.10/site-packages/turtlebot3-example.egg-link (link to .)
+[1.554s] Installing turtlebot3_obstacle_detection script to /home/simon/Documents/ARO/turtlebot3_ws/install/turtlebot3_example/lib/turtlebot3_example
+[1.554s] Installing turtlebot3_patrol_client script to /home/simon/Documents/ARO/turtlebot3_ws/install/turtlebot3_example/lib/turtlebot3_example
+[1.554s] Installing turtlebot3_patrol_server script to /home/simon/Documents/ARO/turtlebot3_ws/install/turtlebot3_example/lib/turtlebot3_example
+[1.554s] Installing turtlebot3_position_control script to /home/simon/Documents/ARO/turtlebot3_ws/install/turtlebot3_example/lib/turtlebot3_example
+[1.554s] 
+[1.555s] Installed /home/simon/Documents/ARO/turtlebot3_ws/build/turtlebot3_example
+[1.555s] running install_data
+[1.555s] creating /home/simon/Documents/ARO/turtlebot3_ws/install/turtlebot3_example/share/ament_index
+[1.555s] creating /home/simon/Documents/ARO/turtlebot3_ws/install/turtlebot3_example/share/ament_index/resource_index
+[1.555s] creating /home/simon/Documents/ARO/turtlebot3_ws/install/turtlebot3_example/share/ament_index/resource_index/packages
+[1.555s] copying resource/turtlebot3_example -> /home/simon/Documents/ARO/turtlebot3_ws/install/turtlebot3_example/share/ament_index/resource_index/packages
+[1.555s] copying package.xml -> /home/simon/Documents/ARO/turtlebot3_ws/install/turtlebot3_example/share/turtlebot3_example
+[1.623s] Invoked command in '/home/simon/Documents/ARO/turtlebot3_ws/build/turtlebot3_example' returned '0': AMENT_PREFIX_PATH=/home/simon/Documents/ARO/turtlebot3_ws/install/turtlebot3_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/simon/Documents/ARO/turtlebot3_ws/install/turtlebot3_msgs LD_LIBRARY_PATH=/home/simon/Documents/ARO/turtlebot3_ws/install/turtlebot3_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/simon/Documents/ARO/turtlebot3_ws/build/turtlebot3_example/prefix_override:/home/simon/Documents/ARO/turtlebot3_ws/install/turtlebot3_example/lib/python3.10/site-packages:/home/simon/Documents/ARO/turtlebot3_ws/install/turtlebot3_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/simon/Documents/ARO/turtlebot3_ws/build/turtlebot3_example/build --no-deps install_data

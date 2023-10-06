@@ -1,0 +1,3 @@
+[console_scripts]
+robot_news_station = mi_paquete_python.robot_news_station:main
+

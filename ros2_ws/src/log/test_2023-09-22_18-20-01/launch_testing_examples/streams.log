@@ -1,0 +1,28 @@
+[2.088s] Invoking command in '/home/simon/Documents/ARO/ros2_ws/src/ROS2_examples/launch_testing/launch_testing_examples': PYTEST_ADDOPTS=--tb=short --junit-xml=/home/simon/Documents/ARO/ros2_ws/src/build/launch_testing_examples/pytest.xml --junit-prefix=launch_testing_examples -o cache_dir=/home/simon/Documents/ARO/ros2_ws/src/build/launch_testing_examples/.pytest_cache /usr/bin/python3 -m pytest
+[2.362s] [1m============================= test session starts ==============================[0m
+[2.362s] platform linux -- Python 3.10.12, pytest-6.2.5, py-1.10.0, pluggy-0.13.0
+[2.366s] cachedir: /home/simon/Documents/ARO/ros2_ws/src/build/launch_testing_examples/.pytest_cache
+[2.366s] rootdir: /home/simon/Documents/ARO/ros2_ws/src/ROS2_examples/launch_testing/launch_testing_examples
+[2.366s] plugins: ament-xmllint-0.12.7, ament-copyright-0.12.7, launch-testing-1.0.4, ament-flake8-0.12.7, launch-testing-ros-0.19.5, ament-pep257-0.12.7, ament-lint-0.12.7, colcon-core-0.12.1, cov-3.0.0
+[2.577s] [1mcollecting ... [0m[1m
+[2.577s] collected 9 items                                                              [0m
+[2.577s] 
+[4.741s] launch_testing_examples/check_msgs_launch_test.py [32m.[0m[32m                      [ 11%][0m
+[8.585s] launch_testing_examples/check_multiple_nodes_launch_test.py [32m.[0m[32m            [ 22%][0m
+[13.867s] launch_testing_examples/check_node_launch_test.py [32m.[0m[32m                      [ 33%][0m
+[13.879s] launch_testing_examples/hello_world_launch_test.py [32m.[0m[32m                     [ 44%][0m
+[17.176s] launch_testing_examples/record_rosbag_launch_test.py [32m.[0m[32m                   [ 55%][0m
+[17.576s] launch_testing_examples/set_param_launch_test.py [32m.[0m[32m                       [ 66%][0m
+[17.823s] test/test_copyright.py [32m.[0m[32m                                                 [ 77%][0m
+[18.017s] test/test_flake8.py [32m.[0m[33m                                                    [ 88%][0m
+[18.084s] test/test_pep257.py [32m.[0m[33m                                                    [100%][0m
+[18.085s] 
+[18.085s] [33m=============================== warnings summary ===============================[0m
+[18.085s] test/test_flake8.py::test_flake8
+[18.085s] test/test_flake8.py::test_flake8
+[18.085s]   Warning: SelectableGroups dict interface is deprecated. Use select.
+[18.085s] 
+[18.085s] -- Docs: https://docs.pytest.org/en/stable/warnings.html
+[18.085s] - generated xml file: /home/simon/Documents/ARO/ros2_ws/src/build/launch_testing_examples/pytest.xml -
+[18.085s] [33m======================== [32m9 passed[0m, [33m[1m2 warnings[0m[33m in 15.72s[0m[33m ========================[0m
+[18.350s] Invoked command in '/home/simon/Documents/ARO/ros2_ws/src/ROS2_examples/launch_testing/launch_testing_examples' returned '0': PYTEST_ADDOPTS=--tb=short --junit-xml=/home/simon/Documents/ARO/ros2_ws/src/build/launch_testing_examples/pytest.xml --junit-prefix=launch_testing_examples -o cache_dir=/home/simon/Documents/ARO/ros2_ws/src/build/launch_testing_examples/.pytest_cache /usr/bin/python3 -m pytest

@@ -1,0 +1,17 @@
+[0.637s] Invoking command in '/home/simon/Documents/ARO/ros2_ws/src/build/mi_paquete_python': PYTHONPATH=/home/simon/Documents/ARO/ros2_ws/src/build/mi_paquete_python/prefix_override:/home/simon/Documents/ARO/ros2_ws/src/install/mi_paquete_python/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/simon/Documents/ARO/ros2_ws/src/build/mi_paquete_python/build --no-deps install_data
+[0.858s] running develop
+[0.985s] running egg_info
+[0.985s] writing mi_paquete_python.egg-info/PKG-INFO
+[0.985s] writing dependency_links to mi_paquete_python.egg-info/dependency_links.txt
+[0.985s] writing entry points to mi_paquete_python.egg-info/entry_points.txt
+[0.985s] writing requirements to mi_paquete_python.egg-info/requires.txt
+[0.986s] writing top-level names to mi_paquete_python.egg-info/top_level.txt
+[0.987s] reading manifest file 'mi_paquete_python.egg-info/SOURCES.txt'
+[0.988s] writing manifest file 'mi_paquete_python.egg-info/SOURCES.txt'
+[0.989s] running build_ext
+[0.989s] Creating /home/simon/Documents/ARO/ros2_ws/src/install/mi_paquete_python/lib/python3.10/site-packages/mi-paquete-python.egg-link (link to .)
+[0.990s] Installing robot_news_station script to /home/simon/Documents/ARO/ros2_ws/src/install/mi_paquete_python/lib/mi_paquete_python
+[0.990s] 
+[0.991s] Installed /home/simon/Documents/ARO/ros2_ws/src/build/mi_paquete_python
+[0.991s] running install_data
+[1.048s] Invoked command in '/home/simon/Documents/ARO/ros2_ws/src/build/mi_paquete_python' returned '0': PYTHONPATH=/home/simon/Documents/ARO/ros2_ws/src/build/mi_paquete_python/prefix_override:/home/simon/Documents/ARO/ros2_ws/src/install/mi_paquete_python/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/simon/Documents/ARO/ros2_ws/src/build/mi_paquete_python/build --no-deps install_data

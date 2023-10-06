@@ -1,0 +1,23 @@
+[2.384s] Invoking command in '/home/simon/Documents/ARO/ros2_ws/build/launch_testing_examples': PYTHONPATH=/home/simon/Documents/ARO/ros2_ws/build/launch_testing_examples/prefix_override:/home/simon/Documents/ARO/ros2_ws/install/launch_testing_examples/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/simon/Documents/ARO/ros2_ws/build/launch_testing_examples/build --no-deps install_data
+[2.716s] running develop
+[2.910s] running egg_info
+[2.910s] creating launch_testing_examples.egg-info
+[2.910s] writing launch_testing_examples.egg-info/PKG-INFO
+[2.911s] writing dependency_links to launch_testing_examples.egg-info/dependency_links.txt
+[2.911s] writing entry points to launch_testing_examples.egg-info/entry_points.txt
+[2.911s] writing requirements to launch_testing_examples.egg-info/requires.txt
+[2.911s] writing top-level names to launch_testing_examples.egg-info/top_level.txt
+[2.912s] writing manifest file 'launch_testing_examples.egg-info/SOURCES.txt'
+[2.914s] reading manifest file 'launch_testing_examples.egg-info/SOURCES.txt'
+[2.914s] writing manifest file 'launch_testing_examples.egg-info/SOURCES.txt'
+[2.916s] running build_ext
+[2.916s] Creating /home/simon/Documents/ARO/ros2_ws/install/launch_testing_examples/lib/python3.10/site-packages/launch-testing-examples.egg-link (link to .)
+[2.917s] 
+[2.918s] Installed /home/simon/Documents/ARO/ros2_ws/build/launch_testing_examples
+[2.918s] running install_data
+[2.918s] creating /home/simon/Documents/ARO/ros2_ws/install/launch_testing_examples/share/ament_index
+[2.918s] creating /home/simon/Documents/ARO/ros2_ws/install/launch_testing_examples/share/ament_index/resource_index
+[2.918s] creating /home/simon/Documents/ARO/ros2_ws/install/launch_testing_examples/share/ament_index/resource_index/packages
+[2.919s] copying resource/launch_testing_examples -> /home/simon/Documents/ARO/ros2_ws/install/launch_testing_examples/share/ament_index/resource_index/packages
+[2.919s] copying package.xml -> /home/simon/Documents/ARO/ros2_ws/install/launch_testing_examples/share/launch_testing_examples
+[3.015s] Invoked command in '/home/simon/Documents/ARO/ros2_ws/build/launch_testing_examples' returned '0': PYTHONPATH=/home/simon/Documents/ARO/ros2_ws/build/launch_testing_examples/prefix_override:/home/simon/Documents/ARO/ros2_ws/install/launch_testing_examples/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/simon/Documents/ARO/ros2_ws/build/launch_testing_examples/build --no-deps install_data

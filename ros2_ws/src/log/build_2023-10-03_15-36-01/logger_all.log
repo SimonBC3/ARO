@@ -1,0 +1,575 @@
+[0.284s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build']
+[0.284s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=16, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0x7fbb489ffaf0>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x7fbb48867910>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x7fbb48867910>>)
+[0.307s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.307s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.307s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.307s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.307s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.307s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.307s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/simon/Documents/ARO/ros2_ws/src'
+[0.307s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.307s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.307s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.307s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.307s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.307s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.307s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.307s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.307s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.318s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.318s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.318s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.318s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.318s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.318s] Level 1:colcon.colcon_core.package_identification:_identify(ROS2_examples) by extensions ['ignore', 'ignore_ament_install']
+[0.318s] Level 1:colcon.colcon_core.package_identification:_identify(ROS2_examples) by extension 'ignore'
+[0.318s] Level 1:colcon.colcon_core.package_identification:_identify(ROS2_examples) by extension 'ignore_ament_install'
+[0.318s] Level 1:colcon.colcon_core.package_identification:_identify(ROS2_examples) by extensions ['colcon_pkg']
+[0.318s] Level 1:colcon.colcon_core.package_identification:_identify(ROS2_examples) by extension 'colcon_pkg'
+[0.318s] Level 1:colcon.colcon_core.package_identification:_identify(ROS2_examples) by extensions ['colcon_meta']
+[0.318s] Level 1:colcon.colcon_core.package_identification:_identify(ROS2_examples) by extension 'colcon_meta'
+[0.318s] Level 1:colcon.colcon_core.package_identification:_identify(ROS2_examples) by extensions ['ros']
+[0.318s] Level 1:colcon.colcon_core.package_identification:_identify(ROS2_examples) by extension 'ros'
+[0.318s] Level 1:colcon.colcon_core.package_identification:_identify(ROS2_examples) by extensions ['cmake', 'python']
+[0.318s] Level 1:colcon.colcon_core.package_identification:_identify(ROS2_examples) by extension 'cmake'
+[0.319s] Level 1:colcon.colcon_core.package_identification:_identify(ROS2_examples) by extension 'python'
+[0.319s] Level 1:colcon.colcon_core.package_identification:_identify(ROS2_examples) by extensions ['python_setup_py']
+[0.319s] Level 1:colcon.colcon_core.package_identification:_identify(ROS2_examples) by extension 'python_setup_py'
+[0.319s] Level 1:colcon.colcon_core.package_identification:_identify(ROS2_examples/launch_testing) by extensions ['ignore', 'ignore_ament_install']
+[0.319s] Level 1:colcon.colcon_core.package_identification:_identify(ROS2_examples/launch_testing) by extension 'ignore'
+[0.319s] Level 1:colcon.colcon_core.package_identification:_identify(ROS2_examples/launch_testing) by extension 'ignore_ament_install'
+[0.319s] Level 1:colcon.colcon_core.package_identification:_identify(ROS2_examples/launch_testing) by extensions ['colcon_pkg']
+[0.319s] Level 1:colcon.colcon_core.package_identification:_identify(ROS2_examples/launch_testing) by extension 'colcon_pkg'
+[0.319s] Level 1:colcon.colcon_core.package_identification:_identify(ROS2_examples/launch_testing) by extensions ['colcon_meta']
+[0.319s] Level 1:colcon.colcon_core.package_identification:_identify(ROS2_examples/launch_testing) by extension 'colcon_meta'
+[0.319s] Level 1:colcon.colcon_core.package_identification:_identify(ROS2_examples/launch_testing) by extensions ['ros']
+[0.319s] Level 1:colcon.colcon_core.package_identification:_identify(ROS2_examples/launch_testing) by extension 'ros'
+[0.319s] Level 1:colcon.colcon_core.package_identification:_identify(ROS2_examples/launch_testing) by extensions ['cmake', 'python']
+[0.319s] Level 1:colcon.colcon_core.package_identification:_identify(ROS2_examples/launch_testing) by extension 'cmake'
+[0.319s] Level 1:colcon.colcon_core.package_identification:_identify(ROS2_examples/launch_testing) by extension 'python'
+[0.319s] Level 1:colcon.colcon_core.package_identification:_identify(ROS2_examples/launch_testing) by extensions ['python_setup_py']
+[0.319s] Level 1:colcon.colcon_core.package_identification:_identify(ROS2_examples/launch_testing) by extension 'python_setup_py'
+[0.319s] Level 1:colcon.colcon_core.package_identification:_identify(ROS2_examples/launch_testing/launch_testing_examples) by extensions ['ignore', 'ignore_ament_install']
+[0.319s] Level 1:colcon.colcon_core.package_identification:_identify(ROS2_examples/launch_testing/launch_testing_examples) by extension 'ignore'
+[0.319s] Level 1:colcon.colcon_core.package_identification:_identify(ROS2_examples/launch_testing/launch_testing_examples) by extension 'ignore_ament_install'
+[0.319s] Level 1:colcon.colcon_core.package_identification:_identify(ROS2_examples/launch_testing/launch_testing_examples) by extensions ['colcon_pkg']
+[0.319s] Level 1:colcon.colcon_core.package_identification:_identify(ROS2_examples/launch_testing/launch_testing_examples) by extension 'colcon_pkg'
+[0.319s] Level 1:colcon.colcon_core.package_identification:_identify(ROS2_examples/launch_testing/launch_testing_examples) by extensions ['colcon_meta']
+[0.319s] Level 1:colcon.colcon_core.package_identification:_identify(ROS2_examples/launch_testing/launch_testing_examples) by extension 'colcon_meta'
+[0.319s] Level 1:colcon.colcon_core.package_identification:_identify(ROS2_examples/launch_testing/launch_testing_examples) by extensions ['ros']
+[0.319s] Level 1:colcon.colcon_core.package_identification:_identify(ROS2_examples/launch_testing/launch_testing_examples) by extension 'ros'
+[0.331s] DEBUG:colcon.colcon_core.package_identification:Package 'ROS2_examples/launch_testing/launch_testing_examples' with type 'ros.ament_python' and name 'launch_testing_examples'
+[0.331s] Level 1:colcon.colcon_core.package_identification:_identify(ROS2_examples/rclpy) by extensions ['ignore', 'ignore_ament_install']
+[0.331s] Level 1:colcon.colcon_core.package_identification:_identify(ROS2_examples/rclpy) by extension 'ignore'
+[0.331s] Level 1:colcon.colcon_core.package_identification:_identify(ROS2_examples/rclpy) by extension 'ignore_ament_install'
+[0.331s] Level 1:colcon.colcon_core.package_identification:_identify(ROS2_examples/rclpy) by extensions ['colcon_pkg']
+[0.331s] Level 1:colcon.colcon_core.package_identification:_identify(ROS2_examples/rclpy) by extension 'colcon_pkg'
+[0.331s] Level 1:colcon.colcon_core.package_identification:_identify(ROS2_examples/rclpy) by extensions ['colcon_meta']
+[0.331s] Level 1:colcon.colcon_core.package_identification:_identify(ROS2_examples/rclpy) by extension 'colcon_meta'
+[0.331s] Level 1:colcon.colcon_core.package_identification:_identify(ROS2_examples/rclpy) by extensions ['ros']
+[0.331s] Level 1:colcon.colcon_core.package_identification:_identify(ROS2_examples/rclpy) by extension 'ros'
+[0.331s] Level 1:colcon.colcon_core.package_identification:_identify(ROS2_examples/rclpy) by extensions ['cmake', 'python']
+[0.331s] Level 1:colcon.colcon_core.package_identification:_identify(ROS2_examples/rclpy) by extension 'cmake'
+[0.331s] Level 1:colcon.colcon_core.package_identification:_identify(ROS2_examples/rclpy) by extension 'python'
+[0.331s] Level 1:colcon.colcon_core.package_identification:_identify(ROS2_examples/rclpy) by extensions ['python_setup_py']
+[0.331s] Level 1:colcon.colcon_core.package_identification:_identify(ROS2_examples/rclpy) by extension 'python_setup_py'
+[0.332s] Level 1:colcon.colcon_core.package_identification:_identify(ROS2_examples/rclpy/actions) by extensions ['ignore', 'ignore_ament_install']
+[0.332s] Level 1:colcon.colcon_core.package_identification:_identify(ROS2_examples/rclpy/actions) by extension 'ignore'
+[0.332s] Level 1:colcon.colcon_core.package_identification:_identify(ROS2_examples/rclpy/actions) by extension 'ignore_ament_install'
+[0.332s] Level 1:colcon.colcon_core.package_identification:_identify(ROS2_examples/rclpy/actions) by extensions ['colcon_pkg']
+[0.332s] Level 1:colcon.colcon_core.package_identification:_identify(ROS2_examples/rclpy/actions) by extension 'colcon_pkg'
+[0.332s] Level 1:colcon.colcon_core.package_identification:_identify(ROS2_examples/rclpy/actions) by extensions ['colcon_meta']
+[0.332s] Level 1:colcon.colcon_core.package_identification:_identify(ROS2_examples/rclpy/actions) by extension 'colcon_meta'
+[0.332s] Level 1:colcon.colcon_core.package_identification:_identify(ROS2_examples/rclpy/actions) by extensions ['ros']
+[0.332s] Level 1:colcon.colcon_core.package_identification:_identify(ROS2_examples/rclpy/actions) by extension 'ros'
+[0.332s] Level 1:colcon.colcon_core.package_identification:_identify(ROS2_examples/rclpy/actions) by extensions ['cmake', 'python']
+[0.332s] Level 1:colcon.colcon_core.package_identification:_identify(ROS2_examples/rclpy/actions) by extension 'cmake'
+[0.332s] Level 1:colcon.colcon_core.package_identification:_identify(ROS2_examples/rclpy/actions) by extension 'python'
+[0.332s] Level 1:colcon.colcon_core.package_identification:_identify(ROS2_examples/rclpy/actions) by extensions ['python_setup_py']
+[0.332s] Level 1:colcon.colcon_core.package_identification:_identify(ROS2_examples/rclpy/actions) by extension 'python_setup_py'
+[0.332s] Level 1:colcon.colcon_core.package_identification:_identify(ROS2_examples/rclpy/actions/minimal_action_client) by extensions ['ignore', 'ignore_ament_install']
+[0.332s] Level 1:colcon.colcon_core.package_identification:_identify(ROS2_examples/rclpy/actions/minimal_action_client) by extension 'ignore'
+[0.332s] Level 1:colcon.colcon_core.package_identification:_identify(ROS2_examples/rclpy/actions/minimal_action_client) by extension 'ignore_ament_install'
+[0.332s] Level 1:colcon.colcon_core.package_identification:_identify(ROS2_examples/rclpy/actions/minimal_action_client) by extensions ['colcon_pkg']
+[0.332s] Level 1:colcon.colcon_core.package_identification:_identify(ROS2_examples/rclpy/actions/minimal_action_client) by extension 'colcon_pkg'
+[0.332s] Level 1:colcon.colcon_core.package_identification:_identify(ROS2_examples/rclpy/actions/minimal_action_client) by extensions ['colcon_meta']
+[0.332s] Level 1:colcon.colcon_core.package_identification:_identify(ROS2_examples/rclpy/actions/minimal_action_client) by extension 'colcon_meta'
+[0.332s] Level 1:colcon.colcon_core.package_identification:_identify(ROS2_examples/rclpy/actions/minimal_action_client) by extensions ['ros']
+[0.332s] Level 1:colcon.colcon_core.package_identification:_identify(ROS2_examples/rclpy/actions/minimal_action_client) by extension 'ros'
+[0.333s] DEBUG:colcon.colcon_core.package_identification:Package 'ROS2_examples/rclpy/actions/minimal_action_client' with type 'ros.ament_python' and name 'examples_rclpy_minimal_action_client'
+[0.333s] Level 1:colcon.colcon_core.package_identification:_identify(ROS2_examples/rclpy/actions/minimal_action_server) by extensions ['ignore', 'ignore_ament_install']
+[0.333s] Level 1:colcon.colcon_core.package_identification:_identify(ROS2_examples/rclpy/actions/minimal_action_server) by extension 'ignore'
+[0.333s] Level 1:colcon.colcon_core.package_identification:_identify(ROS2_examples/rclpy/actions/minimal_action_server) by extension 'ignore_ament_install'
+[0.333s] Level 1:colcon.colcon_core.package_identification:_identify(ROS2_examples/rclpy/actions/minimal_action_server) by extensions ['colcon_pkg']
+[0.333s] Level 1:colcon.colcon_core.package_identification:_identify(ROS2_examples/rclpy/actions/minimal_action_server) by extension 'colcon_pkg'
+[0.334s] Level 1:colcon.colcon_core.package_identification:_identify(ROS2_examples/rclpy/actions/minimal_action_server) by extensions ['colcon_meta']
+[0.334s] Level 1:colcon.colcon_core.package_identification:_identify(ROS2_examples/rclpy/actions/minimal_action_server) by extension 'colcon_meta'
+[0.334s] Level 1:colcon.colcon_core.package_identification:_identify(ROS2_examples/rclpy/actions/minimal_action_server) by extensions ['ros']
+[0.334s] Level 1:colcon.colcon_core.package_identification:_identify(ROS2_examples/rclpy/actions/minimal_action_server) by extension 'ros'
+[0.334s] DEBUG:colcon.colcon_core.package_identification:Package 'ROS2_examples/rclpy/actions/minimal_action_server' with type 'ros.ament_python' and name 'examples_rclpy_minimal_action_server'
+[0.334s] Level 1:colcon.colcon_core.package_identification:_identify(ROS2_examples/rclpy/services) by extensions ['ignore', 'ignore_ament_install']
+[0.334s] Level 1:colcon.colcon_core.package_identification:_identify(ROS2_examples/rclpy/services) by extension 'ignore'
+[0.334s] Level 1:colcon.colcon_core.package_identification:_identify(ROS2_examples/rclpy/services) by extension 'ignore_ament_install'
+[0.335s] Level 1:colcon.colcon_core.package_identification:_identify(ROS2_examples/rclpy/services) by extensions ['colcon_pkg']
+[0.335s] Level 1:colcon.colcon_core.package_identification:_identify(ROS2_examples/rclpy/services) by extension 'colcon_pkg'
+[0.335s] Level 1:colcon.colcon_core.package_identification:_identify(ROS2_examples/rclpy/services) by extensions ['colcon_meta']
+[0.335s] Level 1:colcon.colcon_core.package_identification:_identify(ROS2_examples/rclpy/services) by extension 'colcon_meta'
+[0.335s] Level 1:colcon.colcon_core.package_identification:_identify(ROS2_examples/rclpy/services) by extensions ['ros']
+[0.335s] Level 1:colcon.colcon_core.package_identification:_identify(ROS2_examples/rclpy/services) by extension 'ros'
+[0.335s] Level 1:colcon.colcon_core.package_identification:_identify(ROS2_examples/rclpy/services) by extensions ['cmake', 'python']
+[0.335s] Level 1:colcon.colcon_core.package_identification:_identify(ROS2_examples/rclpy/services) by extension 'cmake'
+[0.335s] Level 1:colcon.colcon_core.package_identification:_identify(ROS2_examples/rclpy/services) by extension 'python'
+[0.335s] Level 1:colcon.colcon_core.package_identification:_identify(ROS2_examples/rclpy/services) by extensions ['python_setup_py']
+[0.335s] Level 1:colcon.colcon_core.package_identification:_identify(ROS2_examples/rclpy/services) by extension 'python_setup_py'
+[0.335s] Level 1:colcon.colcon_core.package_identification:_identify(ROS2_examples/rclpy/services/minimal_client) by extensions ['ignore', 'ignore_ament_install']
+[0.335s] Level 1:colcon.colcon_core.package_identification:_identify(ROS2_examples/rclpy/services/minimal_client) by extension 'ignore'
+[0.335s] Level 1:colcon.colcon_core.package_identification:_identify(ROS2_examples/rclpy/services/minimal_client) by extension 'ignore_ament_install'
+[0.335s] Level 1:colcon.colcon_core.package_identification:_identify(ROS2_examples/rclpy/services/minimal_client) by extensions ['colcon_pkg']
+[0.335s] Level 1:colcon.colcon_core.package_identification:_identify(ROS2_examples/rclpy/services/minimal_client) by extension 'colcon_pkg'
+[0.335s] Level 1:colcon.colcon_core.package_identification:_identify(ROS2_examples/rclpy/services/minimal_client) by extensions ['colcon_meta']
+[0.335s] Level 1:colcon.colcon_core.package_identification:_identify(ROS2_examples/rclpy/services/minimal_client) by extension 'colcon_meta'
+[0.335s] Level 1:colcon.colcon_core.package_identification:_identify(ROS2_examples/rclpy/services/minimal_client) by extensions ['ros']
+[0.335s] Level 1:colcon.colcon_core.package_identification:_identify(ROS2_examples/rclpy/services/minimal_client) by extension 'ros'
+[0.336s] DEBUG:colcon.colcon_core.package_identification:Package 'ROS2_examples/rclpy/services/minimal_client' with type 'ros.ament_python' and name 'examples_rclpy_minimal_client'
+[0.336s] Level 1:colcon.colcon_core.package_identification:_identify(ROS2_examples/rclpy/services/minimal_service) by extensions ['ignore', 'ignore_ament_install']
+[0.336s] Level 1:colcon.colcon_core.package_identification:_identify(ROS2_examples/rclpy/services/minimal_service) by extension 'ignore'
+[0.336s] Level 1:colcon.colcon_core.package_identification:_identify(ROS2_examples/rclpy/services/minimal_service) by extension 'ignore_ament_install'
+[0.336s] Level 1:colcon.colcon_core.package_identification:_identify(ROS2_examples/rclpy/services/minimal_service) by extensions ['colcon_pkg']
+[0.336s] Level 1:colcon.colcon_core.package_identification:_identify(ROS2_examples/rclpy/services/minimal_service) by extension 'colcon_pkg'
+[0.336s] Level 1:colcon.colcon_core.package_identification:_identify(ROS2_examples/rclpy/services/minimal_service) by extensions ['colcon_meta']
+[0.336s] Level 1:colcon.colcon_core.package_identification:_identify(ROS2_examples/rclpy/services/minimal_service) by extension 'colcon_meta'
+[0.336s] Level 1:colcon.colcon_core.package_identification:_identify(ROS2_examples/rclpy/services/minimal_service) by extensions ['ros']
+[0.336s] Level 1:colcon.colcon_core.package_identification:_identify(ROS2_examples/rclpy/services/minimal_service) by extension 'ros'
+[0.337s] DEBUG:colcon.colcon_core.package_identification:Package 'ROS2_examples/rclpy/services/minimal_service' with type 'ros.ament_python' and name 'examples_rclpy_minimal_service'
+[0.337s] Level 1:colcon.colcon_core.package_identification:_identify(ROS2_examples/rclpy/topics) by extensions ['ignore', 'ignore_ament_install']
+[0.337s] Level 1:colcon.colcon_core.package_identification:_identify(ROS2_examples/rclpy/topics) by extension 'ignore'
+[0.337s] Level 1:colcon.colcon_core.package_identification:_identify(ROS2_examples/rclpy/topics) by extension 'ignore_ament_install'
+[0.337s] Level 1:colcon.colcon_core.package_identification:_identify(ROS2_examples/rclpy/topics) by extensions ['colcon_pkg']
+[0.337s] Level 1:colcon.colcon_core.package_identification:_identify(ROS2_examples/rclpy/topics) by extension 'colcon_pkg'
+[0.337s] Level 1:colcon.colcon_core.package_identification:_identify(ROS2_examples/rclpy/topics) by extensions ['colcon_meta']
+[0.337s] Level 1:colcon.colcon_core.package_identification:_identify(ROS2_examples/rclpy/topics) by extension 'colcon_meta'
+[0.337s] Level 1:colcon.colcon_core.package_identification:_identify(ROS2_examples/rclpy/topics) by extensions ['ros']
+[0.337s] Level 1:colcon.colcon_core.package_identification:_identify(ROS2_examples/rclpy/topics) by extension 'ros'
+[0.337s] Level 1:colcon.colcon_core.package_identification:_identify(ROS2_examples/rclpy/topics) by extensions ['cmake', 'python']
+[0.337s] Level 1:colcon.colcon_core.package_identification:_identify(ROS2_examples/rclpy/topics) by extension 'cmake'
+[0.337s] Level 1:colcon.colcon_core.package_identification:_identify(ROS2_examples/rclpy/topics) by extension 'python'
+[0.337s] Level 1:colcon.colcon_core.package_identification:_identify(ROS2_examples/rclpy/topics) by extensions ['python_setup_py']
+[0.337s] Level 1:colcon.colcon_core.package_identification:_identify(ROS2_examples/rclpy/topics) by extension 'python_setup_py'
+[0.338s] Level 1:colcon.colcon_core.package_identification:_identify(ROS2_examples/rclpy/topics/minimal_publisher) by extensions ['ignore', 'ignore_ament_install']
+[0.338s] Level 1:colcon.colcon_core.package_identification:_identify(ROS2_examples/rclpy/topics/minimal_publisher) by extension 'ignore'
+[0.338s] Level 1:colcon.colcon_core.package_identification:_identify(ROS2_examples/rclpy/topics/minimal_publisher) by extension 'ignore_ament_install'
+[0.338s] Level 1:colcon.colcon_core.package_identification:_identify(ROS2_examples/rclpy/topics/minimal_publisher) by extensions ['colcon_pkg']
+[0.338s] Level 1:colcon.colcon_core.package_identification:_identify(ROS2_examples/rclpy/topics/minimal_publisher) by extension 'colcon_pkg'
+[0.338s] Level 1:colcon.colcon_core.package_identification:_identify(ROS2_examples/rclpy/topics/minimal_publisher) by extensions ['colcon_meta']
+[0.338s] Level 1:colcon.colcon_core.package_identification:_identify(ROS2_examples/rclpy/topics/minimal_publisher) by extension 'colcon_meta'
+[0.338s] Level 1:colcon.colcon_core.package_identification:_identify(ROS2_examples/rclpy/topics/minimal_publisher) by extensions ['ros']
+[0.338s] Level 1:colcon.colcon_core.package_identification:_identify(ROS2_examples/rclpy/topics/minimal_publisher) by extension 'ros'
+[0.338s] DEBUG:colcon.colcon_core.package_identification:Package 'ROS2_examples/rclpy/topics/minimal_publisher' with type 'ros.ament_python' and name 'examples_rclpy_minimal_publisher'
+[0.339s] Level 1:colcon.colcon_core.package_identification:_identify(ROS2_examples/rclpy/topics/minimal_subscriber) by extensions ['ignore', 'ignore_ament_install']
+[0.339s] Level 1:colcon.colcon_core.package_identification:_identify(ROS2_examples/rclpy/topics/minimal_subscriber) by extension 'ignore'
+[0.339s] Level 1:colcon.colcon_core.package_identification:_identify(ROS2_examples/rclpy/topics/minimal_subscriber) by extension 'ignore_ament_install'
+[0.339s] Level 1:colcon.colcon_core.package_identification:_identify(ROS2_examples/rclpy/topics/minimal_subscriber) by extensions ['colcon_pkg']
+[0.339s] Level 1:colcon.colcon_core.package_identification:_identify(ROS2_examples/rclpy/topics/minimal_subscriber) by extension 'colcon_pkg'
+[0.339s] Level 1:colcon.colcon_core.package_identification:_identify(ROS2_examples/rclpy/topics/minimal_subscriber) by extensions ['colcon_meta']
+[0.339s] Level 1:colcon.colcon_core.package_identification:_identify(ROS2_examples/rclpy/topics/minimal_subscriber) by extension 'colcon_meta'
+[0.339s] Level 1:colcon.colcon_core.package_identification:_identify(ROS2_examples/rclpy/topics/minimal_subscriber) by extensions ['ros']
+[0.339s] Level 1:colcon.colcon_core.package_identification:_identify(ROS2_examples/rclpy/topics/minimal_subscriber) by extension 'ros'
+[0.339s] DEBUG:colcon.colcon_core.package_identification:Package 'ROS2_examples/rclpy/topics/minimal_subscriber' with type 'ros.ament_python' and name 'examples_rclpy_minimal_subscriber'
+[0.339s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.340s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.340s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.340s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.340s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.340s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.340s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.340s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.340s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.340s] Level 1:colcon.colcon_core.package_identification:_identify(mi_paquete_python) by extensions ['ignore', 'ignore_ament_install']
+[0.340s] Level 1:colcon.colcon_core.package_identification:_identify(mi_paquete_python) by extension 'ignore'
+[0.340s] Level 1:colcon.colcon_core.package_identification:_identify(mi_paquete_python) by extension 'ignore_ament_install'
+[0.340s] Level 1:colcon.colcon_core.package_identification:_identify(mi_paquete_python) by extensions ['colcon_pkg']
+[0.340s] Level 1:colcon.colcon_core.package_identification:_identify(mi_paquete_python) by extension 'colcon_pkg'
+[0.340s] Level 1:colcon.colcon_core.package_identification:_identify(mi_paquete_python) by extensions ['colcon_meta']
+[0.340s] Level 1:colcon.colcon_core.package_identification:_identify(mi_paquete_python) by extension 'colcon_meta'
+[0.340s] Level 1:colcon.colcon_core.package_identification:_identify(mi_paquete_python) by extensions ['ros']
+[0.340s] Level 1:colcon.colcon_core.package_identification:_identify(mi_paquete_python) by extension 'ros'
+[0.341s] DEBUG:colcon.colcon_core.package_identification:Package 'mi_paquete_python' with type 'ros.ament_python' and name 'mi_paquete_python'
+[0.341s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.341s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.341s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.341s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.341s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.362s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[0.362s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[0.364s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 7 installed packages in /home/simon/Documents/ARO/ros2_ws/src/install
+[0.366s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 362 installed packages in /opt/ros/humble
+[0.368s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[0.417s] WARNING:colcon.colcon_core.package_selection:Some selected packages are already built in one or more underlay workspaces:
+	'examples_rclpy_minimal_client' is in: /home/simon/Documents/ARO/ros2_ws/src/install/examples_rclpy_minimal_client, /opt/ros/humble
+	'examples_rclpy_minimal_publisher' is in: /home/simon/Documents/ARO/ros2_ws/src/install/examples_rclpy_minimal_publisher, /opt/ros/humble
+	'examples_rclpy_minimal_subscriber' is in: /home/simon/Documents/ARO/ros2_ws/src/install/examples_rclpy_minimal_subscriber, /opt/ros/humble
+	'examples_rclpy_minimal_action_server' is in: /opt/ros/humble, /home/simon/Documents/ARO/ros2_ws/src/install/examples_rclpy_minimal_action_server
+	'examples_rclpy_minimal_action_client' is in: /home/simon/Documents/ARO/ros2_ws/src/install/examples_rclpy_minimal_action_client, /opt/ros/humble
+	'examples_rclpy_minimal_service' is in: /home/simon/Documents/ARO/ros2_ws/src/install/examples_rclpy_minimal_service, /opt/ros/humble
+If a package in a merged underlay workspace is overridden and it installs headers, then all packages in the overlay must sort their include directories by workspace order. Failure to do so may result in build failures or undefined behavior at run time.
+If the overridden package is used by another package in any underlay, then the overriding package in the overlay must be API and ABI compatible or undefined behavior at run time may occur.
+
+If you understand the risks and want to override a package anyways, add the following to the command line:
+	--allow-overriding examples_rclpy_minimal_action_client examples_rclpy_minimal_action_server examples_rclpy_minimal_client examples_rclpy_minimal_publisher examples_rclpy_minimal_service examples_rclpy_minimal_subscriber
+
+This may be promoted to an error in a future release of colcon-override-check.
+[0.419s] Level 5:colcon.colcon_core.verb:set package 'examples_rclpy_minimal_action_client' build argument 'cmake_args' from command line to 'None'
+[0.419s] Level 5:colcon.colcon_core.verb:set package 'examples_rclpy_minimal_action_client' build argument 'cmake_target' from command line to 'None'
+[0.419s] Level 5:colcon.colcon_core.verb:set package 'examples_rclpy_minimal_action_client' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.419s] Level 5:colcon.colcon_core.verb:set package 'examples_rclpy_minimal_action_client' build argument 'cmake_clean_cache' from command line to 'False'
+[0.419s] Level 5:colcon.colcon_core.verb:set package 'examples_rclpy_minimal_action_client' build argument 'cmake_clean_first' from command line to 'False'
+[0.419s] Level 5:colcon.colcon_core.verb:set package 'examples_rclpy_minimal_action_client' build argument 'cmake_force_configure' from command line to 'False'
+[0.419s] Level 5:colcon.colcon_core.verb:set package 'examples_rclpy_minimal_action_client' build argument 'ament_cmake_args' from command line to 'None'
+[0.419s] Level 5:colcon.colcon_core.verb:set package 'examples_rclpy_minimal_action_client' build argument 'catkin_cmake_args' from command line to 'None'
+[0.419s] Level 5:colcon.colcon_core.verb:set package 'examples_rclpy_minimal_action_client' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.419s] DEBUG:colcon.colcon_core.verb:Building package 'examples_rclpy_minimal_action_client' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/simon/Documents/ARO/ros2_ws/src/build/examples_rclpy_minimal_action_client', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/simon/Documents/ARO/ros2_ws/src/install/examples_rclpy_minimal_action_client', 'merge_install': False, 'path': '/home/simon/Documents/ARO/ros2_ws/src/ROS2_examples/rclpy/actions/minimal_action_client', 'symlink_install': False, 'test_result_base': None}
+[0.419s] Level 5:colcon.colcon_core.verb:set package 'examples_rclpy_minimal_action_server' build argument 'cmake_args' from command line to 'None'
+[0.419s] Level 5:colcon.colcon_core.verb:set package 'examples_rclpy_minimal_action_server' build argument 'cmake_target' from command line to 'None'
+[0.420s] Level 5:colcon.colcon_core.verb:set package 'examples_rclpy_minimal_action_server' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.420s] Level 5:colcon.colcon_core.verb:set package 'examples_rclpy_minimal_action_server' build argument 'cmake_clean_cache' from command line to 'False'
+[0.420s] Level 5:colcon.colcon_core.verb:set package 'examples_rclpy_minimal_action_server' build argument 'cmake_clean_first' from command line to 'False'
+[0.420s] Level 5:colcon.colcon_core.verb:set package 'examples_rclpy_minimal_action_server' build argument 'cmake_force_configure' from command line to 'False'
+[0.420s] Level 5:colcon.colcon_core.verb:set package 'examples_rclpy_minimal_action_server' build argument 'ament_cmake_args' from command line to 'None'
+[0.420s] Level 5:colcon.colcon_core.verb:set package 'examples_rclpy_minimal_action_server' build argument 'catkin_cmake_args' from command line to 'None'
+[0.420s] Level 5:colcon.colcon_core.verb:set package 'examples_rclpy_minimal_action_server' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.420s] DEBUG:colcon.colcon_core.verb:Building package 'examples_rclpy_minimal_action_server' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/simon/Documents/ARO/ros2_ws/src/build/examples_rclpy_minimal_action_server', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/simon/Documents/ARO/ros2_ws/src/install/examples_rclpy_minimal_action_server', 'merge_install': False, 'path': '/home/simon/Documents/ARO/ros2_ws/src/ROS2_examples/rclpy/actions/minimal_action_server', 'symlink_install': False, 'test_result_base': None}
+[0.420s] Level 5:colcon.colcon_core.verb:set package 'examples_rclpy_minimal_client' build argument 'cmake_args' from command line to 'None'
+[0.420s] Level 5:colcon.colcon_core.verb:set package 'examples_rclpy_minimal_client' build argument 'cmake_target' from command line to 'None'
+[0.420s] Level 5:colcon.colcon_core.verb:set package 'examples_rclpy_minimal_client' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.420s] Level 5:colcon.colcon_core.verb:set package 'examples_rclpy_minimal_client' build argument 'cmake_clean_cache' from command line to 'False'
+[0.420s] Level 5:colcon.colcon_core.verb:set package 'examples_rclpy_minimal_client' build argument 'cmake_clean_first' from command line to 'False'
+[0.420s] Level 5:colcon.colcon_core.verb:set package 'examples_rclpy_minimal_client' build argument 'cmake_force_configure' from command line to 'False'
+[0.420s] Level 5:colcon.colcon_core.verb:set package 'examples_rclpy_minimal_client' build argument 'ament_cmake_args' from command line to 'None'
+[0.420s] Level 5:colcon.colcon_core.verb:set package 'examples_rclpy_minimal_client' build argument 'catkin_cmake_args' from command line to 'None'
+[0.420s] Level 5:colcon.colcon_core.verb:set package 'examples_rclpy_minimal_client' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.420s] DEBUG:colcon.colcon_core.verb:Building package 'examples_rclpy_minimal_client' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/simon/Documents/ARO/ros2_ws/src/build/examples_rclpy_minimal_client', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/simon/Documents/ARO/ros2_ws/src/install/examples_rclpy_minimal_client', 'merge_install': False, 'path': '/home/simon/Documents/ARO/ros2_ws/src/ROS2_examples/rclpy/services/minimal_client', 'symlink_install': False, 'test_result_base': None}
+[0.421s] Level 5:colcon.colcon_core.verb:set package 'examples_rclpy_minimal_publisher' build argument 'cmake_args' from command line to 'None'
+[0.421s] Level 5:colcon.colcon_core.verb:set package 'examples_rclpy_minimal_publisher' build argument 'cmake_target' from command line to 'None'
+[0.421s] Level 5:colcon.colcon_core.verb:set package 'examples_rclpy_minimal_publisher' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.421s] Level 5:colcon.colcon_core.verb:set package 'examples_rclpy_minimal_publisher' build argument 'cmake_clean_cache' from command line to 'False'
+[0.421s] Level 5:colcon.colcon_core.verb:set package 'examples_rclpy_minimal_publisher' build argument 'cmake_clean_first' from command line to 'False'
+[0.421s] Level 5:colcon.colcon_core.verb:set package 'examples_rclpy_minimal_publisher' build argument 'cmake_force_configure' from command line to 'False'
+[0.421s] Level 5:colcon.colcon_core.verb:set package 'examples_rclpy_minimal_publisher' build argument 'ament_cmake_args' from command line to 'None'
+[0.421s] Level 5:colcon.colcon_core.verb:set package 'examples_rclpy_minimal_publisher' build argument 'catkin_cmake_args' from command line to 'None'
+[0.421s] Level 5:colcon.colcon_core.verb:set package 'examples_rclpy_minimal_publisher' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.421s] DEBUG:colcon.colcon_core.verb:Building package 'examples_rclpy_minimal_publisher' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/simon/Documents/ARO/ros2_ws/src/build/examples_rclpy_minimal_publisher', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/simon/Documents/ARO/ros2_ws/src/install/examples_rclpy_minimal_publisher', 'merge_install': False, 'path': '/home/simon/Documents/ARO/ros2_ws/src/ROS2_examples/rclpy/topics/minimal_publisher', 'symlink_install': False, 'test_result_base': None}
+[0.422s] Level 5:colcon.colcon_core.verb:set package 'examples_rclpy_minimal_service' build argument 'cmake_args' from command line to 'None'
+[0.422s] Level 5:colcon.colcon_core.verb:set package 'examples_rclpy_minimal_service' build argument 'cmake_target' from command line to 'None'
+[0.422s] Level 5:colcon.colcon_core.verb:set package 'examples_rclpy_minimal_service' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.422s] Level 5:colcon.colcon_core.verb:set package 'examples_rclpy_minimal_service' build argument 'cmake_clean_cache' from command line to 'False'
+[0.422s] Level 5:colcon.colcon_core.verb:set package 'examples_rclpy_minimal_service' build argument 'cmake_clean_first' from command line to 'False'
+[0.422s] Level 5:colcon.colcon_core.verb:set package 'examples_rclpy_minimal_service' build argument 'cmake_force_configure' from command line to 'False'
+[0.422s] Level 5:colcon.colcon_core.verb:set package 'examples_rclpy_minimal_service' build argument 'ament_cmake_args' from command line to 'None'
+[0.422s] Level 5:colcon.colcon_core.verb:set package 'examples_rclpy_minimal_service' build argument 'catkin_cmake_args' from command line to 'None'
+[0.422s] Level 5:colcon.colcon_core.verb:set package 'examples_rclpy_minimal_service' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.422s] DEBUG:colcon.colcon_core.verb:Building package 'examples_rclpy_minimal_service' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/simon/Documents/ARO/ros2_ws/src/build/examples_rclpy_minimal_service', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/simon/Documents/ARO/ros2_ws/src/install/examples_rclpy_minimal_service', 'merge_install': False, 'path': '/home/simon/Documents/ARO/ros2_ws/src/ROS2_examples/rclpy/services/minimal_service', 'symlink_install': False, 'test_result_base': None}
+[0.423s] Level 5:colcon.colcon_core.verb:set package 'examples_rclpy_minimal_subscriber' build argument 'cmake_args' from command line to 'None'
+[0.423s] Level 5:colcon.colcon_core.verb:set package 'examples_rclpy_minimal_subscriber' build argument 'cmake_target' from command line to 'None'
+[0.423s] Level 5:colcon.colcon_core.verb:set package 'examples_rclpy_minimal_subscriber' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.423s] Level 5:colcon.colcon_core.verb:set package 'examples_rclpy_minimal_subscriber' build argument 'cmake_clean_cache' from command line to 'False'
+[0.423s] Level 5:colcon.colcon_core.verb:set package 'examples_rclpy_minimal_subscriber' build argument 'cmake_clean_first' from command line to 'False'
+[0.423s] Level 5:colcon.colcon_core.verb:set package 'examples_rclpy_minimal_subscriber' build argument 'cmake_force_configure' from command line to 'False'
+[0.423s] Level 5:colcon.colcon_core.verb:set package 'examples_rclpy_minimal_subscriber' build argument 'ament_cmake_args' from command line to 'None'
+[0.423s] Level 5:colcon.colcon_core.verb:set package 'examples_rclpy_minimal_subscriber' build argument 'catkin_cmake_args' from command line to 'None'
+[0.423s] Level 5:colcon.colcon_core.verb:set package 'examples_rclpy_minimal_subscriber' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.423s] DEBUG:colcon.colcon_core.verb:Building package 'examples_rclpy_minimal_subscriber' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/simon/Documents/ARO/ros2_ws/src/build/examples_rclpy_minimal_subscriber', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/simon/Documents/ARO/ros2_ws/src/install/examples_rclpy_minimal_subscriber', 'merge_install': False, 'path': '/home/simon/Documents/ARO/ros2_ws/src/ROS2_examples/rclpy/topics/minimal_subscriber', 'symlink_install': False, 'test_result_base': None}
+[0.424s] Level 5:colcon.colcon_core.verb:set package 'launch_testing_examples' build argument 'cmake_args' from command line to 'None'
+[0.424s] Level 5:colcon.colcon_core.verb:set package 'launch_testing_examples' build argument 'cmake_target' from command line to 'None'
+[0.424s] Level 5:colcon.colcon_core.verb:set package 'launch_testing_examples' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.424s] Level 5:colcon.colcon_core.verb:set package 'launch_testing_examples' build argument 'cmake_clean_cache' from command line to 'False'
+[0.424s] Level 5:colcon.colcon_core.verb:set package 'launch_testing_examples' build argument 'cmake_clean_first' from command line to 'False'
+[0.424s] Level 5:colcon.colcon_core.verb:set package 'launch_testing_examples' build argument 'cmake_force_configure' from command line to 'False'
+[0.424s] Level 5:colcon.colcon_core.verb:set package 'launch_testing_examples' build argument 'ament_cmake_args' from command line to 'None'
+[0.424s] Level 5:colcon.colcon_core.verb:set package 'launch_testing_examples' build argument 'catkin_cmake_args' from command line to 'None'
+[0.424s] Level 5:colcon.colcon_core.verb:set package 'launch_testing_examples' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.424s] DEBUG:colcon.colcon_core.verb:Building package 'launch_testing_examples' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/simon/Documents/ARO/ros2_ws/src/build/launch_testing_examples', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/simon/Documents/ARO/ros2_ws/src/install/launch_testing_examples', 'merge_install': False, 'path': '/home/simon/Documents/ARO/ros2_ws/src/ROS2_examples/launch_testing/launch_testing_examples', 'symlink_install': False, 'test_result_base': None}
+[0.425s] Level 5:colcon.colcon_core.verb:set package 'mi_paquete_python' build argument 'cmake_args' from command line to 'None'
+[0.425s] Level 5:colcon.colcon_core.verb:set package 'mi_paquete_python' build argument 'cmake_target' from command line to 'None'
+[0.425s] Level 5:colcon.colcon_core.verb:set package 'mi_paquete_python' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.425s] Level 5:colcon.colcon_core.verb:set package 'mi_paquete_python' build argument 'cmake_clean_cache' from command line to 'False'
+[0.425s] Level 5:colcon.colcon_core.verb:set package 'mi_paquete_python' build argument 'cmake_clean_first' from command line to 'False'
+[0.425s] Level 5:colcon.colcon_core.verb:set package 'mi_paquete_python' build argument 'cmake_force_configure' from command line to 'False'
+[0.425s] Level 5:colcon.colcon_core.verb:set package 'mi_paquete_python' build argument 'ament_cmake_args' from command line to 'None'
+[0.425s] Level 5:colcon.colcon_core.verb:set package 'mi_paquete_python' build argument 'catkin_cmake_args' from command line to 'None'
+[0.425s] Level 5:colcon.colcon_core.verb:set package 'mi_paquete_python' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.425s] DEBUG:colcon.colcon_core.verb:Building package 'mi_paquete_python' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/simon/Documents/ARO/ros2_ws/src/build/mi_paquete_python', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/simon/Documents/ARO/ros2_ws/src/install/mi_paquete_python', 'merge_install': False, 'path': '/home/simon/Documents/ARO/ros2_ws/src/mi_paquete_python', 'symlink_install': False, 'test_result_base': None}
+[0.425s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.428s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.428s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/simon/Documents/ARO/ros2_ws/src/ROS2_examples/rclpy/actions/minimal_action_client' with build type 'ament_python'
+[0.428s] Level 1:colcon.colcon_core.shell:create_environment_hook('examples_rclpy_minimal_action_client', 'ament_prefix_path')
+[0.433s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.433s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/simon/Documents/ARO/ros2_ws/src/install/examples_rclpy_minimal_action_client/share/examples_rclpy_minimal_action_client/hook/ament_prefix_path.ps1'
+[0.434s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/simon/Documents/ARO/ros2_ws/src/install/examples_rclpy_minimal_action_client/share/examples_rclpy_minimal_action_client/hook/ament_prefix_path.dsv'
+[0.434s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/simon/Documents/ARO/ros2_ws/src/install/examples_rclpy_minimal_action_client/share/examples_rclpy_minimal_action_client/hook/ament_prefix_path.sh'
+[0.436s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.436s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.440s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/simon/Documents/ARO/ros2_ws/src/ROS2_examples/rclpy/actions/minimal_action_server' with build type 'ament_python'
+[0.440s] Level 1:colcon.colcon_core.shell:create_environment_hook('examples_rclpy_minimal_action_server', 'ament_prefix_path')
+[0.442s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/simon/Documents/ARO/ros2_ws/src/install/examples_rclpy_minimal_action_server/share/examples_rclpy_minimal_action_server/hook/ament_prefix_path.ps1'
+[0.442s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/simon/Documents/ARO/ros2_ws/src/install/examples_rclpy_minimal_action_server/share/examples_rclpy_minimal_action_server/hook/ament_prefix_path.dsv'
+[0.443s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/simon/Documents/ARO/ros2_ws/src/install/examples_rclpy_minimal_action_server/share/examples_rclpy_minimal_action_server/hook/ament_prefix_path.sh'
+[0.444s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.445s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.449s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/simon/Documents/ARO/ros2_ws/src/ROS2_examples/rclpy/services/minimal_client' with build type 'ament_python'
+[0.449s] Level 1:colcon.colcon_core.shell:create_environment_hook('examples_rclpy_minimal_client', 'ament_prefix_path')
+[0.451s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/simon/Documents/ARO/ros2_ws/src/install/examples_rclpy_minimal_client/share/examples_rclpy_minimal_client/hook/ament_prefix_path.ps1'
+[0.451s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/simon/Documents/ARO/ros2_ws/src/install/examples_rclpy_minimal_client/share/examples_rclpy_minimal_client/hook/ament_prefix_path.dsv'
+[0.452s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/simon/Documents/ARO/ros2_ws/src/install/examples_rclpy_minimal_client/share/examples_rclpy_minimal_client/hook/ament_prefix_path.sh'
+[0.453s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.453s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.458s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/simon/Documents/ARO/ros2_ws/src/ROS2_examples/rclpy/topics/minimal_publisher' with build type 'ament_python'
+[0.459s] Level 1:colcon.colcon_core.shell:create_environment_hook('examples_rclpy_minimal_publisher', 'ament_prefix_path')
+[0.460s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/simon/Documents/ARO/ros2_ws/src/install/examples_rclpy_minimal_publisher/share/examples_rclpy_minimal_publisher/hook/ament_prefix_path.ps1'
+[0.461s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/simon/Documents/ARO/ros2_ws/src/install/examples_rclpy_minimal_publisher/share/examples_rclpy_minimal_publisher/hook/ament_prefix_path.dsv'
+[0.462s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/simon/Documents/ARO/ros2_ws/src/install/examples_rclpy_minimal_publisher/share/examples_rclpy_minimal_publisher/hook/ament_prefix_path.sh'
+[0.464s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.464s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.470s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/simon/Documents/ARO/ros2_ws/src/ROS2_examples/rclpy/services/minimal_service' with build type 'ament_python'
+[0.470s] Level 1:colcon.colcon_core.shell:create_environment_hook('examples_rclpy_minimal_service', 'ament_prefix_path')
+[0.471s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/simon/Documents/ARO/ros2_ws/src/install/examples_rclpy_minimal_service/share/examples_rclpy_minimal_service/hook/ament_prefix_path.ps1'
+[0.472s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/simon/Documents/ARO/ros2_ws/src/install/examples_rclpy_minimal_service/share/examples_rclpy_minimal_service/hook/ament_prefix_path.dsv'
+[0.473s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/simon/Documents/ARO/ros2_ws/src/install/examples_rclpy_minimal_service/share/examples_rclpy_minimal_service/hook/ament_prefix_path.sh'
+[0.475s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.475s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.480s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/simon/Documents/ARO/ros2_ws/src/ROS2_examples/rclpy/topics/minimal_subscriber' with build type 'ament_python'
+[0.480s] Level 1:colcon.colcon_core.shell:create_environment_hook('examples_rclpy_minimal_subscriber', 'ament_prefix_path')
+[0.482s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/simon/Documents/ARO/ros2_ws/src/install/examples_rclpy_minimal_subscriber/share/examples_rclpy_minimal_subscriber/hook/ament_prefix_path.ps1'
+[0.484s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/simon/Documents/ARO/ros2_ws/src/install/examples_rclpy_minimal_subscriber/share/examples_rclpy_minimal_subscriber/hook/ament_prefix_path.dsv'
+[0.484s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/simon/Documents/ARO/ros2_ws/src/install/examples_rclpy_minimal_subscriber/share/examples_rclpy_minimal_subscriber/hook/ament_prefix_path.sh'
+[0.486s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.487s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.492s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/simon/Documents/ARO/ros2_ws/src/ROS2_examples/launch_testing/launch_testing_examples' with build type 'ament_python'
+[0.492s] Level 1:colcon.colcon_core.shell:create_environment_hook('launch_testing_examples', 'ament_prefix_path')
+[0.493s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/simon/Documents/ARO/ros2_ws/src/install/launch_testing_examples/share/launch_testing_examples/hook/ament_prefix_path.ps1'
+[0.494s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/simon/Documents/ARO/ros2_ws/src/install/launch_testing_examples/share/launch_testing_examples/hook/ament_prefix_path.dsv'
+[0.495s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/simon/Documents/ARO/ros2_ws/src/install/launch_testing_examples/share/launch_testing_examples/hook/ament_prefix_path.sh'
+[0.497s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.497s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.503s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/simon/Documents/ARO/ros2_ws/src/mi_paquete_python' with build type 'ament_python'
+[0.503s] Level 1:colcon.colcon_core.shell:create_environment_hook('mi_paquete_python', 'ament_prefix_path')
+[0.505s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/simon/Documents/ARO/ros2_ws/src/install/mi_paquete_python/share/mi_paquete_python/hook/ament_prefix_path.ps1'
+[0.505s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/simon/Documents/ARO/ros2_ws/src/install/mi_paquete_python/share/mi_paquete_python/hook/ament_prefix_path.dsv'
+[0.506s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/simon/Documents/ARO/ros2_ws/src/install/mi_paquete_python/share/mi_paquete_python/hook/ament_prefix_path.sh'
+[0.507s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.507s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.781s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/simon/Documents/ARO/ros2_ws/src/ROS2_examples/rclpy/actions/minimal_action_client'
+[0.783s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.783s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.021s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/simon/Documents/ARO/ros2_ws/src/ROS2_examples/rclpy/actions/minimal_action_server'
+[1.023s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.023s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.277s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/simon/Documents/ARO/ros2_ws/src/ROS2_examples/rclpy/services/minimal_client'
+[1.279s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.280s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.536s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/simon/Documents/ARO/ros2_ws/src/ROS2_examples/rclpy/topics/minimal_publisher'
+[1.538s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.539s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.815s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/simon/Documents/ARO/ros2_ws/src/ROS2_examples/rclpy/services/minimal_service'
+[1.817s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.817s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[2.090s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/simon/Documents/ARO/ros2_ws/src/ROS2_examples/rclpy/topics/minimal_subscriber'
+[2.093s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[2.093s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[2.335s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/simon/Documents/ARO/ros2_ws/src/ROS2_examples/launch_testing/launch_testing_examples'
+[2.337s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[2.337s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[2.572s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/simon/Documents/ARO/ros2_ws/src/mi_paquete_python'
+[2.573s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[2.573s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[3.112s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/simon/Documents/ARO/ros2_ws/src/build/examples_rclpy_minimal_client': PYTHONPATH=/home/simon/Documents/ARO/ros2_ws/src/build/examples_rclpy_minimal_client/prefix_override:/home/simon/Documents/ARO/ros2_ws/src/install/examples_rclpy_minimal_client/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --uninstall --editable --build-directory /home/simon/Documents/ARO/ros2_ws/src/build/examples_rclpy_minimal_client/build
+[3.122s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/simon/Documents/ARO/ros2_ws/src/build/examples_rclpy_minimal_service': PYTHONPATH=/home/simon/Documents/ARO/ros2_ws/src/build/examples_rclpy_minimal_service/prefix_override:/home/simon/Documents/ARO/ros2_ws/src/install/examples_rclpy_minimal_service/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --uninstall --editable --build-directory /home/simon/Documents/ARO/ros2_ws/src/build/examples_rclpy_minimal_service/build
+[3.126s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/simon/Documents/ARO/ros2_ws/src/build/examples_rclpy_minimal_action_server': PYTHONPATH=/home/simon/Documents/ARO/ros2_ws/src/build/examples_rclpy_minimal_action_server/prefix_override:/home/simon/Documents/ARO/ros2_ws/src/install/examples_rclpy_minimal_action_server/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --uninstall --editable --build-directory /home/simon/Documents/ARO/ros2_ws/src/build/examples_rclpy_minimal_action_server/build
+[3.131s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/simon/Documents/ARO/ros2_ws/src/build/examples_rclpy_minimal_publisher': PYTHONPATH=/home/simon/Documents/ARO/ros2_ws/src/build/examples_rclpy_minimal_publisher/prefix_override:/home/simon/Documents/ARO/ros2_ws/src/install/examples_rclpy_minimal_publisher/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --uninstall --editable --build-directory /home/simon/Documents/ARO/ros2_ws/src/build/examples_rclpy_minimal_publisher/build
+[3.136s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/simon/Documents/ARO/ros2_ws/src/build/examples_rclpy_minimal_subscriber': PYTHONPATH=/home/simon/Documents/ARO/ros2_ws/src/build/examples_rclpy_minimal_subscriber/prefix_override:/home/simon/Documents/ARO/ros2_ws/src/install/examples_rclpy_minimal_subscriber/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --uninstall --editable --build-directory /home/simon/Documents/ARO/ros2_ws/src/build/examples_rclpy_minimal_subscriber/build
+[3.141s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/simon/Documents/ARO/ros2_ws/src/build/launch_testing_examples': PYTHONPATH=/home/simon/Documents/ARO/ros2_ws/src/build/launch_testing_examples/prefix_override:/home/simon/Documents/ARO/ros2_ws/src/install/launch_testing_examples/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --uninstall --editable --build-directory /home/simon/Documents/ARO/ros2_ws/src/build/launch_testing_examples/build
+[3.145s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/simon/Documents/ARO/ros2_ws/src/build/examples_rclpy_minimal_action_client': PYTHONPATH=/home/simon/Documents/ARO/ros2_ws/src/build/examples_rclpy_minimal_action_client/prefix_override:/home/simon/Documents/ARO/ros2_ws/src/install/examples_rclpy_minimal_action_client/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --uninstall --editable --build-directory /home/simon/Documents/ARO/ros2_ws/src/build/examples_rclpy_minimal_action_client/build
+[3.146s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/simon/Documents/ARO/ros2_ws/src/mi_paquete_python': PYTHONPATH=/home/simon/Documents/ARO/ros2_ws/src/build/mi_paquete_python/prefix_override:/home/simon/Documents/ARO/ros2_ws/src/install/mi_paquete_python/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../build/mi_paquete_python build --build-base /home/simon/Documents/ARO/ros2_ws/src/build/mi_paquete_python/build install --record /home/simon/Documents/ARO/ros2_ws/src/build/mi_paquete_python/install.log --single-version-externally-managed
+[3.549s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/simon/Documents/ARO/ros2_ws/src/mi_paquete_python' returned '0': PYTHONPATH=/home/simon/Documents/ARO/ros2_ws/src/build/mi_paquete_python/prefix_override:/home/simon/Documents/ARO/ros2_ws/src/install/mi_paquete_python/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../build/mi_paquete_python build --build-base /home/simon/Documents/ARO/ros2_ws/src/build/mi_paquete_python/build install --record /home/simon/Documents/ARO/ros2_ws/src/build/mi_paquete_python/install.log --single-version-externally-managed
+[3.558s] Level 1:colcon.colcon_core.environment:checking '/home/simon/Documents/ARO/ros2_ws/src/install/mi_paquete_python' for CMake module files
+[3.559s] Level 1:colcon.colcon_core.environment:checking '/home/simon/Documents/ARO/ros2_ws/src/install/mi_paquete_python' for CMake config files
+[3.561s] Level 1:colcon.colcon_core.environment:checking '/home/simon/Documents/ARO/ros2_ws/src/install/mi_paquete_python/lib'
+[3.561s] Level 1:colcon.colcon_core.environment:checking '/home/simon/Documents/ARO/ros2_ws/src/install/mi_paquete_python/bin'
+[3.562s] Level 1:colcon.colcon_core.environment:checking '/home/simon/Documents/ARO/ros2_ws/src/install/mi_paquete_python/lib/pkgconfig/mi_paquete_python.pc'
+[3.562s] Level 1:colcon.colcon_core.environment:checking '/home/simon/Documents/ARO/ros2_ws/src/install/mi_paquete_python/lib/python3.10/site-packages'
+[3.562s] Level 1:colcon.colcon_core.shell:create_environment_hook('mi_paquete_python', 'pythonpath')
+[3.565s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/simon/Documents/ARO/ros2_ws/src/install/mi_paquete_python/share/mi_paquete_python/hook/pythonpath.ps1'
+[3.566s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/simon/Documents/ARO/ros2_ws/src/install/mi_paquete_python/share/mi_paquete_python/hook/pythonpath.dsv'
+[3.567s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/simon/Documents/ARO/ros2_ws/src/install/mi_paquete_python/share/mi_paquete_python/hook/pythonpath.sh'
+[3.568s] Level 1:colcon.colcon_core.environment:checking '/home/simon/Documents/ARO/ros2_ws/src/install/mi_paquete_python/bin'
+[3.569s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(mi_paquete_python)
+[3.572s] INFO:colcon.colcon_core.shell:Creating package script '/home/simon/Documents/ARO/ros2_ws/src/install/mi_paquete_python/share/mi_paquete_python/package.ps1'
+[3.573s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/simon/Documents/ARO/ros2_ws/src/install/mi_paquete_python/share/mi_paquete_python/package.dsv'
+[3.575s] INFO:colcon.colcon_core.shell:Creating package script '/home/simon/Documents/ARO/ros2_ws/src/install/mi_paquete_python/share/mi_paquete_python/package.sh'
+[3.576s] INFO:colcon.colcon_core.shell:Creating package script '/home/simon/Documents/ARO/ros2_ws/src/install/mi_paquete_python/share/mi_paquete_python/package.bash'
+[3.578s] INFO:colcon.colcon_core.shell:Creating package script '/home/simon/Documents/ARO/ros2_ws/src/install/mi_paquete_python/share/mi_paquete_python/package.zsh'
+[3.579s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/simon/Documents/ARO/ros2_ws/src/install/mi_paquete_python/share/colcon-core/packages/mi_paquete_python)
+[3.762s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/simon/Documents/ARO/ros2_ws/src/build/examples_rclpy_minimal_action_server' returned '0': PYTHONPATH=/home/simon/Documents/ARO/ros2_ws/src/build/examples_rclpy_minimal_action_server/prefix_override:/home/simon/Documents/ARO/ros2_ws/src/install/examples_rclpy_minimal_action_server/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --uninstall --editable --build-directory /home/simon/Documents/ARO/ros2_ws/src/build/examples_rclpy_minimal_action_server/build
+[3.766s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/simon/Documents/ARO/ros2_ws/src/ROS2_examples/rclpy/actions/minimal_action_server': PYTHONPATH=/home/simon/Documents/ARO/ros2_ws/src/build/examples_rclpy_minimal_action_server/prefix_override:/home/simon/Documents/ARO/ros2_ws/src/install/examples_rclpy_minimal_action_server/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../../../build/examples_rclpy_minimal_action_server build --build-base /home/simon/Documents/ARO/ros2_ws/src/build/examples_rclpy_minimal_action_server/build install --record /home/simon/Documents/ARO/ros2_ws/src/build/examples_rclpy_minimal_action_server/install.log --single-version-externally-managed
+[3.770s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/simon/Documents/ARO/ros2_ws/src/build/launch_testing_examples' returned '0': PYTHONPATH=/home/simon/Documents/ARO/ros2_ws/src/build/launch_testing_examples/prefix_override:/home/simon/Documents/ARO/ros2_ws/src/install/launch_testing_examples/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --uninstall --editable --build-directory /home/simon/Documents/ARO/ros2_ws/src/build/launch_testing_examples/build
+[3.774s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/simon/Documents/ARO/ros2_ws/src/ROS2_examples/launch_testing/launch_testing_examples': PYTHONPATH=/home/simon/Documents/ARO/ros2_ws/src/build/launch_testing_examples/prefix_override:/home/simon/Documents/ARO/ros2_ws/src/install/launch_testing_examples/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../../build/launch_testing_examples build --build-base /home/simon/Documents/ARO/ros2_ws/src/build/launch_testing_examples/build install --record /home/simon/Documents/ARO/ros2_ws/src/build/launch_testing_examples/install.log --single-version-externally-managed
+[3.776s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/simon/Documents/ARO/ros2_ws/src/build/examples_rclpy_minimal_publisher' returned '0': PYTHONPATH=/home/simon/Documents/ARO/ros2_ws/src/build/examples_rclpy_minimal_publisher/prefix_override:/home/simon/Documents/ARO/ros2_ws/src/install/examples_rclpy_minimal_publisher/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --uninstall --editable --build-directory /home/simon/Documents/ARO/ros2_ws/src/build/examples_rclpy_minimal_publisher/build
+[3.778s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/simon/Documents/ARO/ros2_ws/src/ROS2_examples/rclpy/topics/minimal_publisher': PYTHONPATH=/home/simon/Documents/ARO/ros2_ws/src/build/examples_rclpy_minimal_publisher/prefix_override:/home/simon/Documents/ARO/ros2_ws/src/install/examples_rclpy_minimal_publisher/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../../../build/examples_rclpy_minimal_publisher build --build-base /home/simon/Documents/ARO/ros2_ws/src/build/examples_rclpy_minimal_publisher/build install --record /home/simon/Documents/ARO/ros2_ws/src/build/examples_rclpy_minimal_publisher/install.log --single-version-externally-managed
+[3.781s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/simon/Documents/ARO/ros2_ws/src/build/examples_rclpy_minimal_client' returned '0': PYTHONPATH=/home/simon/Documents/ARO/ros2_ws/src/build/examples_rclpy_minimal_client/prefix_override:/home/simon/Documents/ARO/ros2_ws/src/install/examples_rclpy_minimal_client/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --uninstall --editable --build-directory /home/simon/Documents/ARO/ros2_ws/src/build/examples_rclpy_minimal_client/build
+[3.783s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/simon/Documents/ARO/ros2_ws/src/ROS2_examples/rclpy/services/minimal_client': PYTHONPATH=/home/simon/Documents/ARO/ros2_ws/src/build/examples_rclpy_minimal_client/prefix_override:/home/simon/Documents/ARO/ros2_ws/src/install/examples_rclpy_minimal_client/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../../../build/examples_rclpy_minimal_client build --build-base /home/simon/Documents/ARO/ros2_ws/src/build/examples_rclpy_minimal_client/build install --record /home/simon/Documents/ARO/ros2_ws/src/build/examples_rclpy_minimal_client/install.log --single-version-externally-managed
+[3.785s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/simon/Documents/ARO/ros2_ws/src/build/examples_rclpy_minimal_subscriber' returned '0': PYTHONPATH=/home/simon/Documents/ARO/ros2_ws/src/build/examples_rclpy_minimal_subscriber/prefix_override:/home/simon/Documents/ARO/ros2_ws/src/install/examples_rclpy_minimal_subscriber/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --uninstall --editable --build-directory /home/simon/Documents/ARO/ros2_ws/src/build/examples_rclpy_minimal_subscriber/build
+[3.788s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/simon/Documents/ARO/ros2_ws/src/ROS2_examples/rclpy/topics/minimal_subscriber': PYTHONPATH=/home/simon/Documents/ARO/ros2_ws/src/build/examples_rclpy_minimal_subscriber/prefix_override:/home/simon/Documents/ARO/ros2_ws/src/install/examples_rclpy_minimal_subscriber/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../../../build/examples_rclpy_minimal_subscriber build --build-base /home/simon/Documents/ARO/ros2_ws/src/build/examples_rclpy_minimal_subscriber/build install --record /home/simon/Documents/ARO/ros2_ws/src/build/examples_rclpy_minimal_subscriber/install.log --single-version-externally-managed
+[3.789s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/simon/Documents/ARO/ros2_ws/src/build/examples_rclpy_minimal_service' returned '0': PYTHONPATH=/home/simon/Documents/ARO/ros2_ws/src/build/examples_rclpy_minimal_service/prefix_override:/home/simon/Documents/ARO/ros2_ws/src/install/examples_rclpy_minimal_service/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --uninstall --editable --build-directory /home/simon/Documents/ARO/ros2_ws/src/build/examples_rclpy_minimal_service/build
+[3.793s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/simon/Documents/ARO/ros2_ws/src/ROS2_examples/rclpy/services/minimal_service': PYTHONPATH=/home/simon/Documents/ARO/ros2_ws/src/build/examples_rclpy_minimal_service/prefix_override:/home/simon/Documents/ARO/ros2_ws/src/install/examples_rclpy_minimal_service/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../../../build/examples_rclpy_minimal_service build --build-base /home/simon/Documents/ARO/ros2_ws/src/build/examples_rclpy_minimal_service/build install --record /home/simon/Documents/ARO/ros2_ws/src/build/examples_rclpy_minimal_service/install.log --single-version-externally-managed
+[3.806s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/simon/Documents/ARO/ros2_ws/src/build/examples_rclpy_minimal_action_client' returned '0': PYTHONPATH=/home/simon/Documents/ARO/ros2_ws/src/build/examples_rclpy_minimal_action_client/prefix_override:/home/simon/Documents/ARO/ros2_ws/src/install/examples_rclpy_minimal_action_client/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --uninstall --editable --build-directory /home/simon/Documents/ARO/ros2_ws/src/build/examples_rclpy_minimal_action_client/build
+[3.809s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/simon/Documents/ARO/ros2_ws/src/ROS2_examples/rclpy/actions/minimal_action_client': PYTHONPATH=/home/simon/Documents/ARO/ros2_ws/src/build/examples_rclpy_minimal_action_client/prefix_override:/home/simon/Documents/ARO/ros2_ws/src/install/examples_rclpy_minimal_action_client/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../../../build/examples_rclpy_minimal_action_client build --build-base /home/simon/Documents/ARO/ros2_ws/src/build/examples_rclpy_minimal_action_client/build install --record /home/simon/Documents/ARO/ros2_ws/src/build/examples_rclpy_minimal_action_client/install.log --single-version-externally-managed
+[4.202s] Level 1:colcon.colcon_core.environment:checking '/home/simon/Documents/ARO/ros2_ws/src/install/examples_rclpy_minimal_publisher' for CMake module files
+[4.203s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/simon/Documents/ARO/ros2_ws/src/ROS2_examples/rclpy/topics/minimal_publisher' returned '0': PYTHONPATH=/home/simon/Documents/ARO/ros2_ws/src/build/examples_rclpy_minimal_publisher/prefix_override:/home/simon/Documents/ARO/ros2_ws/src/install/examples_rclpy_minimal_publisher/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../../../build/examples_rclpy_minimal_publisher build --build-base /home/simon/Documents/ARO/ros2_ws/src/build/examples_rclpy_minimal_publisher/build install --record /home/simon/Documents/ARO/ros2_ws/src/build/examples_rclpy_minimal_publisher/install.log --single-version-externally-managed
+[4.203s] Level 1:colcon.colcon_core.environment:checking '/home/simon/Documents/ARO/ros2_ws/src/install/examples_rclpy_minimal_publisher' for CMake config files
+[4.204s] Level 1:colcon.colcon_core.environment:checking '/home/simon/Documents/ARO/ros2_ws/src/install/examples_rclpy_minimal_publisher/lib'
+[4.204s] Level 1:colcon.colcon_core.environment:checking '/home/simon/Documents/ARO/ros2_ws/src/install/examples_rclpy_minimal_publisher/bin'
+[4.204s] Level 1:colcon.colcon_core.environment:checking '/home/simon/Documents/ARO/ros2_ws/src/install/examples_rclpy_minimal_publisher/lib/pkgconfig/examples_rclpy_minimal_publisher.pc'
+[4.204s] Level 1:colcon.colcon_core.environment:checking '/home/simon/Documents/ARO/ros2_ws/src/install/examples_rclpy_minimal_publisher/lib/python3.10/site-packages'
+[4.204s] Level 1:colcon.colcon_core.shell:create_environment_hook('examples_rclpy_minimal_publisher', 'pythonpath')
+[4.206s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/simon/Documents/ARO/ros2_ws/src/install/examples_rclpy_minimal_publisher/share/examples_rclpy_minimal_publisher/hook/pythonpath.ps1'
+[4.206s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/simon/Documents/ARO/ros2_ws/src/install/examples_rclpy_minimal_publisher/share/examples_rclpy_minimal_publisher/hook/pythonpath.dsv'
+[4.207s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/simon/Documents/ARO/ros2_ws/src/install/examples_rclpy_minimal_publisher/share/examples_rclpy_minimal_publisher/hook/pythonpath.sh'
+[4.207s] Level 1:colcon.colcon_core.environment:checking '/home/simon/Documents/ARO/ros2_ws/src/install/examples_rclpy_minimal_publisher/bin'
+[4.207s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(examples_rclpy_minimal_publisher)
+[4.209s] INFO:colcon.colcon_core.shell:Creating package script '/home/simon/Documents/ARO/ros2_ws/src/install/examples_rclpy_minimal_publisher/share/examples_rclpy_minimal_publisher/package.ps1'
+[4.210s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/simon/Documents/ARO/ros2_ws/src/install/examples_rclpy_minimal_publisher/share/examples_rclpy_minimal_publisher/package.dsv'
+[4.210s] INFO:colcon.colcon_core.shell:Creating package script '/home/simon/Documents/ARO/ros2_ws/src/install/examples_rclpy_minimal_publisher/share/examples_rclpy_minimal_publisher/package.sh'
+[4.211s] INFO:colcon.colcon_core.shell:Creating package script '/home/simon/Documents/ARO/ros2_ws/src/install/examples_rclpy_minimal_publisher/share/examples_rclpy_minimal_publisher/package.bash'
+[4.211s] INFO:colcon.colcon_core.shell:Creating package script '/home/simon/Documents/ARO/ros2_ws/src/install/examples_rclpy_minimal_publisher/share/examples_rclpy_minimal_publisher/package.zsh'
+[4.211s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/simon/Documents/ARO/ros2_ws/src/install/examples_rclpy_minimal_publisher/share/colcon-core/packages/examples_rclpy_minimal_publisher)
+[4.215s] Level 1:colcon.colcon_core.environment:checking '/home/simon/Documents/ARO/ros2_ws/src/install/examples_rclpy_minimal_action_server' for CMake module files
+[4.216s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/simon/Documents/ARO/ros2_ws/src/ROS2_examples/rclpy/actions/minimal_action_server' returned '0': PYTHONPATH=/home/simon/Documents/ARO/ros2_ws/src/build/examples_rclpy_minimal_action_server/prefix_override:/home/simon/Documents/ARO/ros2_ws/src/install/examples_rclpy_minimal_action_server/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../../../build/examples_rclpy_minimal_action_server build --build-base /home/simon/Documents/ARO/ros2_ws/src/build/examples_rclpy_minimal_action_server/build install --record /home/simon/Documents/ARO/ros2_ws/src/build/examples_rclpy_minimal_action_server/install.log --single-version-externally-managed
+[4.216s] Level 1:colcon.colcon_core.environment:checking '/home/simon/Documents/ARO/ros2_ws/src/install/examples_rclpy_minimal_action_server' for CMake config files
+[4.217s] Level 1:colcon.colcon_core.environment:checking '/home/simon/Documents/ARO/ros2_ws/src/install/examples_rclpy_minimal_action_server/lib'
+[4.217s] Level 1:colcon.colcon_core.environment:checking '/home/simon/Documents/ARO/ros2_ws/src/install/examples_rclpy_minimal_action_server/bin'
+[4.217s] Level 1:colcon.colcon_core.environment:checking '/home/simon/Documents/ARO/ros2_ws/src/install/examples_rclpy_minimal_action_server/lib/pkgconfig/examples_rclpy_minimal_action_server.pc'
+[4.217s] Level 1:colcon.colcon_core.environment:checking '/home/simon/Documents/ARO/ros2_ws/src/install/examples_rclpy_minimal_action_server/lib/python3.10/site-packages'
+[4.217s] Level 1:colcon.colcon_core.shell:create_environment_hook('examples_rclpy_minimal_action_server', 'pythonpath')
+[4.218s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/simon/Documents/ARO/ros2_ws/src/install/examples_rclpy_minimal_action_server/share/examples_rclpy_minimal_action_server/hook/pythonpath.ps1'
+[4.219s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/simon/Documents/ARO/ros2_ws/src/install/examples_rclpy_minimal_action_server/share/examples_rclpy_minimal_action_server/hook/pythonpath.dsv'
+[4.219s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/simon/Documents/ARO/ros2_ws/src/install/examples_rclpy_minimal_action_server/share/examples_rclpy_minimal_action_server/hook/pythonpath.sh'
+[4.220s] Level 1:colcon.colcon_core.environment:checking '/home/simon/Documents/ARO/ros2_ws/src/install/examples_rclpy_minimal_action_server/bin'
+[4.220s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(examples_rclpy_minimal_action_server)
+[4.221s] INFO:colcon.colcon_core.shell:Creating package script '/home/simon/Documents/ARO/ros2_ws/src/install/examples_rclpy_minimal_action_server/share/examples_rclpy_minimal_action_server/package.ps1'
+[4.222s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/simon/Documents/ARO/ros2_ws/src/install/examples_rclpy_minimal_action_server/share/examples_rclpy_minimal_action_server/package.dsv'
+[4.222s] INFO:colcon.colcon_core.shell:Creating package script '/home/simon/Documents/ARO/ros2_ws/src/install/examples_rclpy_minimal_action_server/share/examples_rclpy_minimal_action_server/package.sh'
+[4.223s] INFO:colcon.colcon_core.shell:Creating package script '/home/simon/Documents/ARO/ros2_ws/src/install/examples_rclpy_minimal_action_server/share/examples_rclpy_minimal_action_server/package.bash'
+[4.223s] INFO:colcon.colcon_core.shell:Creating package script '/home/simon/Documents/ARO/ros2_ws/src/install/examples_rclpy_minimal_action_server/share/examples_rclpy_minimal_action_server/package.zsh'
+[4.223s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/simon/Documents/ARO/ros2_ws/src/install/examples_rclpy_minimal_action_server/share/colcon-core/packages/examples_rclpy_minimal_action_server)
+[4.226s] Level 1:colcon.colcon_core.environment:checking '/home/simon/Documents/ARO/ros2_ws/src/install/examples_rclpy_minimal_client' for CMake module files
+[4.229s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/simon/Documents/ARO/ros2_ws/src/ROS2_examples/rclpy/services/minimal_client' returned '0': PYTHONPATH=/home/simon/Documents/ARO/ros2_ws/src/build/examples_rclpy_minimal_client/prefix_override:/home/simon/Documents/ARO/ros2_ws/src/install/examples_rclpy_minimal_client/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../../../build/examples_rclpy_minimal_client build --build-base /home/simon/Documents/ARO/ros2_ws/src/build/examples_rclpy_minimal_client/build install --record /home/simon/Documents/ARO/ros2_ws/src/build/examples_rclpy_minimal_client/install.log --single-version-externally-managed
+[4.229s] Level 1:colcon.colcon_core.environment:checking '/home/simon/Documents/ARO/ros2_ws/src/install/examples_rclpy_minimal_client' for CMake config files
+[4.230s] Level 1:colcon.colcon_core.environment:checking '/home/simon/Documents/ARO/ros2_ws/src/install/examples_rclpy_minimal_client/lib'
+[4.230s] Level 1:colcon.colcon_core.environment:checking '/home/simon/Documents/ARO/ros2_ws/src/install/examples_rclpy_minimal_client/bin'
+[4.230s] Level 1:colcon.colcon_core.environment:checking '/home/simon/Documents/ARO/ros2_ws/src/install/examples_rclpy_minimal_client/lib/pkgconfig/examples_rclpy_minimal_client.pc'
+[4.230s] Level 1:colcon.colcon_core.environment:checking '/home/simon/Documents/ARO/ros2_ws/src/install/examples_rclpy_minimal_client/lib/python3.10/site-packages'
+[4.230s] Level 1:colcon.colcon_core.shell:create_environment_hook('examples_rclpy_minimal_client', 'pythonpath')
+[4.232s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/simon/Documents/ARO/ros2_ws/src/install/examples_rclpy_minimal_client/share/examples_rclpy_minimal_client/hook/pythonpath.ps1'
+[4.232s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/simon/Documents/ARO/ros2_ws/src/install/examples_rclpy_minimal_client/share/examples_rclpy_minimal_client/hook/pythonpath.dsv'
+[4.233s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/simon/Documents/ARO/ros2_ws/src/install/examples_rclpy_minimal_client/share/examples_rclpy_minimal_client/hook/pythonpath.sh'
+[4.233s] Level 1:colcon.colcon_core.environment:checking '/home/simon/Documents/ARO/ros2_ws/src/install/examples_rclpy_minimal_client/bin'
+[4.233s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(examples_rclpy_minimal_client)
+[4.235s] INFO:colcon.colcon_core.shell:Creating package script '/home/simon/Documents/ARO/ros2_ws/src/install/examples_rclpy_minimal_client/share/examples_rclpy_minimal_client/package.ps1'
+[4.236s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/simon/Documents/ARO/ros2_ws/src/install/examples_rclpy_minimal_client/share/examples_rclpy_minimal_client/package.dsv'
+[4.236s] INFO:colcon.colcon_core.shell:Creating package script '/home/simon/Documents/ARO/ros2_ws/src/install/examples_rclpy_minimal_client/share/examples_rclpy_minimal_client/package.sh'
+[4.236s] INFO:colcon.colcon_core.shell:Creating package script '/home/simon/Documents/ARO/ros2_ws/src/install/examples_rclpy_minimal_client/share/examples_rclpy_minimal_client/package.bash'
+[4.237s] INFO:colcon.colcon_core.shell:Creating package script '/home/simon/Documents/ARO/ros2_ws/src/install/examples_rclpy_minimal_client/share/examples_rclpy_minimal_client/package.zsh'
+[4.237s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/simon/Documents/ARO/ros2_ws/src/install/examples_rclpy_minimal_client/share/colcon-core/packages/examples_rclpy_minimal_client)
+[4.239s] Level 1:colcon.colcon_core.environment:checking '/home/simon/Documents/ARO/ros2_ws/src/install/launch_testing_examples' for CMake module files
+[4.240s] Level 1:colcon.colcon_core.environment:checking '/home/simon/Documents/ARO/ros2_ws/src/install/launch_testing_examples' for CMake config files
+[4.240s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/simon/Documents/ARO/ros2_ws/src/ROS2_examples/launch_testing/launch_testing_examples' returned '0': PYTHONPATH=/home/simon/Documents/ARO/ros2_ws/src/build/launch_testing_examples/prefix_override:/home/simon/Documents/ARO/ros2_ws/src/install/launch_testing_examples/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../../build/launch_testing_examples build --build-base /home/simon/Documents/ARO/ros2_ws/src/build/launch_testing_examples/build install --record /home/simon/Documents/ARO/ros2_ws/src/build/launch_testing_examples/install.log --single-version-externally-managed
+[4.241s] Level 1:colcon.colcon_core.environment:checking '/home/simon/Documents/ARO/ros2_ws/src/install/launch_testing_examples/lib'
+[4.241s] Level 1:colcon.colcon_core.environment:checking '/home/simon/Documents/ARO/ros2_ws/src/install/launch_testing_examples/bin'
+[4.241s] Level 1:colcon.colcon_core.environment:checking '/home/simon/Documents/ARO/ros2_ws/src/install/launch_testing_examples/lib/pkgconfig/launch_testing_examples.pc'
+[4.241s] Level 1:colcon.colcon_core.environment:checking '/home/simon/Documents/ARO/ros2_ws/src/install/launch_testing_examples/lib/python3.10/site-packages'
+[4.241s] Level 1:colcon.colcon_core.shell:create_environment_hook('launch_testing_examples', 'pythonpath')
+[4.242s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/simon/Documents/ARO/ros2_ws/src/install/launch_testing_examples/share/launch_testing_examples/hook/pythonpath.ps1'
+[4.242s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/simon/Documents/ARO/ros2_ws/src/install/launch_testing_examples/share/launch_testing_examples/hook/pythonpath.dsv'
+[4.243s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/simon/Documents/ARO/ros2_ws/src/install/launch_testing_examples/share/launch_testing_examples/hook/pythonpath.sh'
+[4.243s] Level 1:colcon.colcon_core.environment:checking '/home/simon/Documents/ARO/ros2_ws/src/install/launch_testing_examples/bin'
+[4.243s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(launch_testing_examples)
+[4.244s] INFO:colcon.colcon_core.shell:Creating package script '/home/simon/Documents/ARO/ros2_ws/src/install/launch_testing_examples/share/launch_testing_examples/package.ps1'
+[4.245s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/simon/Documents/ARO/ros2_ws/src/install/launch_testing_examples/share/launch_testing_examples/package.dsv'
+[4.245s] INFO:colcon.colcon_core.shell:Creating package script '/home/simon/Documents/ARO/ros2_ws/src/install/launch_testing_examples/share/launch_testing_examples/package.sh'
+[4.246s] INFO:colcon.colcon_core.shell:Creating package script '/home/simon/Documents/ARO/ros2_ws/src/install/launch_testing_examples/share/launch_testing_examples/package.bash'
+[4.246s] INFO:colcon.colcon_core.shell:Creating package script '/home/simon/Documents/ARO/ros2_ws/src/install/launch_testing_examples/share/launch_testing_examples/package.zsh'
+[4.246s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/simon/Documents/ARO/ros2_ws/src/install/launch_testing_examples/share/colcon-core/packages/launch_testing_examples)
+[4.250s] Level 1:colcon.colcon_core.environment:checking '/home/simon/Documents/ARO/ros2_ws/src/install/examples_rclpy_minimal_action_client' for CMake module files
+[4.251s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/simon/Documents/ARO/ros2_ws/src/ROS2_examples/rclpy/actions/minimal_action_client' returned '0': PYTHONPATH=/home/simon/Documents/ARO/ros2_ws/src/build/examples_rclpy_minimal_action_client/prefix_override:/home/simon/Documents/ARO/ros2_ws/src/install/examples_rclpy_minimal_action_client/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../../../build/examples_rclpy_minimal_action_client build --build-base /home/simon/Documents/ARO/ros2_ws/src/build/examples_rclpy_minimal_action_client/build install --record /home/simon/Documents/ARO/ros2_ws/src/build/examples_rclpy_minimal_action_client/install.log --single-version-externally-managed
+[4.251s] Level 1:colcon.colcon_core.environment:checking '/home/simon/Documents/ARO/ros2_ws/src/install/examples_rclpy_minimal_action_client' for CMake config files
+[4.252s] Level 1:colcon.colcon_core.environment:checking '/home/simon/Documents/ARO/ros2_ws/src/install/examples_rclpy_minimal_action_client/lib'
+[4.252s] Level 1:colcon.colcon_core.environment:checking '/home/simon/Documents/ARO/ros2_ws/src/install/examples_rclpy_minimal_action_client/bin'
+[4.252s] Level 1:colcon.colcon_core.environment:checking '/home/simon/Documents/ARO/ros2_ws/src/install/examples_rclpy_minimal_action_client/lib/pkgconfig/examples_rclpy_minimal_action_client.pc'
+[4.253s] Level 1:colcon.colcon_core.environment:checking '/home/simon/Documents/ARO/ros2_ws/src/install/examples_rclpy_minimal_action_client/lib/python3.10/site-packages'
+[4.253s] Level 1:colcon.colcon_core.shell:create_environment_hook('examples_rclpy_minimal_action_client', 'pythonpath')
+[4.254s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/simon/Documents/ARO/ros2_ws/src/install/examples_rclpy_minimal_action_client/share/examples_rclpy_minimal_action_client/hook/pythonpath.ps1'
+[4.254s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/simon/Documents/ARO/ros2_ws/src/install/examples_rclpy_minimal_action_client/share/examples_rclpy_minimal_action_client/hook/pythonpath.dsv'
+[4.255s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/simon/Documents/ARO/ros2_ws/src/install/examples_rclpy_minimal_action_client/share/examples_rclpy_minimal_action_client/hook/pythonpath.sh'
+[4.255s] Level 1:colcon.colcon_core.environment:checking '/home/simon/Documents/ARO/ros2_ws/src/install/examples_rclpy_minimal_action_client/bin'
+[4.255s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(examples_rclpy_minimal_action_client)
+[4.256s] INFO:colcon.colcon_core.shell:Creating package script '/home/simon/Documents/ARO/ros2_ws/src/install/examples_rclpy_minimal_action_client/share/examples_rclpy_minimal_action_client/package.ps1'
+[4.257s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/simon/Documents/ARO/ros2_ws/src/install/examples_rclpy_minimal_action_client/share/examples_rclpy_minimal_action_client/package.dsv'
+[4.257s] INFO:colcon.colcon_core.shell:Creating package script '/home/simon/Documents/ARO/ros2_ws/src/install/examples_rclpy_minimal_action_client/share/examples_rclpy_minimal_action_client/package.sh'
+[4.257s] INFO:colcon.colcon_core.shell:Creating package script '/home/simon/Documents/ARO/ros2_ws/src/install/examples_rclpy_minimal_action_client/share/examples_rclpy_minimal_action_client/package.bash'
+[4.258s] INFO:colcon.colcon_core.shell:Creating package script '/home/simon/Documents/ARO/ros2_ws/src/install/examples_rclpy_minimal_action_client/share/examples_rclpy_minimal_action_client/package.zsh'
+[4.258s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/simon/Documents/ARO/ros2_ws/src/install/examples_rclpy_minimal_action_client/share/colcon-core/packages/examples_rclpy_minimal_action_client)
+[4.260s] Level 1:colcon.colcon_core.environment:checking '/home/simon/Documents/ARO/ros2_ws/src/install/examples_rclpy_minimal_service' for CMake module files
+[4.260s] Level 1:colcon.colcon_core.environment:checking '/home/simon/Documents/ARO/ros2_ws/src/install/examples_rclpy_minimal_service' for CMake config files
+[4.261s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/simon/Documents/ARO/ros2_ws/src/ROS2_examples/rclpy/services/minimal_service' returned '0': PYTHONPATH=/home/simon/Documents/ARO/ros2_ws/src/build/examples_rclpy_minimal_service/prefix_override:/home/simon/Documents/ARO/ros2_ws/src/install/examples_rclpy_minimal_service/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../../../build/examples_rclpy_minimal_service build --build-base /home/simon/Documents/ARO/ros2_ws/src/build/examples_rclpy_minimal_service/build install --record /home/simon/Documents/ARO/ros2_ws/src/build/examples_rclpy_minimal_service/install.log --single-version-externally-managed
+[4.261s] Level 1:colcon.colcon_core.environment:checking '/home/simon/Documents/ARO/ros2_ws/src/install/examples_rclpy_minimal_service/lib'
+[4.261s] Level 1:colcon.colcon_core.environment:checking '/home/simon/Documents/ARO/ros2_ws/src/install/examples_rclpy_minimal_service/bin'
+[4.261s] Level 1:colcon.colcon_core.environment:checking '/home/simon/Documents/ARO/ros2_ws/src/install/examples_rclpy_minimal_service/lib/pkgconfig/examples_rclpy_minimal_service.pc'
+[4.262s] Level 1:colcon.colcon_core.environment:checking '/home/simon/Documents/ARO/ros2_ws/src/install/examples_rclpy_minimal_service/lib/python3.10/site-packages'
+[4.262s] Level 1:colcon.colcon_core.shell:create_environment_hook('examples_rclpy_minimal_service', 'pythonpath')
+[4.263s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/simon/Documents/ARO/ros2_ws/src/install/examples_rclpy_minimal_service/share/examples_rclpy_minimal_service/hook/pythonpath.ps1'
+[4.263s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/simon/Documents/ARO/ros2_ws/src/install/examples_rclpy_minimal_service/share/examples_rclpy_minimal_service/hook/pythonpath.dsv'
+[4.263s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/simon/Documents/ARO/ros2_ws/src/install/examples_rclpy_minimal_service/share/examples_rclpy_minimal_service/hook/pythonpath.sh'
+[4.264s] Level 1:colcon.colcon_core.environment:checking '/home/simon/Documents/ARO/ros2_ws/src/install/examples_rclpy_minimal_service/bin'
+[4.264s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(examples_rclpy_minimal_service)
+[4.265s] INFO:colcon.colcon_core.shell:Creating package script '/home/simon/Documents/ARO/ros2_ws/src/install/examples_rclpy_minimal_service/share/examples_rclpy_minimal_service/package.ps1'
+[4.266s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/simon/Documents/ARO/ros2_ws/src/install/examples_rclpy_minimal_service/share/examples_rclpy_minimal_service/package.dsv'
+[4.267s] INFO:colcon.colcon_core.shell:Creating package script '/home/simon/Documents/ARO/ros2_ws/src/install/examples_rclpy_minimal_service/share/examples_rclpy_minimal_service/package.sh'
+[4.267s] INFO:colcon.colcon_core.shell:Creating package script '/home/simon/Documents/ARO/ros2_ws/src/install/examples_rclpy_minimal_service/share/examples_rclpy_minimal_service/package.bash'
+[4.268s] INFO:colcon.colcon_core.shell:Creating package script '/home/simon/Documents/ARO/ros2_ws/src/install/examples_rclpy_minimal_service/share/examples_rclpy_minimal_service/package.zsh'
+[4.268s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/simon/Documents/ARO/ros2_ws/src/install/examples_rclpy_minimal_service/share/colcon-core/packages/examples_rclpy_minimal_service)
+[4.270s] Level 1:colcon.colcon_core.environment:checking '/home/simon/Documents/ARO/ros2_ws/src/install/examples_rclpy_minimal_subscriber' for CMake module files
+[4.271s] Level 1:colcon.colcon_core.environment:checking '/home/simon/Documents/ARO/ros2_ws/src/install/examples_rclpy_minimal_subscriber' for CMake config files
+[4.271s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/simon/Documents/ARO/ros2_ws/src/ROS2_examples/rclpy/topics/minimal_subscriber' returned '0': PYTHONPATH=/home/simon/Documents/ARO/ros2_ws/src/build/examples_rclpy_minimal_subscriber/prefix_override:/home/simon/Documents/ARO/ros2_ws/src/install/examples_rclpy_minimal_subscriber/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../../../build/examples_rclpy_minimal_subscriber build --build-base /home/simon/Documents/ARO/ros2_ws/src/build/examples_rclpy_minimal_subscriber/build install --record /home/simon/Documents/ARO/ros2_ws/src/build/examples_rclpy_minimal_subscriber/install.log --single-version-externally-managed
+[4.272s] Level 1:colcon.colcon_core.environment:checking '/home/simon/Documents/ARO/ros2_ws/src/install/examples_rclpy_minimal_subscriber/lib'
+[4.272s] Level 1:colcon.colcon_core.environment:checking '/home/simon/Documents/ARO/ros2_ws/src/install/examples_rclpy_minimal_subscriber/bin'
+[4.272s] Level 1:colcon.colcon_core.environment:checking '/home/simon/Documents/ARO/ros2_ws/src/install/examples_rclpy_minimal_subscriber/lib/pkgconfig/examples_rclpy_minimal_subscriber.pc'
+[4.272s] Level 1:colcon.colcon_core.environment:checking '/home/simon/Documents/ARO/ros2_ws/src/install/examples_rclpy_minimal_subscriber/lib/python3.10/site-packages'
+[4.272s] Level 1:colcon.colcon_core.shell:create_environment_hook('examples_rclpy_minimal_subscriber', 'pythonpath')
+[4.273s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/simon/Documents/ARO/ros2_ws/src/install/examples_rclpy_minimal_subscriber/share/examples_rclpy_minimal_subscriber/hook/pythonpath.ps1'
+[4.273s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/simon/Documents/ARO/ros2_ws/src/install/examples_rclpy_minimal_subscriber/share/examples_rclpy_minimal_subscriber/hook/pythonpath.dsv'
+[4.274s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/simon/Documents/ARO/ros2_ws/src/install/examples_rclpy_minimal_subscriber/share/examples_rclpy_minimal_subscriber/hook/pythonpath.sh'
+[4.274s] Level 1:colcon.colcon_core.environment:checking '/home/simon/Documents/ARO/ros2_ws/src/install/examples_rclpy_minimal_subscriber/bin'
+[4.274s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(examples_rclpy_minimal_subscriber)
+[4.275s] INFO:colcon.colcon_core.shell:Creating package script '/home/simon/Documents/ARO/ros2_ws/src/install/examples_rclpy_minimal_subscriber/share/examples_rclpy_minimal_subscriber/package.ps1'
+[4.275s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/simon/Documents/ARO/ros2_ws/src/install/examples_rclpy_minimal_subscriber/share/examples_rclpy_minimal_subscriber/package.dsv'
+[4.276s] INFO:colcon.colcon_core.shell:Creating package script '/home/simon/Documents/ARO/ros2_ws/src/install/examples_rclpy_minimal_subscriber/share/examples_rclpy_minimal_subscriber/package.sh'
+[4.276s] INFO:colcon.colcon_core.shell:Creating package script '/home/simon/Documents/ARO/ros2_ws/src/install/examples_rclpy_minimal_subscriber/share/examples_rclpy_minimal_subscriber/package.bash'
+[4.276s] INFO:colcon.colcon_core.shell:Creating package script '/home/simon/Documents/ARO/ros2_ws/src/install/examples_rclpy_minimal_subscriber/share/examples_rclpy_minimal_subscriber/package.zsh'
+[4.276s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/simon/Documents/ARO/ros2_ws/src/install/examples_rclpy_minimal_subscriber/share/colcon-core/packages/examples_rclpy_minimal_subscriber)
+[4.276s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[4.277s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[4.277s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[4.277s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[4.286s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[4.286s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[4.286s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[4.301s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[4.304s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/simon/Documents/ARO/ros2_ws/src/install/local_setup.ps1'
+[4.304s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/simon/Documents/ARO/ros2_ws/src/install/_local_setup_util_ps1.py'
+[4.305s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/simon/Documents/ARO/ros2_ws/src/install/setup.ps1'
+[4.306s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/simon/Documents/ARO/ros2_ws/src/install/local_setup.sh'
+[4.307s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/simon/Documents/ARO/ros2_ws/src/install/_local_setup_util_sh.py'
+[4.307s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/simon/Documents/ARO/ros2_ws/src/install/setup.sh'
+[4.308s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/simon/Documents/ARO/ros2_ws/src/install/local_setup.bash'
+[4.308s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/simon/Documents/ARO/ros2_ws/src/install/setup.bash'
+[4.310s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/simon/Documents/ARO/ros2_ws/src/install/local_setup.zsh'
+[4.310s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/simon/Documents/ARO/ros2_ws/src/install/setup.zsh'

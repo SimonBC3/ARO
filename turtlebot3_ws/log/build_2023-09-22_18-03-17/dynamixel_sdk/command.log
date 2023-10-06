@@ -1,0 +1,1 @@
+Invoking command in '/home/simon/Documents/ARO/turtlebot3_ws/build/dynamixel_sdk': /usr/bin/cmake /home/simon/Documents/ARO/turtlebot3_ws/src/utils/DynamixelSDK/dynamixel_sdk -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/simon/Documents/ARO/turtlebot3_ws/install/dynamixel_sdk

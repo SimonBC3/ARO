@@ -1,0 +1,18 @@
+[0.629s] Invoking command in '/home/simon/Documents/ARO/ros2_ws/src/build/examples_rclpy_minimal_publisher': PYTHONPATH=/home/simon/Documents/ARO/ros2_ws/src/build/examples_rclpy_minimal_publisher/prefix_override:/home/simon/Documents/ARO/ros2_ws/src/install/examples_rclpy_minimal_publisher/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/simon/Documents/ARO/ros2_ws/src/build/examples_rclpy_minimal_publisher/build --no-deps install_data
+[0.862s] running develop
+[0.984s] running egg_info
+[0.984s] writing examples_rclpy_minimal_publisher.egg-info/PKG-INFO
+[0.985s] writing dependency_links to examples_rclpy_minimal_publisher.egg-info/dependency_links.txt
+[0.985s] writing entry points to examples_rclpy_minimal_publisher.egg-info/entry_points.txt
+[0.985s] writing requirements to examples_rclpy_minimal_publisher.egg-info/requires.txt
+[0.985s] writing top-level names to examples_rclpy_minimal_publisher.egg-info/top_level.txt
+[0.987s] reading manifest file 'examples_rclpy_minimal_publisher.egg-info/SOURCES.txt'
+[0.994s] writing manifest file 'examples_rclpy_minimal_publisher.egg-info/SOURCES.txt'
+[0.996s] running build_ext
+[0.996s] Creating /home/simon/Documents/ARO/ros2_ws/src/install/examples_rclpy_minimal_publisher/lib/python3.10/site-packages/examples-rclpy-minimal-publisher.egg-link (link to .)
+[0.997s] Installing publisher_member_function script to /home/simon/Documents/ARO/ros2_ws/src/install/examples_rclpy_minimal_publisher/lib/examples_rclpy_minimal_publisher
+[0.997s] Installing publisher_old_school script to /home/simon/Documents/ARO/ros2_ws/src/install/examples_rclpy_minimal_publisher/lib/examples_rclpy_minimal_publisher
+[0.997s] 
+[0.997s] Installed /home/simon/Documents/ARO/ros2_ws/src/build/examples_rclpy_minimal_publisher
+[0.997s] running install_data
+[1.056s] Invoked command in '/home/simon/Documents/ARO/ros2_ws/src/build/examples_rclpy_minimal_publisher' returned '0': PYTHONPATH=/home/simon/Documents/ARO/ros2_ws/src/build/examples_rclpy_minimal_publisher/prefix_override:/home/simon/Documents/ARO/ros2_ws/src/install/examples_rclpy_minimal_publisher/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/simon/Documents/ARO/ros2_ws/src/build/examples_rclpy_minimal_publisher/build --no-deps install_data

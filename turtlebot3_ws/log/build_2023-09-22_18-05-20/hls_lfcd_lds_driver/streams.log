@@ -1,0 +1,56 @@
+[0.046s] Invoking command in '/home/simon/Documents/ARO/turtlebot3_ws/build/hls_lfcd_lds_driver': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/simon/Documents/ARO/turtlebot3_ws/src/utils/hls_lfcd_lds_driver -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/simon/Documents/ARO/turtlebot3_ws/install/hls_lfcd_lds_driver
+[0.069s] -- Found ament_cmake: 1.3.5 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.321s] -- Found Python3: /usr/bin/python3.10 (found version "3.10.12") found components: Interpreter 
+[0.478s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.509s] -- Found rclcpp: 16.0.5 (/opt/ros/humble/share/rclcpp/cmake)
+[0.563s] -- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.570s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.581s] -- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.603s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.628s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.750s] -- Found rmw_implementation_cmake: 6.1.1 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.756s] -- Found rmw_fastrtps_cpp: 6.2.3 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[0.993s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[1.049s] -- Found FastRTPS: /opt/ros/humble/include  
+[1.134s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[1.149s] -- Looking for pthread.h
+[1.281s] -- Looking for pthread.h - found
+[1.282s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[1.383s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[1.384s] -- Found Threads: TRUE  
+[1.601s] -- Found sensor_msgs: 4.2.3 (/opt/ros/humble/share/sensor_msgs/cmake)
+[1.760s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: system 
+[1.843s] -- Configuring done
+[1.856s] -- Generating done
+[1.858s] -- Build files have been written to: /home/simon/Documents/ARO/turtlebot3_ws/build/hls_lfcd_lds_driver
+[1.873s] Invoked command in '/home/simon/Documents/ARO/turtlebot3_ws/build/hls_lfcd_lds_driver' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/simon/Documents/ARO/turtlebot3_ws/src/utils/hls_lfcd_lds_driver -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/simon/Documents/ARO/turtlebot3_ws/install/hls_lfcd_lds_driver
+[1.876s] Invoking command in '/home/simon/Documents/ARO/turtlebot3_ws/build/hls_lfcd_lds_driver': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/simon/Documents/ARO/turtlebot3_ws/build/hls_lfcd_lds_driver -- -j16 -l16
+[1.925s] [ 50%] [32mBuilding CXX object CMakeFiles/hlds_laser_publisher.dir/src/hlds_laser_publisher.cpp.o[0m
+[11.787s] [100%] [32m[1mLinking CXX executable hlds_laser_publisher[0m
+[12.133s] [100%] Built target hlds_laser_publisher
+[12.145s] Invoked command in '/home/simon/Documents/ARO/turtlebot3_ws/build/hls_lfcd_lds_driver' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/simon/Documents/ARO/turtlebot3_ws/build/hls_lfcd_lds_driver -- -j16 -l16
+[12.228s] Invoking command in '/home/simon/Documents/ARO/turtlebot3_ws/build/hls_lfcd_lds_driver': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/simon/Documents/ARO/turtlebot3_ws/build/hls_lfcd_lds_driver
+[12.236s] -- Install configuration: ""
+[12.237s] -- Execute custom install script
+[12.237s] -- Symlinking: /home/simon/Documents/ARO/turtlebot3_ws/install/hls_lfcd_lds_driver/share/hls_lfcd_lds_driver/launch/hlds_laser.launch.py
+[12.248s] -- Symlinking: /home/simon/Documents/ARO/turtlebot3_ws/install/hls_lfcd_lds_driver/share/hls_lfcd_lds_driver/launch/view_hlds_laser.launch.py
+[12.258s] -- Symlinking: /home/simon/Documents/ARO/turtlebot3_ws/install/hls_lfcd_lds_driver/share/hls_lfcd_lds_driver/rviz/hlds_laser.rviz
+[12.270s] -- Symlinking: /home/simon/Documents/ARO/turtlebot3_ws/install/hls_lfcd_lds_driver/lib/hls_lfcd_lds_driver/hlds_laser_publisher
+[12.281s] -- Symlinking: /home/simon/Documents/ARO/turtlebot3_ws/install/hls_lfcd_lds_driver/share/ament_index/resource_index/package_run_dependencies/hls_lfcd_lds_driver
+[12.293s] -- Symlinking: /home/simon/Documents/ARO/turtlebot3_ws/install/hls_lfcd_lds_driver/share/ament_index/resource_index/parent_prefix_path/hls_lfcd_lds_driver
+[12.303s] -- Symlinking: /home/simon/Documents/ARO/turtlebot3_ws/install/hls_lfcd_lds_driver/share/hls_lfcd_lds_driver/environment/ament_prefix_path.sh
+[12.313s] -- Symlinking: /home/simon/Documents/ARO/turtlebot3_ws/install/hls_lfcd_lds_driver/share/hls_lfcd_lds_driver/environment/ament_prefix_path.dsv
+[12.323s] -- Symlinking: /home/simon/Documents/ARO/turtlebot3_ws/install/hls_lfcd_lds_driver/share/hls_lfcd_lds_driver/environment/path.sh
+[12.333s] -- Symlinking: /home/simon/Documents/ARO/turtlebot3_ws/install/hls_lfcd_lds_driver/share/hls_lfcd_lds_driver/environment/path.dsv
+[12.343s] -- Symlinking: /home/simon/Documents/ARO/turtlebot3_ws/install/hls_lfcd_lds_driver/share/hls_lfcd_lds_driver/local_setup.bash
+[12.353s] -- Symlinking: /home/simon/Documents/ARO/turtlebot3_ws/install/hls_lfcd_lds_driver/share/hls_lfcd_lds_driver/local_setup.sh
+[12.368s] -- Symlinking: /home/simon/Documents/ARO/turtlebot3_ws/install/hls_lfcd_lds_driver/share/hls_lfcd_lds_driver/local_setup.zsh
+[12.379s] -- Symlinking: /home/simon/Documents/ARO/turtlebot3_ws/install/hls_lfcd_lds_driver/share/hls_lfcd_lds_driver/local_setup.dsv
+[12.389s] -- Symlinking: /home/simon/Documents/ARO/turtlebot3_ws/install/hls_lfcd_lds_driver/share/hls_lfcd_lds_driver/package.dsv
+[12.399s] -- Symlinking: /home/simon/Documents/ARO/turtlebot3_ws/install/hls_lfcd_lds_driver/share/ament_index/resource_index/packages/hls_lfcd_lds_driver
+[12.410s] -- Symlinking: /home/simon/Documents/ARO/turtlebot3_ws/install/hls_lfcd_lds_driver/share/hls_lfcd_lds_driver/cmake/ament_cmake_export_dependencies-extras.cmake
+[12.420s] -- Symlinking: /home/simon/Documents/ARO/turtlebot3_ws/install/hls_lfcd_lds_driver/share/hls_lfcd_lds_driver/cmake/ament_cmake_export_include_directories-extras.cmake
+[12.430s] -- Symlinking: /home/simon/Documents/ARO/turtlebot3_ws/install/hls_lfcd_lds_driver/share/hls_lfcd_lds_driver/cmake/hls_lfcd_lds_driverConfig.cmake
+[12.440s] -- Symlinking: /home/simon/Documents/ARO/turtlebot3_ws/install/hls_lfcd_lds_driver/share/hls_lfcd_lds_driver/cmake/hls_lfcd_lds_driverConfig-version.cmake
+[12.450s] -- Symlinking: /home/simon/Documents/ARO/turtlebot3_ws/install/hls_lfcd_lds_driver/share/hls_lfcd_lds_driver/package.xml
+[12.598s] Invoked command in '/home/simon/Documents/ARO/turtlebot3_ws/build/hls_lfcd_lds_driver' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/simon/Documents/ARO/turtlebot3_ws/build/hls_lfcd_lds_driver

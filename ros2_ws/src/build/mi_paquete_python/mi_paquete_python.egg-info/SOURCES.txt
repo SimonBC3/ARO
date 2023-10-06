@@ -1,0 +1,13 @@
+package.xml
+setup.cfg
+setup.py
+mi_paquete_python/__init__.py
+mi_paquete_python/robot_news_station.py
+mi_paquete_python.egg-info/PKG-INFO
+mi_paquete_python.egg-info/SOURCES.txt
+mi_paquete_python.egg-info/dependency_links.txt
+mi_paquete_python.egg-info/entry_points.txt
+mi_paquete_python.egg-info/requires.txt
+mi_paquete_python.egg-info/top_level.txt
+mi_paquete_python.egg-info/zip-safe
+resource/mi_paquete_python

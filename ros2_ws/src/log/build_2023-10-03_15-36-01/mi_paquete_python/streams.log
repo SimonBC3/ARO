@@ -1,0 +1,33 @@
+[2.641s] Invoking command in '/home/simon/Documents/ARO/ros2_ws/src/mi_paquete_python': PYTHONPATH=/home/simon/Documents/ARO/ros2_ws/src/build/mi_paquete_python/prefix_override:/home/simon/Documents/ARO/ros2_ws/src/install/mi_paquete_python/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../build/mi_paquete_python build --build-base /home/simon/Documents/ARO/ros2_ws/src/build/mi_paquete_python/build install --record /home/simon/Documents/ARO/ros2_ws/src/build/mi_paquete_python/install.log --single-version-externally-managed
+[2.958s] running egg_info
+[2.958s] creating ../build/mi_paquete_python/mi_paquete_python.egg-info
+[2.958s] writing ../build/mi_paquete_python/mi_paquete_python.egg-info/PKG-INFO
+[2.959s] writing dependency_links to ../build/mi_paquete_python/mi_paquete_python.egg-info/dependency_links.txt
+[2.959s] writing entry points to ../build/mi_paquete_python/mi_paquete_python.egg-info/entry_points.txt
+[2.959s] writing requirements to ../build/mi_paquete_python/mi_paquete_python.egg-info/requires.txt
+[2.959s] writing top-level names to ../build/mi_paquete_python/mi_paquete_python.egg-info/top_level.txt
+[2.959s] writing manifest file '../build/mi_paquete_python/mi_paquete_python.egg-info/SOURCES.txt'
+[2.962s] reading manifest file '../build/mi_paquete_python/mi_paquete_python.egg-info/SOURCES.txt'
+[2.963s] writing manifest file '../build/mi_paquete_python/mi_paquete_python.egg-info/SOURCES.txt'
+[2.963s] running build
+[2.963s] running build_py
+[2.963s] creating /home/simon/Documents/ARO/ros2_ws/src/build/mi_paquete_python/build
+[2.963s] creating /home/simon/Documents/ARO/ros2_ws/src/build/mi_paquete_python/build/lib
+[2.964s] creating /home/simon/Documents/ARO/ros2_ws/src/build/mi_paquete_python/build/lib/mi_paquete_python
+[2.964s] copying mi_paquete_python/__init__.py -> /home/simon/Documents/ARO/ros2_ws/src/build/mi_paquete_python/build/lib/mi_paquete_python
+[2.964s] running install
+[2.964s] running install_lib
+[2.965s] creating /home/simon/Documents/ARO/ros2_ws/src/install/mi_paquete_python/lib/python3.10/site-packages/mi_paquete_python
+[2.965s] copying /home/simon/Documents/ARO/ros2_ws/src/build/mi_paquete_python/build/lib/mi_paquete_python/__init__.py -> /home/simon/Documents/ARO/ros2_ws/src/install/mi_paquete_python/lib/python3.10/site-packages/mi_paquete_python
+[2.966s] byte-compiling /home/simon/Documents/ARO/ros2_ws/src/install/mi_paquete_python/lib/python3.10/site-packages/mi_paquete_python/__init__.py to __init__.cpython-310.pyc
+[2.966s] running install_data
+[2.967s] creating /home/simon/Documents/ARO/ros2_ws/src/install/mi_paquete_python/share/ament_index
+[2.967s] creating /home/simon/Documents/ARO/ros2_ws/src/install/mi_paquete_python/share/ament_index/resource_index
+[2.967s] creating /home/simon/Documents/ARO/ros2_ws/src/install/mi_paquete_python/share/ament_index/resource_index/packages
+[2.967s] copying resource/mi_paquete_python -> /home/simon/Documents/ARO/ros2_ws/src/install/mi_paquete_python/share/ament_index/resource_index/packages
+[2.968s] copying package.xml -> /home/simon/Documents/ARO/ros2_ws/src/install/mi_paquete_python/share/mi_paquete_python
+[2.968s] running install_egg_info
+[2.970s] Copying ../build/mi_paquete_python/mi_paquete_python.egg-info to /home/simon/Documents/ARO/ros2_ws/src/install/mi_paquete_python/lib/python3.10/site-packages/mi_paquete_python-0.0.0-py3.10.egg-info
+[2.970s] running install_scripts
+[2.997s] writing list of installed files to '/home/simon/Documents/ARO/ros2_ws/src/build/mi_paquete_python/install.log'
+[3.043s] Invoked command in '/home/simon/Documents/ARO/ros2_ws/src/mi_paquete_python' returned '0': PYTHONPATH=/home/simon/Documents/ARO/ros2_ws/src/build/mi_paquete_python/prefix_override:/home/simon/Documents/ARO/ros2_ws/src/install/mi_paquete_python/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../build/mi_paquete_python build --build-base /home/simon/Documents/ARO/ros2_ws/src/build/mi_paquete_python/build install --record /home/simon/Documents/ARO/ros2_ws/src/build/mi_paquete_python/install.log --single-version-externally-managed
