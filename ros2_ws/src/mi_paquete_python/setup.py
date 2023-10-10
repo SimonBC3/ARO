@@ -21,6 +21,10 @@ setup(
     entry_points={
         'console_scripts': [
             'robot_news_station = mi_paquete_python.robot_news_station:main',
+            'move_leonardo = mi_paquete_python.move_leonardo:main',
+            'move_michelangelo = mi_paquete_python.move_michelangelo:main',
+            'move_donatello = mi_paquete_python.move_donatello:main',
+
         ],
     },
 )

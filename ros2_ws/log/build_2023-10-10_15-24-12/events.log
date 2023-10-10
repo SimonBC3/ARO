@@ -1,0 +1,10 @@
+[0.000000] (-) TimerEvent: {}
+[0.000505] (-) JobUnselected: {'identifier': 'examples_rclpy_minimal_action_client'}
+[0.000568] (-) JobUnselected: {'identifier': 'examples_rclpy_minimal_action_server'}
+[0.000603] (-) JobUnselected: {'identifier': 'examples_rclpy_minimal_client'}
+[0.000741] (-) JobUnselected: {'identifier': 'examples_rclpy_minimal_publisher'}
+[0.000920] (-) JobUnselected: {'identifier': 'examples_rclpy_minimal_service'}
+[0.000952] (-) JobUnselected: {'identifier': 'examples_rclpy_minimal_subscriber'}
+[0.000980] (-) JobUnselected: {'identifier': 'launch_testing_examples'}
+[0.001007] (-) JobUnselected: {'identifier': 'mi_paquete_python'}
+[0.001036] (-) EventReactorShutdown: {}

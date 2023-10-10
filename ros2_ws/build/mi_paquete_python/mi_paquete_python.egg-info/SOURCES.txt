@@ -2,7 +2,12 @@ package.xml
 setup.cfg
 setup.py
 mi_paquete_python/__init__.py
+mi_paquete_python/move_donatello.py
+mi_paquete_python/move_leonardo.py
+mi_paquete_python/move_michelangelo.py
+mi_paquete_python/move_raphael.py
 mi_paquete_python/robot_news_station.py
+mi_paquete_python/smartphone.py
 mi_paquete_python.egg-info/PKG-INFO
 mi_paquete_python.egg-info/SOURCES.txt
 mi_paquete_python.egg-info/dependency_links.txt
