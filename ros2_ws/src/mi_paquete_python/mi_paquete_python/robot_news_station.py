@@ -12,7 +12,6 @@ class RobotNews(Node):
         self.timer = self.create_timer(timer_period, self.publish_news)
         self.i = 0
 
-
     def publish_news(self):
         msg = String()
         msg.data = "Hi, this is C3PO from the robot news station"

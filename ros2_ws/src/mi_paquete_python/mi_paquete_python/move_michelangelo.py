@@ -15,8 +15,7 @@ class MichelangeloController(Node):
         self.move(1.0,0.0)
         self.move(1.0,0.0)
         self.move(1.0,0.0)
-        self.move(1.0,0.0)
-        
+        self.move(1.0,0.0)      
 
     def publish_instruction(self):
         self.publisher_.publish(self.vel_msg)
