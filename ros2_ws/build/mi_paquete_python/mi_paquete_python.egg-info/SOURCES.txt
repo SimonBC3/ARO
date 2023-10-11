@@ -9,6 +9,7 @@ mi_paquete_python/move_raphael.py
 mi_paquete_python/position_logger.py
 mi_paquete_python/robot_news_station.py
 mi_paquete_python/smartphone.py
+mi_paquete_python/turtle_controller.py
 mi_paquete_python.egg-info/PKG-INFO
 mi_paquete_python.egg-info/SOURCES.txt
 mi_paquete_python.egg-info/dependency_links.txt
