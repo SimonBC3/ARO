@@ -24,7 +24,7 @@ setup(
             'move_leonardo = mi_paquete_python.move_leonardo:main',
             'move_michelangelo = mi_paquete_python.move_michelangelo:main',
             'move_donatello = mi_paquete_python.move_donatello:main',
-            'smartphone = mi_paquete_python.smartphone.py:main',
+            'smartphone = mi_paquete_python.smartphone:main',
         ],
     },
 )
