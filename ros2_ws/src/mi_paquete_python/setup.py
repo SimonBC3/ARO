@@ -26,7 +26,8 @@ setup(
             'move_donatello = mi_paquete_python.move_donatello:main',
             'smartphone = mi_paquete_python.smartphone:main',
             'position_logger = mi_paquete_python.position_logger:main',
-            'turtle_controller = mi_paquete_python.turtle_controller:main'
+            'turtle_controller = mi_paquete_python.turtle_controller:main',
+            'move_turtle = mi_paquete_python.move_turtle:main'
         ],
     },
 )

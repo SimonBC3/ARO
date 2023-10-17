@@ -1,0 +1,6 @@
+{
+  "package_name": "minimal_interfaces",
+  "non_idl_tuples": [
+    "/home/simon/Documents/ARO/ros2_ws/src/ROS2_examples/rclpy/interfaces/minimal_interfaces:srv/StringService.srv"
+  ]
+}

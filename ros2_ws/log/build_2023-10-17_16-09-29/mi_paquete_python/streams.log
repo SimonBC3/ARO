@@ -1,0 +1,30 @@
+[3.236s] Invoking command in '/home/simon/Documents/ARO/ros2_ws/src/mi_paquete_python': PYTHONPATH=/home/simon/Documents/ARO/ros2_ws/build/mi_paquete_python/prefix_override:/home/simon/Documents/ARO/ros2_ws/install/mi_paquete_python/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/mi_paquete_python build --build-base /home/simon/Documents/ARO/ros2_ws/build/mi_paquete_python/build install --record /home/simon/Documents/ARO/ros2_ws/build/mi_paquete_python/install.log --single-version-externally-managed
+[3.618s] running egg_info
+[3.619s] writing ../../build/mi_paquete_python/mi_paquete_python.egg-info/PKG-INFO
+[3.619s] writing dependency_links to ../../build/mi_paquete_python/mi_paquete_python.egg-info/dependency_links.txt
+[3.619s] writing entry points to ../../build/mi_paquete_python/mi_paquete_python.egg-info/entry_points.txt
+[3.620s] writing requirements to ../../build/mi_paquete_python/mi_paquete_python.egg-info/requires.txt
+[3.620s] writing top-level names to ../../build/mi_paquete_python/mi_paquete_python.egg-info/top_level.txt
+[3.623s] reading manifest file '../../build/mi_paquete_python/mi_paquete_python.egg-info/SOURCES.txt'
+[3.624s] writing manifest file '../../build/mi_paquete_python/mi_paquete_python.egg-info/SOURCES.txt'
+[3.624s] running build
+[3.625s] running build_py
+[3.626s] copying mi_paquete_python/move_turtle.py -> /home/simon/Documents/ARO/ros2_ws/build/mi_paquete_python/build/lib/mi_paquete_python
+[3.626s] running install
+[3.627s] running install_lib
+[3.627s] copying /home/simon/Documents/ARO/ros2_ws/build/mi_paquete_python/build/lib/mi_paquete_python/move_turtle.py -> /home/simon/Documents/ARO/ros2_ws/install/mi_paquete_python/lib/python3.10/site-packages/mi_paquete_python
+[3.629s] byte-compiling /home/simon/Documents/ARO/ros2_ws/install/mi_paquete_python/lib/python3.10/site-packages/mi_paquete_python/move_turtle.py to move_turtle.cpython-310.pyc
+[3.629s] running install_data
+[3.630s] running install_egg_info
+[3.633s] removing '/home/simon/Documents/ARO/ros2_ws/install/mi_paquete_python/lib/python3.10/site-packages/mi_paquete_python-0.0.0-py3.10.egg-info' (and everything under it)
+[3.633s] Copying ../../build/mi_paquete_python/mi_paquete_python.egg-info to /home/simon/Documents/ARO/ros2_ws/install/mi_paquete_python/lib/python3.10/site-packages/mi_paquete_python-0.0.0-py3.10.egg-info
+[3.635s] running install_scripts
+[3.667s] Installing move_donatello script to /home/simon/Documents/ARO/ros2_ws/install/mi_paquete_python/lib/mi_paquete_python
+[3.667s] Installing move_leonardo script to /home/simon/Documents/ARO/ros2_ws/install/mi_paquete_python/lib/mi_paquete_python
+[3.667s] Installing move_michelangelo script to /home/simon/Documents/ARO/ros2_ws/install/mi_paquete_python/lib/mi_paquete_python
+[3.667s] Installing position_logger script to /home/simon/Documents/ARO/ros2_ws/install/mi_paquete_python/lib/mi_paquete_python
+[3.668s] Installing robot_news_station script to /home/simon/Documents/ARO/ros2_ws/install/mi_paquete_python/lib/mi_paquete_python
+[3.668s] Installing smartphone script to /home/simon/Documents/ARO/ros2_ws/install/mi_paquete_python/lib/mi_paquete_python
+[3.668s] Installing turtle_controller script to /home/simon/Documents/ARO/ros2_ws/install/mi_paquete_python/lib/mi_paquete_python
+[3.668s] writing list of installed files to '/home/simon/Documents/ARO/ros2_ws/build/mi_paquete_python/install.log'
+[3.900s] Invoked command in '/home/simon/Documents/ARO/ros2_ws/src/mi_paquete_python' returned '0': PYTHONPATH=/home/simon/Documents/ARO/ros2_ws/build/mi_paquete_python/prefix_override:/home/simon/Documents/ARO/ros2_ws/install/mi_paquete_python/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/mi_paquete_python build --build-base /home/simon/Documents/ARO/ros2_ws/build/mi_paquete_python/build install --record /home/simon/Documents/ARO/ros2_ws/build/mi_paquete_python/install.log --single-version-externally-managed
