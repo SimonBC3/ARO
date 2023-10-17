@@ -1,0 +1,15 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from minimal_interfaces/srv/StringService.srv
+// generated code does not contain a copyright notice
+
+
+module minimal_interfaces {
+  module srv {
+    struct StringService_Request {
+      string figura;
+    };
+    struct StringService_Response {
+      string respuesta;
+    };
+  };
+};

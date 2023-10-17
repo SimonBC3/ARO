@@ -1,0 +1,42 @@
+[6.283s] Invoking command in '/home/simon/Documents/ARO/turtlebot3_ws/src/turtlebot3/turtlebot3/turtlebot3_teleop': PYTHONPATH=/home/simon/Documents/ARO/build/turtlebot3_teleop/prefix_override:/home/simon/Documents/ARO/install/turtlebot3_teleop/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../../../../build/turtlebot3_teleop build --build-base /home/simon/Documents/ARO/build/turtlebot3_teleop/build install --record /home/simon/Documents/ARO/build/turtlebot3_teleop/install.log --single-version-externally-managed
+[7.061s] running egg_info
+[7.062s] creating ../../../../../build/turtlebot3_teleop/turtlebot3_teleop.egg-info
+[7.063s] writing ../../../../../build/turtlebot3_teleop/turtlebot3_teleop.egg-info/PKG-INFO
+[7.065s] writing dependency_links to ../../../../../build/turtlebot3_teleop/turtlebot3_teleop.egg-info/dependency_links.txt
+[7.066s] writing entry points to ../../../../../build/turtlebot3_teleop/turtlebot3_teleop.egg-info/entry_points.txt
+[7.066s] writing requirements to ../../../../../build/turtlebot3_teleop/turtlebot3_teleop.egg-info/requires.txt
+[7.067s] writing top-level names to ../../../../../build/turtlebot3_teleop/turtlebot3_teleop.egg-info/top_level.txt
+[7.070s] writing manifest file '../../../../../build/turtlebot3_teleop/turtlebot3_teleop.egg-info/SOURCES.txt'
+[7.074s] reading manifest file '../../../../../build/turtlebot3_teleop/turtlebot3_teleop.egg-info/SOURCES.txt'
+[7.075s] writing manifest file '../../../../../build/turtlebot3_teleop/turtlebot3_teleop.egg-info/SOURCES.txt'
+[7.076s] running build
+[7.076s] running build_py
+[7.076s] creating /home/simon/Documents/ARO/build/turtlebot3_teleop/build
+[7.077s] creating /home/simon/Documents/ARO/build/turtlebot3_teleop/build/lib
+[7.077s] creating /home/simon/Documents/ARO/build/turtlebot3_teleop/build/lib/turtlebot3_teleop
+[7.077s] copying turtlebot3_teleop/__init__.py -> /home/simon/Documents/ARO/build/turtlebot3_teleop/build/lib/turtlebot3_teleop
+[7.078s] creating /home/simon/Documents/ARO/build/turtlebot3_teleop/build/lib/turtlebot3_teleop/script
+[7.079s] copying turtlebot3_teleop/script/__init__.py -> /home/simon/Documents/ARO/build/turtlebot3_teleop/build/lib/turtlebot3_teleop/script
+[7.080s] copying turtlebot3_teleop/script/teleop_keyboard.py -> /home/simon/Documents/ARO/build/turtlebot3_teleop/build/lib/turtlebot3_teleop/script
+[7.081s] running install
+[7.082s] running install_lib
+[7.084s] creating /home/simon/Documents/ARO/install/turtlebot3_teleop/lib/python3.10/site-packages/turtlebot3_teleop
+[7.084s] copying /home/simon/Documents/ARO/build/turtlebot3_teleop/build/lib/turtlebot3_teleop/__init__.py -> /home/simon/Documents/ARO/install/turtlebot3_teleop/lib/python3.10/site-packages/turtlebot3_teleop
+[7.084s] creating /home/simon/Documents/ARO/install/turtlebot3_teleop/lib/python3.10/site-packages/turtlebot3_teleop/script
+[7.084s] copying /home/simon/Documents/ARO/build/turtlebot3_teleop/build/lib/turtlebot3_teleop/script/__init__.py -> /home/simon/Documents/ARO/install/turtlebot3_teleop/lib/python3.10/site-packages/turtlebot3_teleop/script
+[7.085s] copying /home/simon/Documents/ARO/build/turtlebot3_teleop/build/lib/turtlebot3_teleop/script/teleop_keyboard.py -> /home/simon/Documents/ARO/install/turtlebot3_teleop/lib/python3.10/site-packages/turtlebot3_teleop/script
+[7.088s] byte-compiling /home/simon/Documents/ARO/install/turtlebot3_teleop/lib/python3.10/site-packages/turtlebot3_teleop/__init__.py to __init__.cpython-310.pyc
+[7.088s] byte-compiling /home/simon/Documents/ARO/install/turtlebot3_teleop/lib/python3.10/site-packages/turtlebot3_teleop/script/__init__.py to __init__.cpython-310.pyc
+[7.089s] byte-compiling /home/simon/Documents/ARO/install/turtlebot3_teleop/lib/python3.10/site-packages/turtlebot3_teleop/script/teleop_keyboard.py to teleop_keyboard.cpython-310.pyc
+[7.091s] running install_data
+[7.092s] creating /home/simon/Documents/ARO/install/turtlebot3_teleop/share/ament_index
+[7.093s] creating /home/simon/Documents/ARO/install/turtlebot3_teleop/share/ament_index/resource_index
+[7.093s] creating /home/simon/Documents/ARO/install/turtlebot3_teleop/share/ament_index/resource_index/packages
+[7.093s] copying resource/turtlebot3_teleop -> /home/simon/Documents/ARO/install/turtlebot3_teleop/share/ament_index/resource_index/packages
+[7.093s] copying package.xml -> /home/simon/Documents/ARO/install/turtlebot3_teleop/share/turtlebot3_teleop
+[7.093s] running install_egg_info
+[7.098s] Copying ../../../../../build/turtlebot3_teleop/turtlebot3_teleop.egg-info to /home/simon/Documents/ARO/install/turtlebot3_teleop/lib/python3.10/site-packages/turtlebot3_teleop-2.1.5-py3.10.egg-info
+[7.100s] running install_scripts
+[7.153s] Installing teleop_keyboard script to /home/simon/Documents/ARO/install/turtlebot3_teleop/lib/turtlebot3_teleop
+[7.155s] writing list of installed files to '/home/simon/Documents/ARO/build/turtlebot3_teleop/install.log'
+[7.874s] Invoked command in '/home/simon/Documents/ARO/turtlebot3_ws/src/turtlebot3/turtlebot3/turtlebot3_teleop' returned '0': PYTHONPATH=/home/simon/Documents/ARO/build/turtlebot3_teleop/prefix_override:/home/simon/Documents/ARO/install/turtlebot3_teleop/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../../../../build/turtlebot3_teleop build --build-base /home/simon/Documents/ARO/build/turtlebot3_teleop/build install --record /home/simon/Documents/ARO/build/turtlebot3_teleop/install.log --single-version-externally-managed

@@ -1,1 +1,0 @@
-/home/simon/Documents/ARO/ros2_ws/src/ROS2_examples/rclpy/actions/minimal_action_server/setup.py

@@ -1,0 +1,41 @@
+[5.792s] Invoking command in '/home/simon/Documents/ARO/ros2_ws/src/ROS2_examples/rclpy/topics/minimal_subscriber': PYTHONPATH=/home/simon/Documents/ARO/build/examples_rclpy_minimal_subscriber/prefix_override:/home/simon/Documents/ARO/install/examples_rclpy_minimal_subscriber/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../../../../../build/examples_rclpy_minimal_subscriber build --build-base /home/simon/Documents/ARO/build/examples_rclpy_minimal_subscriber/build install --record /home/simon/Documents/ARO/build/examples_rclpy_minimal_subscriber/install.log --single-version-externally-managed
+[7.065s] running egg_info
+[7.065s] creating ../../../../../../build/examples_rclpy_minimal_subscriber/examples_rclpy_minimal_subscriber.egg-info
+[7.066s] writing ../../../../../../build/examples_rclpy_minimal_subscriber/examples_rclpy_minimal_subscriber.egg-info/PKG-INFO
+[7.067s] writing dependency_links to ../../../../../../build/examples_rclpy_minimal_subscriber/examples_rclpy_minimal_subscriber.egg-info/dependency_links.txt
+[7.068s] writing entry points to ../../../../../../build/examples_rclpy_minimal_subscriber/examples_rclpy_minimal_subscriber.egg-info/entry_points.txt
+[7.068s] writing requirements to ../../../../../../build/examples_rclpy_minimal_subscriber/examples_rclpy_minimal_subscriber.egg-info/requires.txt
+[7.068s] writing top-level names to ../../../../../../build/examples_rclpy_minimal_subscriber/examples_rclpy_minimal_subscriber.egg-info/top_level.txt
+[7.069s] writing manifest file '../../../../../../build/examples_rclpy_minimal_subscriber/examples_rclpy_minimal_subscriber.egg-info/SOURCES.txt'
+[7.070s] reading manifest file '../../../../../../build/examples_rclpy_minimal_subscriber/examples_rclpy_minimal_subscriber.egg-info/SOURCES.txt'
+[7.070s] writing manifest file '../../../../../../build/examples_rclpy_minimal_subscriber/examples_rclpy_minimal_subscriber.egg-info/SOURCES.txt'
+[7.071s] running build
+[7.071s] running build_py
+[7.071s] creating /home/simon/Documents/ARO/build/examples_rclpy_minimal_subscriber/build
+[7.071s] creating /home/simon/Documents/ARO/build/examples_rclpy_minimal_subscriber/build/lib
+[7.071s] creating /home/simon/Documents/ARO/build/examples_rclpy_minimal_subscriber/build/lib/examples_rclpy_minimal_subscriber
+[7.072s] copying examples_rclpy_minimal_subscriber/subscriber_old_school.py -> /home/simon/Documents/ARO/build/examples_rclpy_minimal_subscriber/build/lib/examples_rclpy_minimal_subscriber
+[7.072s] copying examples_rclpy_minimal_subscriber/__init__.py -> /home/simon/Documents/ARO/build/examples_rclpy_minimal_subscriber/build/lib/examples_rclpy_minimal_subscriber
+[7.072s] copying examples_rclpy_minimal_subscriber/subscriber_member_function.py -> /home/simon/Documents/ARO/build/examples_rclpy_minimal_subscriber/build/lib/examples_rclpy_minimal_subscriber
+[7.072s] running install
+[7.072s] running install_lib
+[7.073s] creating /home/simon/Documents/ARO/install/examples_rclpy_minimal_subscriber/lib/python3.10/site-packages/examples_rclpy_minimal_subscriber
+[7.073s] copying /home/simon/Documents/ARO/build/examples_rclpy_minimal_subscriber/build/lib/examples_rclpy_minimal_subscriber/subscriber_old_school.py -> /home/simon/Documents/ARO/install/examples_rclpy_minimal_subscriber/lib/python3.10/site-packages/examples_rclpy_minimal_subscriber
+[7.073s] copying /home/simon/Documents/ARO/build/examples_rclpy_minimal_subscriber/build/lib/examples_rclpy_minimal_subscriber/__init__.py -> /home/simon/Documents/ARO/install/examples_rclpy_minimal_subscriber/lib/python3.10/site-packages/examples_rclpy_minimal_subscriber
+[7.073s] copying /home/simon/Documents/ARO/build/examples_rclpy_minimal_subscriber/build/lib/examples_rclpy_minimal_subscriber/subscriber_member_function.py -> /home/simon/Documents/ARO/install/examples_rclpy_minimal_subscriber/lib/python3.10/site-packages/examples_rclpy_minimal_subscriber
+[7.074s] byte-compiling /home/simon/Documents/ARO/install/examples_rclpy_minimal_subscriber/lib/python3.10/site-packages/examples_rclpy_minimal_subscriber/subscriber_old_school.py to subscriber_old_school.cpython-310.pyc
+[7.074s] byte-compiling /home/simon/Documents/ARO/install/examples_rclpy_minimal_subscriber/lib/python3.10/site-packages/examples_rclpy_minimal_subscriber/__init__.py to __init__.cpython-310.pyc
+[7.074s] byte-compiling /home/simon/Documents/ARO/install/examples_rclpy_minimal_subscriber/lib/python3.10/site-packages/examples_rclpy_minimal_subscriber/subscriber_member_function.py to subscriber_member_function.cpython-310.pyc
+[7.074s] running install_data
+[7.075s] creating /home/simon/Documents/ARO/install/examples_rclpy_minimal_subscriber/share/ament_index
+[7.075s] creating /home/simon/Documents/ARO/install/examples_rclpy_minimal_subscriber/share/ament_index/resource_index
+[7.075s] creating /home/simon/Documents/ARO/install/examples_rclpy_minimal_subscriber/share/ament_index/resource_index/packages
+[7.075s] copying resource/examples_rclpy_minimal_subscriber -> /home/simon/Documents/ARO/install/examples_rclpy_minimal_subscriber/share/ament_index/resource_index/packages
+[7.076s] copying package.xml -> /home/simon/Documents/ARO/install/examples_rclpy_minimal_subscriber/share/examples_rclpy_minimal_subscriber
+[7.076s] running install_egg_info
+[7.076s] Copying ../../../../../../build/examples_rclpy_minimal_subscriber/examples_rclpy_minimal_subscriber.egg-info to /home/simon/Documents/ARO/install/examples_rclpy_minimal_subscriber/lib/python3.10/site-packages/examples_rclpy_minimal_subscriber-0.15.1-py3.10.egg-info
+[7.076s] running install_scripts
+[7.076s] Installing subscriber_member_function script to /home/simon/Documents/ARO/install/examples_rclpy_minimal_subscriber/lib/examples_rclpy_minimal_subscriber
+[7.077s] Installing subscriber_old_school script to /home/simon/Documents/ARO/install/examples_rclpy_minimal_subscriber/lib/examples_rclpy_minimal_subscriber
+[7.077s] writing list of installed files to '/home/simon/Documents/ARO/build/examples_rclpy_minimal_subscriber/install.log'
+[8.058s] Invoked command in '/home/simon/Documents/ARO/ros2_ws/src/ROS2_examples/rclpy/topics/minimal_subscriber' returned '0': PYTHONPATH=/home/simon/Documents/ARO/build/examples_rclpy_minimal_subscriber/prefix_override:/home/simon/Documents/ARO/install/examples_rclpy_minimal_subscriber/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../../../../../build/examples_rclpy_minimal_subscriber build --build-base /home/simon/Documents/ARO/build/examples_rclpy_minimal_subscriber/build install --record /home/simon/Documents/ARO/build/examples_rclpy_minimal_subscriber/install.log --single-version-externally-managed
