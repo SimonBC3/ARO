@@ -27,7 +27,8 @@ setup(
             'smartphone = mi_paquete_python.smartphone:main',
             'position_logger = mi_paquete_python.position_logger:main',
             'turtle_controller = mi_paquete_python.turtle_controller:main',
-            'move_turtle = mi_paquete_python.move_turtle:main'
+            'move_turtle = mi_paquete_python.move_turtle:main',
+            'move_turtle_client = mi_paquete_python.move_turtle_client:main'
         ],
     },
 )
