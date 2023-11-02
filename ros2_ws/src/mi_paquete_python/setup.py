@@ -29,7 +29,8 @@ setup(
             'turtle_controller = mi_paquete_python.turtle_controller:main',
             'move_turtle = mi_paquete_python.move_turtle:main',
             'move_turtle_client = mi_paquete_python.move_turtle_client:main',
-            'circle_action_server = mi_paquete_python.circle_action_server:main'
+            'circle_action_server = mi_paquete_python.circle_action_server:main',
+            'circle_action_client = mi_paquete_python.circle_action_client:main'
         ],
     },
 )
