@@ -1,5 +1,5 @@
 
-import time
+import math
 
 from turtlesim.action import RotateAbsolute
 
@@ -16,8 +16,8 @@ class CircleActionServer(Node):
     def __init__(self):
         super().__init__('circle_action_server')
 
-        self.time = None
-        self.timer = 0.1 
+        self.duration = None
+        self.rate = self.create_rate(10) 
         self.publisher = self.create_publisher(Twist, '/turtle1/cmd_vel', 10)
         self._action_server = ActionServer(
             self,
@@ -53,10 +53,9 @@ class CircleActionServer(Node):
         msg.angular.z = 1.0
         msg.linear.x = msg.angular.z * goal_handle.request.theta
         self.publisher.publish(msg)
-        self.time.min = time.localtime().tm_min
-        self.time.sec = time.localtime().tm_sec
+        self.start_time = self.get_clock().now()
         feedback_msg = RotateAbsolute.Feedback()
-        feedback_msg.sequence = []
+        feedback_msg.remaining = 0.0
 
         while True:
             if goal_handle.is_cancel_requested:
@@ -65,18 +64,25 @@ class CircleActionServer(Node):
                 return RotateAbsolute.Result()
             
             self.publisher.publish(msg)
-            time_passed = ((time.localtime().tm_min - self.time.min) * 60) + (time.localtime().tm_sec - self.time.sec)
+            self.duration = self.get_clock().now() - self.start_time
+            elapsed_time = self.duration.nanoseconds / 1e9
                         
-            if time_passed > 120: # 120 s max to finish the action
+            if elapsed_time > 2000: 
                 return RotateAbsolute.Result()
 
-            drawn_rad = time_passed * msg.angular.z
+            drawn_rad = elapsed_time * msg.angular.z
             self.get_logger().info(f"Amount of drawed rad = {drawn_rad}")
 
-            feedback_msg.sequence.append(drawn_rad)
+            feedback_msg.remaining += drawn_rad
             goal_handle.publish_feedback(feedback_msg)
 
-            time.sleep(1)
+            if  ((2*math.pi) - drawn_rad) < 0.2: 
+                goal_handle.succeed()
+                result = RotateAbsolute.Result()
+                result.delta = feedback_msg.remaining
+                return result
+
+            self.rate.sleep()
 
 
 def main(args=None):
