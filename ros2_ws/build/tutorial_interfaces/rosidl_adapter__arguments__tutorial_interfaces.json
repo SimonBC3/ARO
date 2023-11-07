@@ -1,0 +1,9 @@
+{
+  "package_name": "tutorial_interfaces",
+  "non_idl_tuples": [
+    "/home/simon/Documents/ARO/ros2_ws/src/tutorial_interfaces:msg/Num.msg",
+    "/home/simon/Documents/ARO/ros2_ws/src/tutorial_interfaces:msg/Sphere.msg",
+    "/home/simon/Documents/ARO/ros2_ws/src/tutorial_interfaces:srv/AddThreeInts.srv",
+    "/home/simon/Documents/ARO/ros2_ws/src/tutorial_interfaces:action/ComputeSum.action"
+  ]
+}
