@@ -24,7 +24,8 @@ class CircleActionClient(Node):
 
     def __init__(self):
         super().__init__('circle_action_client')
-        self.circle_action_client = CircleActionClient(self, RotateAbsolute, '/draw_circle')
+        self._action_client = ActionClient(self, RotateAbsolute, '/draw_circle')
+        self.counter = 0
 
     def goal_response_callback(self, future):
         goal_handle = future.result()
@@ -45,48 +46,40 @@ class CircleActionClient(Node):
         status = future.result().status
         if status == GoalStatus.STATUS_SUCCEEDED:
             self.get_logger().info('Goal succeeded! Result: {0}'.format(result.delta))
+            if self.counter < 1:
+                self.counter  = 1
+                self.send_goal(1.0)
+
         else:
             self.get_logger().info('Goal failed with status: {0}'.format(status))
 
         # Shutdown after receiving a result
         rclpy.shutdown()
 
-    def send_goal(self):
+    def send_goal(self, theta):
         self.get_logger().info('Waiting for action server...')
         self._action_client.wait_for_server()
 
-        goal_msg = RotateAbsolute.Goal()
-        goal_msg.theta = 2
+        self.goal_msg = RotateAbsolute.Goal()
+        self.goal_msg.theta = theta
 
         self.get_logger().info('Sending goal request...')
 
         self._send_goal_future = self._action_client.send_goal_async(
-            goal_msg,
+            self.goal_msg,
             feedback_callback=self.feedback_callback)
 
         self._send_goal_future.add_done_callback(self.goal_response_callback)
-
-        goal_msg.theta = 1
-
-        self.get_logger().info('Sending goal request...')
-
-        self._send_goal_future = self._action_client.send_goal_async(
-            goal_msg,
-            feedback_callback=self.feedback_callback)
-
-        self._send_goal_future.add_done_callback(self.goal_response_callback)
-
-
 
 
 def main(args=None):
     rclpy.init(args=args)
 
-    circle_action_client = CircleActionClient()
+    action_client = CircleActionClient()
 
-    circle_action_client.send_goal()
+    action_client.send_goal(2.0)
 
-    rclpy.spin(circle_action_client)
+    rclpy.spin(action_client)
 
 
 if __name__ == '__main__':
