@@ -1,0 +1,20 @@
+[3.330s] Invoking command in '/home/simon/Documents/ARO/ros2_ws/src/ROS2_examples/launch_testing/launch_testing_examples': PYTHONPATH=/home/simon/Documents/ARO/ros2_ws/build/launch_testing_examples/prefix_override:/home/simon/Documents/ARO/ros2_ws/install/launch_testing_examples/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../../../build/launch_testing_examples build --build-base /home/simon/Documents/ARO/ros2_ws/build/launch_testing_examples/build install --record /home/simon/Documents/ARO/ros2_ws/build/launch_testing_examples/install.log --single-version-externally-managed
+[3.936s] running egg_info
+[3.937s] writing ../../../../build/launch_testing_examples/launch_testing_examples.egg-info/PKG-INFO
+[3.938s] writing dependency_links to ../../../../build/launch_testing_examples/launch_testing_examples.egg-info/dependency_links.txt
+[3.939s] writing entry points to ../../../../build/launch_testing_examples/launch_testing_examples.egg-info/entry_points.txt
+[3.939s] writing requirements to ../../../../build/launch_testing_examples/launch_testing_examples.egg-info/requires.txt
+[3.941s] writing top-level names to ../../../../build/launch_testing_examples/launch_testing_examples.egg-info/top_level.txt
+[3.942s] reading manifest file '../../../../build/launch_testing_examples/launch_testing_examples.egg-info/SOURCES.txt'
+[3.944s] writing manifest file '../../../../build/launch_testing_examples/launch_testing_examples.egg-info/SOURCES.txt'
+[3.944s] running build
+[3.945s] running build_py
+[3.947s] running install
+[3.947s] running install_lib
+[3.949s] running install_data
+[3.952s] running install_egg_info
+[3.955s] removing '/home/simon/Documents/ARO/ros2_ws/install/launch_testing_examples/lib/python3.10/site-packages/launch_testing_examples-0.15.1-py3.10.egg-info' (and everything under it)
+[3.956s] Copying ../../../../build/launch_testing_examples/launch_testing_examples.egg-info to /home/simon/Documents/ARO/ros2_ws/install/launch_testing_examples/lib/python3.10/site-packages/launch_testing_examples-0.15.1-py3.10.egg-info
+[3.959s] running install_scripts
+[4.000s] writing list of installed files to '/home/simon/Documents/ARO/ros2_ws/build/launch_testing_examples/install.log'
+[4.314s] Invoked command in '/home/simon/Documents/ARO/ros2_ws/src/ROS2_examples/launch_testing/launch_testing_examples' returned '0': PYTHONPATH=/home/simon/Documents/ARO/ros2_ws/build/launch_testing_examples/prefix_override:/home/simon/Documents/ARO/ros2_ws/install/launch_testing_examples/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../../../build/launch_testing_examples build --build-base /home/simon/Documents/ARO/ros2_ws/build/launch_testing_examples/build install --record /home/simon/Documents/ARO/ros2_ws/build/launch_testing_examples/install.log --single-version-externally-managed

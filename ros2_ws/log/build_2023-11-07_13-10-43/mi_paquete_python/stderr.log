@@ -1,0 +1,5 @@
+  File "/home/simon/Documents/ARO/ros2_ws/install/mi_paquete_python/lib/python3.10/site-packages/mi_paquete_python/circle_action_server.py", line 37
+    self. = Point()
+          ^
+SyntaxError: invalid syntax
+

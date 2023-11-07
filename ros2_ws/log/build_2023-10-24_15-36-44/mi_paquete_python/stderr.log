@@ -1,5 +1,0 @@
-  File "/home/simon/Documents/ARO/ros2_ws/install/mi_paquete_python/lib/python3.10/site-packages/mi_paquete_python/move_turtle.py", line 12
-    self.srv = self.create_service(StringService, 'string_service', self.move_turtle_callback)ç
-                                                                                              ^^
-SyntaxError: invalid syntax
-

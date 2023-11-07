@@ -14,18 +14,18 @@ class AddThreeIntsClient(Node):
         self.req.b = b
         self.req.c = c
 
-def send_request(self):
-    future = self.cli.call_async(self.req)
-    future.add_done_callback(self.future_callback)
+    def send_request(self):
+        future = self.cli.call_async(self.req)
+        future.add_done_callback(self.future_callback)
 
-def future_callback(self, future):
-    try:
-        response = future.result()
-        self.get_logger().info(f"Sum: { response.sum} ")
-        # Shutdown rclpy to make the node terminate
-        rclpy.shutdown()
-    except Exception as e:
-        self.get_logger().error(f"Service call failed { e} ")
+    def future_callback(self, future):
+        try:
+            response = future.result()
+            self.get_logger().info(f"Sum: { response.sum} ")
+            # Shutdown rclpy to make the node terminate
+            rclpy.shutdown()
+        except Exception as e:
+            self.get_logger().error(f"Service call failed { e} ")
 
 
 def main(args=None):
@@ -41,7 +41,7 @@ def main(args=None):
     client.send_request()
 
     rclpy.spin(client)
-    
+
     client.destroy_node()
 
 if __name__ == '__main__':

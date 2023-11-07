@@ -30,6 +30,8 @@ rosidl_generate_interfaces(${PROJECT_NAME}
 "msg/Sphere.msg"
 "srv/AddThreeInts.srv"
 "action/ComputeSum.action"
+"action/Circle.action"
+"srv/Circle.srv"
 DEPENDENCIES geometry_msgs
 )
 

@@ -1,0 +1,5 @@
+geometry_msgs/Point point
+float64 linear_vel
+float64 radius
+---
+float64 drawn_rad

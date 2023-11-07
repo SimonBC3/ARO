@@ -1,0 +1,23 @@
+// generated from rosidl_adapter/resource/action.idl.em
+// with input from tutorial_interfaces/action/Circle.action
+// generated code does not contain a copyright notice
+
+#include "geometry_msgs/msg/Point.idl"
+
+module tutorial_interfaces {
+  module action {
+    struct Circle_Goal {
+      geometry_msgs::msg::Point point;
+
+      double linear_vel;
+
+      double radius;
+    };
+    struct Circle_Result {
+      double drawn_rad;
+    };
+    struct Circle_Feedback {
+      geometry_msgs::msg::Point current_point;
+    };
+  };
+};

@@ -1,3 +1,5 @@
+action/Circle.action
+action/Circle.idl
 action/ComputeSum.action
 action/ComputeSum.idl
 msg/Num.idl
@@ -8,3 +10,7 @@ srv/AddThreeInts.idl
 srv/AddThreeInts.srv
 srv/AddThreeInts_Request.msg
 srv/AddThreeInts_Response.msg
+srv/Circle.idl
+srv/Circle.srv
+srv/Circle_Request.msg
+srv/Circle_Response.msg
