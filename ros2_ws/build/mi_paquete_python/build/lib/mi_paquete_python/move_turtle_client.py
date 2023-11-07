@@ -14,7 +14,7 @@ class MoveTurtleClient(Node):
         self.req = StringService.Request()
 
     def send_request(self, figure):
-        self.req.figure = figure
+        self.req.figura = figure
         self.future = self.cli.call_async(self.req)
 
 
@@ -22,6 +22,8 @@ def main(args=None):
     rclpy.init(args=args)
 
     minimal_client = MoveTurtleClient()
+    minimal_client.send_request('cuadrado')
+    minimal_client.send_request('circulo')
     minimal_client.send_request('cuadrado')
 
     while rclpy.ok():

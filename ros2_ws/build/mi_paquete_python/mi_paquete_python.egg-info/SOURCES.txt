@@ -9,6 +9,8 @@ setup.py
 ../../build/mi_paquete_python/mi_paquete_python.egg-info/top_level.txt
 ../../build/mi_paquete_python/mi_paquete_python.egg-info/zip-safe
 mi_paquete_python/__init__.py
+mi_paquete_python/add_three_ints_client.py
+mi_paquete_python/add_three_ints_server.py
 mi_paquete_python/circle_action_client.py
 mi_paquete_python/circle_action_server.py
 mi_paquete_python/move_donatello.py
