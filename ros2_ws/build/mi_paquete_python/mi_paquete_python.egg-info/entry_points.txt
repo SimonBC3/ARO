@@ -3,6 +3,7 @@ add_three_ints_client = mi_paquete_python.add_three_ints_client:main
 add_three_ints_server = mi_paquete_python.add_three_ints_server:main
 circle_action_client = mi_paquete_python.circle_action_client:main
 circle_action_server = mi_paquete_python.circle_action_server:main
+minimal_param_node = mi_paquete_python.python_parameters_node:main
 move_donatello = mi_paquete_python.move_donatello:main
 move_leonardo = mi_paquete_python.move_leonardo:main
 move_michelangelo = mi_paquete_python.move_michelangelo:main
@@ -10,6 +11,7 @@ move_turtle = mi_paquete_python.move_turtle:main
 move_turtle_client = mi_paquete_python.move_turtle_client:main
 position_logger = mi_paquete_python.position_logger:main
 robot_news_station = mi_paquete_python.robot_news_station:main
+safe_zone_controller = mi_paquete_python.safe_zone_controller:main
 smartphone = mi_paquete_python.smartphone:main
 turtle_controller = mi_paquete_python.turtle_controller:main
 

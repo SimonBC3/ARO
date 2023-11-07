@@ -14,6 +14,8 @@
 
 from action_msgs.msg import GoalStatus
 from turtlesim.action import RotateAbsolute
+from tutorial_interfaces.action import Circle
+from geometry_msgs.msg import Point
 
 import rclpy
 from rclpy.action import ActionClient
@@ -24,8 +26,8 @@ class CircleActionClient(Node):
 
     def __init__(self):
         super().__init__('circle_action_client')
-        self._action_client = ActionClient(self, RotateAbsolute, '/draw_circle')
-        self.counter = 0
+        self._action_client = ActionClient(self, Circle, '/draw_circle')
+        self.counter = 1
 
     def goal_response_callback(self, future):
         goal_handle = future.result()
@@ -39,13 +41,13 @@ class CircleActionClient(Node):
         self._get_result_future.add_done_callback(self.get_result_callback)
 
     def feedback_callback(self, feedback):
-        self.get_logger().info('Received feedback: {0}'.format(feedback.feedback.remaining))
+        self.get_logger().info('Received feedback: {0}'.format(feedback.feedback.current_point))
 
     def get_result_callback(self, future):
         result = future.result().result
         status = future.result().status
         if status == GoalStatus.STATUS_SUCCEEDED:
-            self.get_logger().info('Goal succeeded! Result: {0}'.format(result.delta))
+            self.get_logger().info('Goal succeeded! Result: {0}'.format(result.drawn_rad))
             if self.counter < 1:
                 self.counter  = 1
                 self.send_goal(1.0)
@@ -56,12 +58,17 @@ class CircleActionClient(Node):
         # Shutdown after receiving a result
         rclpy.shutdown()
 
-    def send_goal(self, theta):
+    def send_goal(self):
         self.get_logger().info('Waiting for action server...')
         self._action_client.wait_for_server()
 
-        self.goal_msg = RotateAbsolute.Goal()
-        self.goal_msg.theta = theta
+        self.goal_msg = Circle.Goal()
+        point = Point()
+        point.x = 3.0
+        point.y = 3.0
+        self.goal_msg.point = point
+        self.goal_msg.linear_vel = 1.0
+        self.goal_msg.radius = 2.0
 
         self.get_logger().info('Sending goal request...')
 
@@ -77,7 +84,8 @@ def main(args=None):
 
     action_client = CircleActionClient()
 
-    action_client.send_goal(2.0)
+    
+    action_client.send_goal()
 
     rclpy.spin(action_client)
 

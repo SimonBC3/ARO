@@ -32,7 +32,9 @@ setup(
             'circle_action_server = mi_paquete_python.circle_action_server:main',
             'circle_action_client = mi_paquete_python.circle_action_client:main',
             'add_three_ints_server = mi_paquete_python.add_three_ints_server:main',
-            'add_three_ints_client = mi_paquete_python.add_three_ints_client:main'
+            'add_three_ints_client = mi_paquete_python.add_three_ints_client:main',
+            'minimal_param_node = mi_paquete_python.python_parameters_node:main',
+            'safe_zone_controller = mi_paquete_python.safe_zone_controller:main'
         ],
     },
 )

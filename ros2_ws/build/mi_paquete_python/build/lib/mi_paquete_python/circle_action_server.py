@@ -33,12 +33,11 @@ class CircleActionServer(Node):
 
     def listener_callback(self, pose):
         self.feedback_msg = Circle.Feedback()
-        print(self.feedback_msg)
-        self.feedback_msg.final_point = Point()
+        self.feedback_msg.current_point = Point()
         
-        self.feedback_msg.final_point.x = pose.x
-        self.feedback_msg.final_point.y = pose.y
-        self.feedback_msg.final_point.z = pose.theta
+        self.feedback_msg.current_point.x = pose.x
+        self.feedback_msg.current_point.y = pose.y
+        self.feedback_msg.current_point.z = pose.theta
 
     def destroy(self):
         self._action_server.destroy()
@@ -59,17 +58,13 @@ class CircleActionServer(Node):
         """Execute a goal."""
         self.get_logger().info('Executing goal...')
 
-        self.get_logger().info("Recived theta: " + str(goal_handle.request.theta))
+        self.get_logger().info("Recived goal: " + str(goal_handle.request))
 
-        starting_point = Pose()
-        starting_point.x = goal_handle.request.x
-        starting_point.y = goal_handle.request.y
-        starting_point.theta = goal_handle.request.z
-        self.tp_publisher.publish(starting_point)
+        self.tp_publisher.publish(goal_handle.request.point)
 
         msg = Twist()
-        msg.angular.z = 1.0
-        msg.linear.x = msg.angular.z * goal_handle.request.theta
+        msg.angular.z = goal_handle.request.linear_vel / goal_handle.request.radius
+        msg.linear.x = goal_handle.request.linear_vel
         self.vel_publisher.publish(msg)
         self.start_time = self.get_clock().now()
         
@@ -92,10 +87,10 @@ class CircleActionServer(Node):
 
             goal_handle.publish_feedback(self.feedback_msg)
 
-            if  ((2*math.pi) - drawn_rad) < 0.2 or goal_handle.request.point == self.feedback_msg: 
+            if  ((2*math.pi) - drawn_rad) < 0.2 or goal_handle.request.point == self.feedback_msg.current_point: 
                 goal_handle.succeed()
                 result = Circle.Result()
-                result.dranw_rad = drawn_rad
+                result.drawn_rad = drawn_rad
                 return result
 
             self.rate.sleep()
