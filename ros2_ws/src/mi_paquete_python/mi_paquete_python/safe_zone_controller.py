@@ -20,6 +20,10 @@ class SafeZoneController(Node):
         distance = math.sqrt((x - cx)**2 + (y - cy)**2)
         return distance < r
 
+    def is_turtle_close_to_circle(turtle_x, turtle_y, circle_x, circle_y, circle_radius, threshold):
+        distance = math.sqrt((turtle_x - circle_x)**2 + (turtle_y - circle_y)**2)
+        return distance <= circle_radius + threshold
+
     def callback(self, msg):
         print(msg.x)
 
