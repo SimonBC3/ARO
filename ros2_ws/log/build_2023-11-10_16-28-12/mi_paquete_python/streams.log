@@ -1,0 +1,35 @@
+[0.760s] Invoking command in '/home/simon/Documents/ARO/ros2_ws/src/mi_paquete_python': AMENT_PREFIX_PATH=/home/simon/Documents/ARO/ros2_ws/install/tutorial_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/simon/Documents/ARO/ros2_ws/install/tutorial_interfaces:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/simon/Documents/ARO/ros2_ws/install/tutorial_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/simon/Documents/ARO/ros2_ws/build/mi_paquete_python/prefix_override:/home/simon/Documents/ARO/ros2_ws/install/mi_paquete_python/lib/python3.10/site-packages:/home/simon/Documents/ARO/ros2_ws/install/tutorial_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/mi_paquete_python build --build-base /home/simon/Documents/ARO/ros2_ws/build/mi_paquete_python/build install --record /home/simon/Documents/ARO/ros2_ws/build/mi_paquete_python/install.log --single-version-externally-managed
+[0.982s] running egg_info
+[0.983s] writing ../../build/mi_paquete_python/mi_paquete_python.egg-info/PKG-INFO
+[0.983s] writing dependency_links to ../../build/mi_paquete_python/mi_paquete_python.egg-info/dependency_links.txt
+[0.983s] writing entry points to ../../build/mi_paquete_python/mi_paquete_python.egg-info/entry_points.txt
+[0.983s] writing requirements to ../../build/mi_paquete_python/mi_paquete_python.egg-info/requires.txt
+[0.983s] writing top-level names to ../../build/mi_paquete_python/mi_paquete_python.egg-info/top_level.txt
+[0.985s] reading manifest file '../../build/mi_paquete_python/mi_paquete_python.egg-info/SOURCES.txt'
+[0.985s] writing manifest file '../../build/mi_paquete_python/mi_paquete_python.egg-info/SOURCES.txt'
+[0.986s] running build
+[0.986s] running build_py
+[0.986s] running install
+[0.987s] running install_lib
+[0.988s] running install_data
+[0.989s] running install_egg_info
+[0.990s] removing '/home/simon/Documents/ARO/ros2_ws/install/mi_paquete_python/lib/python3.10/site-packages/mi_paquete_python-0.0.0-py3.10.egg-info' (and everything under it)
+[0.990s] Copying ../../build/mi_paquete_python/mi_paquete_python.egg-info to /home/simon/Documents/ARO/ros2_ws/install/mi_paquete_python/lib/python3.10/site-packages/mi_paquete_python-0.0.0-py3.10.egg-info
+[0.991s] running install_scripts
+[1.008s] Installing add_three_ints_client script to /home/simon/Documents/ARO/ros2_ws/install/mi_paquete_python/lib/mi_paquete_python
+[1.008s] Installing add_three_ints_server script to /home/simon/Documents/ARO/ros2_ws/install/mi_paquete_python/lib/mi_paquete_python
+[1.009s] Installing circle_action_client script to /home/simon/Documents/ARO/ros2_ws/install/mi_paquete_python/lib/mi_paquete_python
+[1.009s] Installing circle_action_server script to /home/simon/Documents/ARO/ros2_ws/install/mi_paquete_python/lib/mi_paquete_python
+[1.009s] Installing minimal_param_node script to /home/simon/Documents/ARO/ros2_ws/install/mi_paquete_python/lib/mi_paquete_python
+[1.009s] Installing move_donatello script to /home/simon/Documents/ARO/ros2_ws/install/mi_paquete_python/lib/mi_paquete_python
+[1.009s] Installing move_leonardo script to /home/simon/Documents/ARO/ros2_ws/install/mi_paquete_python/lib/mi_paquete_python
+[1.010s] Installing move_michelangelo script to /home/simon/Documents/ARO/ros2_ws/install/mi_paquete_python/lib/mi_paquete_python
+[1.010s] Installing move_turtle script to /home/simon/Documents/ARO/ros2_ws/install/mi_paquete_python/lib/mi_paquete_python
+[1.010s] Installing move_turtle_client script to /home/simon/Documents/ARO/ros2_ws/install/mi_paquete_python/lib/mi_paquete_python
+[1.010s] Installing position_logger script to /home/simon/Documents/ARO/ros2_ws/install/mi_paquete_python/lib/mi_paquete_python
+[1.010s] Installing robot_news_station script to /home/simon/Documents/ARO/ros2_ws/install/mi_paquete_python/lib/mi_paquete_python
+[1.010s] Installing safe_zone_controller script to /home/simon/Documents/ARO/ros2_ws/install/mi_paquete_python/lib/mi_paquete_python
+[1.011s] Installing smartphone script to /home/simon/Documents/ARO/ros2_ws/install/mi_paquete_python/lib/mi_paquete_python
+[1.011s] Installing turtle_controller script to /home/simon/Documents/ARO/ros2_ws/install/mi_paquete_python/lib/mi_paquete_python
+[1.011s] writing list of installed files to '/home/simon/Documents/ARO/ros2_ws/build/mi_paquete_python/install.log'
+[1.041s] Invoked command in '/home/simon/Documents/ARO/ros2_ws/src/mi_paquete_python' returned '0': AMENT_PREFIX_PATH=/home/simon/Documents/ARO/ros2_ws/install/tutorial_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/simon/Documents/ARO/ros2_ws/install/tutorial_interfaces:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/simon/Documents/ARO/ros2_ws/install/tutorial_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/simon/Documents/ARO/ros2_ws/build/mi_paquete_python/prefix_override:/home/simon/Documents/ARO/ros2_ws/install/mi_paquete_python/lib/python3.10/site-packages:/home/simon/Documents/ARO/ros2_ws/install/tutorial_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/mi_paquete_python build --build-base /home/simon/Documents/ARO/ros2_ws/build/mi_paquete_python/build install --record /home/simon/Documents/ARO/ros2_ws/build/mi_paquete_python/install.log --single-version-externally-managed

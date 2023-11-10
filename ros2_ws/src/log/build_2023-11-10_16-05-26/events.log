@@ -1,0 +1,15 @@
+[0.000000] (-) TimerEvent: {}
+[0.000362] (-) JobUnselected: {'identifier': 'examples_rclpy_minimal_action_client'}
+[0.000392] (-) JobUnselected: {'identifier': 'examples_rclpy_minimal_action_server'}
+[0.000411] (-) JobUnselected: {'identifier': 'examples_rclpy_minimal_client'}
+[0.000426] (-) JobUnselected: {'identifier': 'examples_rclpy_minimal_publisher'}
+[0.000440] (-) JobUnselected: {'identifier': 'examples_rclpy_minimal_service'}
+[0.000480] (-) JobUnselected: {'identifier': 'examples_rclpy_minimal_subscriber'}
+[0.000496] (-) JobUnselected: {'identifier': 'launch_testing_examples'}
+[0.000627] (-) JobUnselected: {'identifier': 'minimal_interfaces'}
+[0.000667] (-) JobUnselected: {'identifier': 'minimal_launch'}
+[0.000685] (-) JobUnselected: {'identifier': 'tutorial_interfaces'}
+[0.000726] (mi_paquete_python) JobQueued: {'identifier': 'mi_paquete_python', 'dependencies': OrderedDict([('tutorial_interfaces', '/home/simon/Documents/ARO/ros2_ws/src/install/tutorial_interfaces')])}
+[0.000783] (mi_paquete_python) JobStarted: {'identifier': 'mi_paquete_python'}
+[0.081956] (mi_paquete_python) JobEnded: {'identifier': 'mi_paquete_python', 'rc': 1}
+[0.092948] (-) EventReactorShutdown: {}

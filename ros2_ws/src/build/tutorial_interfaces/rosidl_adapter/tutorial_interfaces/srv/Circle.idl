@@ -1,0 +1,20 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from tutorial_interfaces/srv/Circle.srv
+// generated code does not contain a copyright notice
+
+#include "geometry_msgs/msg/Point.idl"
+
+module tutorial_interfaces {
+  module srv {
+    struct Circle_Request {
+      geometry_msgs::msg::Point point;
+
+      double linear_vel;
+
+      double radius;
+    };
+    struct Circle_Response {
+      double drawn_rad;
+    };
+  };
+};

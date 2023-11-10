@@ -1,0 +1,19 @@
+[0.000000] (-) TimerEvent: {}
+[0.000401] (-) JobUnselected: {'identifier': 'examples_rclpy_minimal_action_client'}
+[0.000938] (-) JobUnselected: {'identifier': 'examples_rclpy_minimal_action_server'}
+[0.000973] (-) JobUnselected: {'identifier': 'examples_rclpy_minimal_client'}
+[0.000989] (-) JobUnselected: {'identifier': 'examples_rclpy_minimal_publisher'}
+[0.001089] (-) JobUnselected: {'identifier': 'examples_rclpy_minimal_service'}
+[0.001115] (-) JobUnselected: {'identifier': 'examples_rclpy_minimal_subscriber'}
+[0.001157] (-) JobUnselected: {'identifier': 'launch_testing_examples'}
+[0.001217] (-) JobUnselected: {'identifier': 'minimal_interfaces'}
+[0.001233] (-) JobUnselected: {'identifier': 'minimal_launch'}
+[0.001247] (-) JobUnselected: {'identifier': 'tutorial_interfaces'}
+[0.001282] (mi_paquete_python) JobQueued: {'identifier': 'mi_paquete_python', 'dependencies': OrderedDict([('tutorial_interfaces', '/home/simon/Documents/ARO/ros2_ws/install/tutorial_interfaces')])}
+[0.001303] (mi_paquete_python) JobStarted: {'identifier': 'mi_paquete_python'}
+[0.099579] (-) TimerEvent: {}
+[0.199963] (-) TimerEvent: {}
+[0.300302] (-) TimerEvent: {}
+[0.365159] (mi_paquete_python) StderrLine: {'line': b'Traceback (most recent call last):\n  File "/usr/lib/python3/dist-packages/colcon_core/executor/__init__.py", line 91, in __call__\n    rc = await self.task(*args, **kwargs)\n  File "/usr/lib/python3/dist-packages/colcon_core/task/__init__.py", line 93, in __call__\n    return await task_method(*args, **kwargs)\n  File "/usr/lib/python3/dist-packages/colcon_ros/task/ament_python/build.py", line 54, in build\n    data_files = get_data_files_mapping(\n  File "/usr/lib/python3/dist-packages/colcon_core/task/python/__init__.py", line 38, in get_data_files_mapping\n    assert not os.path.isabs(dest)\nAssertionError\n'}
+[0.365975] (mi_paquete_python) JobEnded: {'identifier': 'mi_paquete_python', 'rc': 1}
+[0.375931] (-) EventReactorShutdown: {}

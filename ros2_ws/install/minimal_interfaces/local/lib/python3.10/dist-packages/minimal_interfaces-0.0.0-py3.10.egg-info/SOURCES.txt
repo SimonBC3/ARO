@@ -4,5 +4,3 @@ minimal_interfaces.egg-info/PKG-INFO
 minimal_interfaces.egg-info/SOURCES.txt
 minimal_interfaces.egg-info/dependency_links.txt
 minimal_interfaces.egg-info/top_level.txt
-minimal_interfaces/srv/__init__.py
-minimal_interfaces/srv/_string_service.py
