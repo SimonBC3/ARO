@@ -1,0 +1,32 @@
+[0.779s] Invoking command in '/home/simon/Documents/ARO/ros2_ws/build/mi_paquete_python': AMENT_PREFIX_PATH=/home/simon/Documents/ARO/ros2_ws/install/tutorial_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/simon/Documents/ARO/ros2_ws/install/tutorial_interfaces:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/simon/Documents/ARO/ros2_ws/install/tutorial_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/simon/Documents/ARO/ros2_ws/build/mi_paquete_python/prefix_override:/home/simon/Documents/ARO/ros2_ws/install/mi_paquete_python/lib/python3.10/site-packages:/home/simon/Documents/ARO/ros2_ws/install/tutorial_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/simon/Documents/ARO/ros2_ws/build/mi_paquete_python/build --no-deps install_data
+[1.041s] running develop
+[1.195s] running egg_info
+[1.196s] writing mi_paquete_python.egg-info/PKG-INFO
+[1.196s] writing dependency_links to mi_paquete_python.egg-info/dependency_links.txt
+[1.196s] writing entry points to mi_paquete_python.egg-info/entry_points.txt
+[1.196s] writing requirements to mi_paquete_python.egg-info/requires.txt
+[1.196s] writing top-level names to mi_paquete_python.egg-info/top_level.txt
+[1.198s] reading manifest file 'mi_paquete_python.egg-info/SOURCES.txt'
+[1.199s] writing manifest file 'mi_paquete_python.egg-info/SOURCES.txt'
+[1.200s] running build_ext
+[1.200s] Creating /home/simon/Documents/ARO/ros2_ws/install/mi_paquete_python/lib/python3.10/site-packages/mi-paquete-python.egg-link (link to .)
+[1.201s] Installing add_three_ints_client script to /home/simon/Documents/ARO/ros2_ws/install/mi_paquete_python/lib/mi_paquete_python
+[1.202s] Installing add_three_ints_server script to /home/simon/Documents/ARO/ros2_ws/install/mi_paquete_python/lib/mi_paquete_python
+[1.202s] Installing circle_action_client script to /home/simon/Documents/ARO/ros2_ws/install/mi_paquete_python/lib/mi_paquete_python
+[1.202s] Installing circle_action_server script to /home/simon/Documents/ARO/ros2_ws/install/mi_paquete_python/lib/mi_paquete_python
+[1.202s] Installing minimal_param_node script to /home/simon/Documents/ARO/ros2_ws/install/mi_paquete_python/lib/mi_paquete_python
+[1.202s] Installing move_donatello script to /home/simon/Documents/ARO/ros2_ws/install/mi_paquete_python/lib/mi_paquete_python
+[1.202s] Installing move_leonardo script to /home/simon/Documents/ARO/ros2_ws/install/mi_paquete_python/lib/mi_paquete_python
+[1.202s] Installing move_michelangelo script to /home/simon/Documents/ARO/ros2_ws/install/mi_paquete_python/lib/mi_paquete_python
+[1.202s] Installing move_turtle script to /home/simon/Documents/ARO/ros2_ws/install/mi_paquete_python/lib/mi_paquete_python
+[1.203s] Installing move_turtle_client script to /home/simon/Documents/ARO/ros2_ws/install/mi_paquete_python/lib/mi_paquete_python
+[1.203s] Installing nav2_test script to /home/simon/Documents/ARO/ros2_ws/install/mi_paquete_python/lib/mi_paquete_python
+[1.203s] Installing position_logger script to /home/simon/Documents/ARO/ros2_ws/install/mi_paquete_python/lib/mi_paquete_python
+[1.203s] Installing robot_news_station script to /home/simon/Documents/ARO/ros2_ws/install/mi_paquete_python/lib/mi_paquete_python
+[1.203s] Installing safe_zone_controller script to /home/simon/Documents/ARO/ros2_ws/install/mi_paquete_python/lib/mi_paquete_python
+[1.204s] Installing smartphone script to /home/simon/Documents/ARO/ros2_ws/install/mi_paquete_python/lib/mi_paquete_python
+[1.204s] Installing turtle_controller script to /home/simon/Documents/ARO/ros2_ws/install/mi_paquete_python/lib/mi_paquete_python
+[1.204s] 
+[1.204s] Installed /home/simon/Documents/ARO/ros2_ws/build/mi_paquete_python
+[1.204s] running install_data
+[1.247s] Invoked command in '/home/simon/Documents/ARO/ros2_ws/build/mi_paquete_python' returned '0': AMENT_PREFIX_PATH=/home/simon/Documents/ARO/ros2_ws/install/tutorial_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/simon/Documents/ARO/ros2_ws/install/tutorial_interfaces:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/simon/Documents/ARO/ros2_ws/install/tutorial_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/simon/Documents/ARO/ros2_ws/build/mi_paquete_python/prefix_override:/home/simon/Documents/ARO/ros2_ws/install/mi_paquete_python/lib/python3.10/site-packages:/home/simon/Documents/ARO/ros2_ws/install/tutorial_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/simon/Documents/ARO/ros2_ws/build/mi_paquete_python/build --no-deps install_data

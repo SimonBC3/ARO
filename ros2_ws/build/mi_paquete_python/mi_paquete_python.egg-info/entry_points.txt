@@ -9,6 +9,7 @@ move_leonardo = mi_paquete_python.move_leonardo:main
 move_michelangelo = mi_paquete_python.move_michelangelo:main
 move_turtle = mi_paquete_python.move_turtle:main
 move_turtle_client = mi_paquete_python.move_turtle_client:main
+nav2_test = mi_paquete_python.nav2_test:main
 position_logger = mi_paquete_python.position_logger:main
 robot_news_station = mi_paquete_python.robot_news_station:main
 safe_zone_controller = mi_paquete_python.safe_zone_controller:main

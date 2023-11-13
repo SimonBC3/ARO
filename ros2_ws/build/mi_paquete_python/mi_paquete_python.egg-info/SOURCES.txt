@@ -19,6 +19,7 @@ mi_paquete_python/move_michelangelo.py
 mi_paquete_python/move_raphael.py
 mi_paquete_python/move_turtle.py
 mi_paquete_python/move_turtle_client.py
+mi_paquete_python/nav2_test.py
 mi_paquete_python/position_logger.py
 mi_paquete_python/python_parameters_node.py
 mi_paquete_python/robot_news_station.py

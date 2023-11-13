@@ -32,6 +32,8 @@ rosidl_generate_interfaces(${PROJECT_NAME}
 "action/ComputeSum.action"
 "action/Circle.action"
 "srv/Circle.srv"
+"action/MoveRobot.action"
+"srv/MoveRobot.srv"
 DEPENDENCIES geometry_msgs
 )
 

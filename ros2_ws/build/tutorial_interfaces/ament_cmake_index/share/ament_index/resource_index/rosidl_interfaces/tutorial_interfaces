@@ -2,6 +2,8 @@ action/Circle.action
 action/Circle.idl
 action/ComputeSum.action
 action/ComputeSum.idl
+action/MoveRobot.action
+action/MoveRobot.idl
 msg/Num.idl
 msg/Num.msg
 msg/Sphere.idl
@@ -14,3 +16,7 @@ srv/Circle.idl
 srv/Circle.srv
 srv/Circle_Request.msg
 srv/Circle_Response.msg
+srv/MoveRobot.idl
+srv/MoveRobot.srv
+srv/MoveRobot_Request.msg
+srv/MoveRobot_Response.msg

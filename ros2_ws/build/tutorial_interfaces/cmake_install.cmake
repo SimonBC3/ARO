@@ -380,6 +380,14 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/tutorial_interfaces/action" TYPE FILE FILES "/home/simon/Documents/ARO/ros2_ws/build/tutorial_interfaces/rosidl_adapter/tutorial_interfaces/action/MoveRobot.idl")
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/tutorial_interfaces/srv" TYPE FILE FILES "/home/simon/Documents/ARO/ros2_ws/build/tutorial_interfaces/rosidl_adapter/tutorial_interfaces/srv/MoveRobot.idl")
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/tutorial_interfaces/msg" TYPE FILE FILES "/home/simon/Documents/ARO/ros2_ws/src/tutorial_interfaces/msg/Num.msg")
 endif()
 
@@ -417,6 +425,22 @@ endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/tutorial_interfaces/srv" TYPE FILE FILES "/home/simon/Documents/ARO/ros2_ws/build/tutorial_interfaces/rosidl_cmake/srv/Circle_Response.msg")
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/tutorial_interfaces/action" TYPE FILE FILES "/home/simon/Documents/ARO/ros2_ws/src/tutorial_interfaces/action/MoveRobot.action")
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/tutorial_interfaces/srv" TYPE FILE FILES "/home/simon/Documents/ARO/ros2_ws/src/tutorial_interfaces/srv/MoveRobot.srv")
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/tutorial_interfaces/srv" TYPE FILE FILES "/home/simon/Documents/ARO/ros2_ws/build/tutorial_interfaces/rosidl_cmake/srv/MoveRobot_Request.msg")
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/tutorial_interfaces/srv" TYPE FILE FILES "/home/simon/Documents/ARO/ros2_ws/build/tutorial_interfaces/rosidl_cmake/srv/MoveRobot_Response.msg")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)

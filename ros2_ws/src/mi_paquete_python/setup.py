@@ -37,7 +37,8 @@ setup(
             'add_three_ints_server = mi_paquete_python.add_three_ints_server:main',
             'add_three_ints_client = mi_paquete_python.add_three_ints_client:main',
             'minimal_param_node = mi_paquete_python.python_parameters_node:main',
-            'safe_zone_controller = mi_paquete_python.safe_zone_controller:main'
+            'safe_zone_controller = mi_paquete_python.safe_zone_controller:main',
+            'nav2_test = mi_paquete_python.nav2_test:main'
         ],
     },
 )

@@ -4,3 +4,5 @@
 /home/simon/Documents/ARO/ros2_ws/build/tutorial_interfaces/rosidl_adapter/tutorial_interfaces:action/ComputeSum.idl
 /home/simon/Documents/ARO/ros2_ws/build/tutorial_interfaces/rosidl_adapter/tutorial_interfaces:action/Circle.idl
 /home/simon/Documents/ARO/ros2_ws/build/tutorial_interfaces/rosidl_adapter/tutorial_interfaces:srv/Circle.idl
+/home/simon/Documents/ARO/ros2_ws/build/tutorial_interfaces/rosidl_adapter/tutorial_interfaces:action/MoveRobot.idl
+/home/simon/Documents/ARO/ros2_ws/build/tutorial_interfaces/rosidl_adapter/tutorial_interfaces:srv/MoveRobot.idl

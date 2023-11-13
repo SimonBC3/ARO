@@ -8,6 +8,10 @@ file(REMOVE_RECURSE
   "rosidl_generator_cpp/tutorial_interfaces/action/detail/compute_sum__builder.hpp"
   "rosidl_generator_cpp/tutorial_interfaces/action/detail/compute_sum__struct.hpp"
   "rosidl_generator_cpp/tutorial_interfaces/action/detail/compute_sum__traits.hpp"
+  "rosidl_generator_cpp/tutorial_interfaces/action/detail/move_robot__builder.hpp"
+  "rosidl_generator_cpp/tutorial_interfaces/action/detail/move_robot__struct.hpp"
+  "rosidl_generator_cpp/tutorial_interfaces/action/detail/move_robot__traits.hpp"
+  "rosidl_generator_cpp/tutorial_interfaces/action/move_robot.hpp"
   "rosidl_generator_cpp/tutorial_interfaces/msg/detail/num__builder.hpp"
   "rosidl_generator_cpp/tutorial_interfaces/msg/detail/num__struct.hpp"
   "rosidl_generator_cpp/tutorial_interfaces/msg/detail/num__traits.hpp"
@@ -24,6 +28,10 @@ file(REMOVE_RECURSE
   "rosidl_generator_cpp/tutorial_interfaces/srv/detail/circle__builder.hpp"
   "rosidl_generator_cpp/tutorial_interfaces/srv/detail/circle__struct.hpp"
   "rosidl_generator_cpp/tutorial_interfaces/srv/detail/circle__traits.hpp"
+  "rosidl_generator_cpp/tutorial_interfaces/srv/detail/move_robot__builder.hpp"
+  "rosidl_generator_cpp/tutorial_interfaces/srv/detail/move_robot__struct.hpp"
+  "rosidl_generator_cpp/tutorial_interfaces/srv/detail/move_robot__traits.hpp"
+  "rosidl_generator_cpp/tutorial_interfaces/srv/move_robot.hpp"
 )
 
 # Per-language clean rules from dependency scanning.

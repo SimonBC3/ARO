@@ -1,0 +1,5 @@
+geometry_msgs/Point objective_point
+---
+float64 proximity
+---
+geometry_msgs/Point current_point

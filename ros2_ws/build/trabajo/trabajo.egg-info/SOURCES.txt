@@ -1,0 +1,16 @@
+package.xml
+setup.cfg
+setup.py
+../../build/trabajo/trabajo.egg-info/PKG-INFO
+../../build/trabajo/trabajo.egg-info/SOURCES.txt
+../../build/trabajo/trabajo.egg-info/dependency_links.txt
+../../build/trabajo/trabajo.egg-info/entry_points.txt
+../../build/trabajo/trabajo.egg-info/requires.txt
+../../build/trabajo/trabajo.egg-info/top_level.txt
+../../build/trabajo/trabajo.egg-info/zip-safe
+resource/trabajo
+test/test_copyright.py
+test/test_flake8.py
+test/test_pep257.py
+trabajo/__init__.py
+trabajo/service_server.py

@@ -1,0 +1,19 @@
+// generated from rosidl_adapter/resource/action.idl.em
+// with input from tutorial_interfaces/action/MoveRobot.action
+// generated code does not contain a copyright notice
+
+#include "geometry_msgs/msg/Point.idl"
+
+module tutorial_interfaces {
+  module action {
+    struct MoveRobot_Goal {
+      geometry_msgs::msg::Point objective_point;
+    };
+    struct MoveRobot_Result {
+      double proximity;
+    };
+    struct MoveRobot_Feedback {
+      geometry_msgs::msg::Point current_point;
+    };
+  };
+};

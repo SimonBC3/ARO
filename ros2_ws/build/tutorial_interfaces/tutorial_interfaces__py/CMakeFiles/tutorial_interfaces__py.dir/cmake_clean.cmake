@@ -7,6 +7,8 @@ file(REMOVE_RECURSE
   "../rosidl_generator_py/tutorial_interfaces/action/_circle_s.c"
   "../rosidl_generator_py/tutorial_interfaces/action/_compute_sum.py"
   "../rosidl_generator_py/tutorial_interfaces/action/_compute_sum_s.c"
+  "../rosidl_generator_py/tutorial_interfaces/action/_move_robot.py"
+  "../rosidl_generator_py/tutorial_interfaces/action/_move_robot_s.c"
   "../rosidl_generator_py/tutorial_interfaces/msg/__init__.py"
   "../rosidl_generator_py/tutorial_interfaces/msg/_num.py"
   "../rosidl_generator_py/tutorial_interfaces/msg/_num_s.c"
@@ -17,6 +19,8 @@ file(REMOVE_RECURSE
   "../rosidl_generator_py/tutorial_interfaces/srv/_add_three_ints_s.c"
   "../rosidl_generator_py/tutorial_interfaces/srv/_circle.py"
   "../rosidl_generator_py/tutorial_interfaces/srv/_circle_s.c"
+  "../rosidl_generator_py/tutorial_interfaces/srv/_move_robot.py"
+  "../rosidl_generator_py/tutorial_interfaces/srv/_move_robot_s.c"
   "CMakeFiles/tutorial_interfaces__py"
 )
 
