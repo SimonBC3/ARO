@@ -16,6 +16,9 @@
 #include "tutorial_interfaces/action/detail/move_robot__struct.h"
 #include "tutorial_interfaces/action/detail/move_robot__functions.h"
 
+#include "rosidl_runtime_c/string.h"
+#include "rosidl_runtime_c/string_functions.h"
+
 ROSIDL_GENERATOR_C_IMPORT
 bool geometry_msgs__msg__point__convert_from_py(PyObject * _pymsg, void * _ros_message);
 ROSIDL_GENERATOR_C_IMPORT
@@ -54,6 +57,21 @@ bool tutorial_interfaces__action__move_robot__goal__convert_from_py(PyObject * _
     assert(strncmp("tutorial_interfaces.action._move_robot.MoveRobot_Goal", full_classname_dest, 53) == 0);
   }
   tutorial_interfaces__action__MoveRobot_Goal * ros_message = _ros_message;
+  {  // command
+    PyObject * field = PyObject_GetAttrString(_pymsg, "command");
+    if (!field) {
+      return false;
+    }
+    assert(PyUnicode_Check(field));
+    PyObject * encoded_field = PyUnicode_AsUTF8String(field);
+    if (!encoded_field) {
+      Py_DECREF(field);
+      return false;
+    }
+    rosidl_runtime_c__String__assign(&ros_message->command, PyBytes_AS_STRING(encoded_field));
+    Py_DECREF(encoded_field);
+    Py_DECREF(field);
+  }
   {  // objective_point
     PyObject * field = PyObject_GetAttrString(_pymsg, "objective_point");
     if (!field) {
@@ -87,6 +105,23 @@ PyObject * tutorial_interfaces__action__move_robot__goal__convert_to_py(void * r
     }
   }
   tutorial_interfaces__action__MoveRobot_Goal * ros_message = (tutorial_interfaces__action__MoveRobot_Goal *)raw_ros_message;
+  {  // command
+    PyObject * field = NULL;
+    field = PyUnicode_DecodeUTF8(
+      ros_message->command.data,
+      strlen(ros_message->command.data),
+      "replace");
+    if (!field) {
+      return NULL;
+    }
+    {
+      int rc = PyObject_SetAttrString(_pymessage, "command", field);
+      Py_DECREF(field);
+      if (rc) {
+        return NULL;
+      }
+    }
+  }
   {  // objective_point
     PyObject * field = NULL;
     field = geometry_msgs__msg__point__convert_to_py(&ros_message->objective_point);
@@ -119,6 +154,11 @@ PyObject * tutorial_interfaces__action__move_robot__goal__convert_to_py(void * r
 // #include "tutorial_interfaces/action/detail/move_robot__struct.h"
 // already included above
 // #include "tutorial_interfaces/action/detail/move_robot__functions.h"
+
+// already included above
+// #include "rosidl_runtime_c/string.h"
+// already included above
+// #include "rosidl_runtime_c/string_functions.h"
 
 
 ROSIDL_GENERATOR_C_EXPORT
@@ -154,13 +194,19 @@ bool tutorial_interfaces__action__move_robot__result__convert_from_py(PyObject *
     assert(strncmp("tutorial_interfaces.action._move_robot.MoveRobot_Result", full_classname_dest, 55) == 0);
   }
   tutorial_interfaces__action__MoveRobot_Result * ros_message = _ros_message;
-  {  // proximity
-    PyObject * field = PyObject_GetAttrString(_pymsg, "proximity");
+  {  // answer
+    PyObject * field = PyObject_GetAttrString(_pymsg, "answer");
     if (!field) {
       return false;
     }
-    assert(PyFloat_Check(field));
-    ros_message->proximity = PyFloat_AS_DOUBLE(field);
+    assert(PyUnicode_Check(field));
+    PyObject * encoded_field = PyUnicode_AsUTF8String(field);
+    if (!encoded_field) {
+      Py_DECREF(field);
+      return false;
+    }
+    rosidl_runtime_c__String__assign(&ros_message->answer, PyBytes_AS_STRING(encoded_field));
+    Py_DECREF(encoded_field);
     Py_DECREF(field);
   }
 
@@ -185,11 +231,17 @@ PyObject * tutorial_interfaces__action__move_robot__result__convert_to_py(void *
     }
   }
   tutorial_interfaces__action__MoveRobot_Result * ros_message = (tutorial_interfaces__action__MoveRobot_Result *)raw_ros_message;
-  {  // proximity
+  {  // answer
     PyObject * field = NULL;
-    field = PyFloat_FromDouble(ros_message->proximity);
+    field = PyUnicode_DecodeUTF8(
+      ros_message->answer.data,
+      strlen(ros_message->answer.data),
+      "replace");
+    if (!field) {
+      return NULL;
+    }
     {
-      int rc = PyObject_SetAttrString(_pymessage, "proximity", field);
+      int rc = PyObject_SetAttrString(_pymessage, "answer", field);
       Py_DECREF(field);
       if (rc) {
         return NULL;

@@ -1,0 +1,49 @@
+[5.042s] Invoking command in '/home/simon/Documents/ARO/ros2_ws/src/ROS2_examples/rclpy/actions/minimal_action_client': PYTHONPATH=/home/simon/Documents/ARO/ros2_ws/build/examples_rclpy_minimal_action_client/prefix_override:/home/simon/Documents/ARO/ros2_ws/install/examples_rclpy_minimal_action_client/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../../../../build/examples_rclpy_minimal_action_client build --build-base /home/simon/Documents/ARO/ros2_ws/build/examples_rclpy_minimal_action_client/build install --record /home/simon/Documents/ARO/ros2_ws/build/examples_rclpy_minimal_action_client/install.log --single-version-externally-managed
+[5.455s] running egg_info
+[5.458s] creating ../../../../../build/examples_rclpy_minimal_action_client/examples_rclpy_minimal_action_client.egg-info
+[5.458s] writing ../../../../../build/examples_rclpy_minimal_action_client/examples_rclpy_minimal_action_client.egg-info/PKG-INFO
+[5.458s] writing dependency_links to ../../../../../build/examples_rclpy_minimal_action_client/examples_rclpy_minimal_action_client.egg-info/dependency_links.txt
+[5.458s] writing entry points to ../../../../../build/examples_rclpy_minimal_action_client/examples_rclpy_minimal_action_client.egg-info/entry_points.txt
+[5.458s] writing requirements to ../../../../../build/examples_rclpy_minimal_action_client/examples_rclpy_minimal_action_client.egg-info/requires.txt
+[5.459s] writing top-level names to ../../../../../build/examples_rclpy_minimal_action_client/examples_rclpy_minimal_action_client.egg-info/top_level.txt
+[5.459s] writing manifest file '../../../../../build/examples_rclpy_minimal_action_client/examples_rclpy_minimal_action_client.egg-info/SOURCES.txt'
+[5.461s] reading manifest file '../../../../../build/examples_rclpy_minimal_action_client/examples_rclpy_minimal_action_client.egg-info/SOURCES.txt'
+[5.463s] writing manifest file '../../../../../build/examples_rclpy_minimal_action_client/examples_rclpy_minimal_action_client.egg-info/SOURCES.txt'
+[5.463s] running build
+[5.463s] running build_py
+[5.464s] creating /home/simon/Documents/ARO/ros2_ws/build/examples_rclpy_minimal_action_client/build
+[5.464s] creating /home/simon/Documents/ARO/ros2_ws/build/examples_rclpy_minimal_action_client/build/lib
+[5.464s] creating /home/simon/Documents/ARO/ros2_ws/build/examples_rclpy_minimal_action_client/build/lib/examples_rclpy_minimal_action_client
+[5.465s] copying examples_rclpy_minimal_action_client/client.py -> /home/simon/Documents/ARO/ros2_ws/build/examples_rclpy_minimal_action_client/build/lib/examples_rclpy_minimal_action_client
+[5.465s] copying examples_rclpy_minimal_action_client/client_cancel.py -> /home/simon/Documents/ARO/ros2_ws/build/examples_rclpy_minimal_action_client/build/lib/examples_rclpy_minimal_action_client
+[5.465s] copying examples_rclpy_minimal_action_client/client_asyncio.py -> /home/simon/Documents/ARO/ros2_ws/build/examples_rclpy_minimal_action_client/build/lib/examples_rclpy_minimal_action_client
+[5.465s] copying examples_rclpy_minimal_action_client/__init__.py -> /home/simon/Documents/ARO/ros2_ws/build/examples_rclpy_minimal_action_client/build/lib/examples_rclpy_minimal_action_client
+[5.466s] copying examples_rclpy_minimal_action_client/client_not_composable.py -> /home/simon/Documents/ARO/ros2_ws/build/examples_rclpy_minimal_action_client/build/lib/examples_rclpy_minimal_action_client
+[5.466s] running install
+[5.466s] running install_lib
+[5.468s] creating /home/simon/Documents/ARO/ros2_ws/install/examples_rclpy_minimal_action_client/lib/python3.10/site-packages/examples_rclpy_minimal_action_client
+[5.469s] copying /home/simon/Documents/ARO/ros2_ws/build/examples_rclpy_minimal_action_client/build/lib/examples_rclpy_minimal_action_client/client.py -> /home/simon/Documents/ARO/ros2_ws/install/examples_rclpy_minimal_action_client/lib/python3.10/site-packages/examples_rclpy_minimal_action_client
+[5.469s] copying /home/simon/Documents/ARO/ros2_ws/build/examples_rclpy_minimal_action_client/build/lib/examples_rclpy_minimal_action_client/client_cancel.py -> /home/simon/Documents/ARO/ros2_ws/install/examples_rclpy_minimal_action_client/lib/python3.10/site-packages/examples_rclpy_minimal_action_client
+[5.469s] copying /home/simon/Documents/ARO/ros2_ws/build/examples_rclpy_minimal_action_client/build/lib/examples_rclpy_minimal_action_client/client_asyncio.py -> /home/simon/Documents/ARO/ros2_ws/install/examples_rclpy_minimal_action_client/lib/python3.10/site-packages/examples_rclpy_minimal_action_client
+[5.470s] copying /home/simon/Documents/ARO/ros2_ws/build/examples_rclpy_minimal_action_client/build/lib/examples_rclpy_minimal_action_client/__init__.py -> /home/simon/Documents/ARO/ros2_ws/install/examples_rclpy_minimal_action_client/lib/python3.10/site-packages/examples_rclpy_minimal_action_client
+[5.470s] copying /home/simon/Documents/ARO/ros2_ws/build/examples_rclpy_minimal_action_client/build/lib/examples_rclpy_minimal_action_client/client_not_composable.py -> /home/simon/Documents/ARO/ros2_ws/install/examples_rclpy_minimal_action_client/lib/python3.10/site-packages/examples_rclpy_minimal_action_client
+[5.470s] byte-compiling /home/simon/Documents/ARO/ros2_ws/install/examples_rclpy_minimal_action_client/lib/python3.10/site-packages/examples_rclpy_minimal_action_client/client.py to client.cpython-310.pyc
+[5.471s] byte-compiling /home/simon/Documents/ARO/ros2_ws/install/examples_rclpy_minimal_action_client/lib/python3.10/site-packages/examples_rclpy_minimal_action_client/client_cancel.py to client_cancel.cpython-310.pyc
+[5.473s] byte-compiling /home/simon/Documents/ARO/ros2_ws/install/examples_rclpy_minimal_action_client/lib/python3.10/site-packages/examples_rclpy_minimal_action_client/client_asyncio.py to client_asyncio.cpython-310.pyc
+[5.474s] byte-compiling /home/simon/Documents/ARO/ros2_ws/install/examples_rclpy_minimal_action_client/lib/python3.10/site-packages/examples_rclpy_minimal_action_client/__init__.py to __init__.cpython-310.pyc
+[5.474s] byte-compiling /home/simon/Documents/ARO/ros2_ws/install/examples_rclpy_minimal_action_client/lib/python3.10/site-packages/examples_rclpy_minimal_action_client/client_not_composable.py to client_not_composable.cpython-310.pyc
+[5.476s] running install_data
+[5.476s] creating /home/simon/Documents/ARO/ros2_ws/install/examples_rclpy_minimal_action_client/share/ament_index
+[5.476s] creating /home/simon/Documents/ARO/ros2_ws/install/examples_rclpy_minimal_action_client/share/ament_index/resource_index
+[5.477s] creating /home/simon/Documents/ARO/ros2_ws/install/examples_rclpy_minimal_action_client/share/ament_index/resource_index/packages
+[5.477s] copying resource/examples_rclpy_minimal_action_client -> /home/simon/Documents/ARO/ros2_ws/install/examples_rclpy_minimal_action_client/share/ament_index/resource_index/packages
+[5.477s] copying package.xml -> /home/simon/Documents/ARO/ros2_ws/install/examples_rclpy_minimal_action_client/share/examples_rclpy_minimal_action_client
+[5.477s] running install_egg_info
+[5.480s] Copying ../../../../../build/examples_rclpy_minimal_action_client/examples_rclpy_minimal_action_client.egg-info to /home/simon/Documents/ARO/ros2_ws/install/examples_rclpy_minimal_action_client/lib/python3.10/site-packages/examples_rclpy_minimal_action_client-0.15.1-py3.10.egg-info
+[5.481s] running install_scripts
+[5.514s] Installing client script to /home/simon/Documents/ARO/ros2_ws/install/examples_rclpy_minimal_action_client/lib/examples_rclpy_minimal_action_client
+[5.514s] Installing client_asyncio script to /home/simon/Documents/ARO/ros2_ws/install/examples_rclpy_minimal_action_client/lib/examples_rclpy_minimal_action_client
+[5.514s] Installing client_cancel script to /home/simon/Documents/ARO/ros2_ws/install/examples_rclpy_minimal_action_client/lib/examples_rclpy_minimal_action_client
+[5.515s] Installing client_not_composable script to /home/simon/Documents/ARO/ros2_ws/install/examples_rclpy_minimal_action_client/lib/examples_rclpy_minimal_action_client
+[5.515s] writing list of installed files to '/home/simon/Documents/ARO/ros2_ws/build/examples_rclpy_minimal_action_client/install.log'
+[5.644s] Invoked command in '/home/simon/Documents/ARO/ros2_ws/src/ROS2_examples/rclpy/actions/minimal_action_client' returned '0': PYTHONPATH=/home/simon/Documents/ARO/ros2_ws/build/examples_rclpy_minimal_action_client/prefix_override:/home/simon/Documents/ARO/ros2_ws/install/examples_rclpy_minimal_action_client/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../../../../build/examples_rclpy_minimal_action_client build --build-base /home/simon/Documents/ARO/ros2_ws/build/examples_rclpy_minimal_action_client/build install --record /home/simon/Documents/ARO/ros2_ws/build/examples_rclpy_minimal_action_client/install.log --single-version-externally-managed

@@ -29,6 +29,13 @@ inline void to_flow_style_yaml(
   std::ostream & out)
 {
   out << "{";
+  // member: command
+  {
+    out << "command: ";
+    rosidl_generator_traits::value_to_yaml(msg.command, out);
+    out << ", ";
+  }
+
   // member: objective_point
   {
     out << "objective_point: ";
@@ -41,6 +48,16 @@ inline void to_block_style_yaml(
   const MoveRobot_Goal & msg,
   std::ostream & out, size_t indentation = 0)
 {
+  // member: command
+  {
+    if (indentation > 0) {
+      out << std::string(indentation, ' ');
+    }
+    out << "command: ";
+    rosidl_generator_traits::value_to_yaml(msg.command, out);
+    out << "\n";
+  }
+
   // member: objective_point
   {
     if (indentation > 0) {
@@ -97,11 +114,11 @@ inline const char * name<tutorial_interfaces::action::MoveRobot_Goal>()
 
 template<>
 struct has_fixed_size<tutorial_interfaces::action::MoveRobot_Goal>
-  : std::integral_constant<bool, has_fixed_size<geometry_msgs::msg::Point>::value> {};
+  : std::integral_constant<bool, false> {};
 
 template<>
 struct has_bounded_size<tutorial_interfaces::action::MoveRobot_Goal>
-  : std::integral_constant<bool, has_bounded_size<geometry_msgs::msg::Point>::value> {};
+  : std::integral_constant<bool, false> {};
 
 template<>
 struct is_message<tutorial_interfaces::action::MoveRobot_Goal>
@@ -120,10 +137,10 @@ inline void to_flow_style_yaml(
   std::ostream & out)
 {
   out << "{";
-  // member: proximity
+  // member: answer
   {
-    out << "proximity: ";
-    rosidl_generator_traits::value_to_yaml(msg.proximity, out);
+    out << "answer: ";
+    rosidl_generator_traits::value_to_yaml(msg.answer, out);
   }
   out << "}";
 }  // NOLINT(readability/fn_size)
@@ -132,13 +149,13 @@ inline void to_block_style_yaml(
   const MoveRobot_Result & msg,
   std::ostream & out, size_t indentation = 0)
 {
-  // member: proximity
+  // member: answer
   {
     if (indentation > 0) {
       out << std::string(indentation, ' ');
     }
-    out << "proximity: ";
-    rosidl_generator_traits::value_to_yaml(msg.proximity, out);
+    out << "answer: ";
+    rosidl_generator_traits::value_to_yaml(msg.answer, out);
     out << "\n";
   }
 }  // NOLINT(readability/fn_size)
@@ -189,11 +206,11 @@ inline const char * name<tutorial_interfaces::action::MoveRobot_Result>()
 
 template<>
 struct has_fixed_size<tutorial_interfaces::action::MoveRobot_Result>
-  : std::integral_constant<bool, true> {};
+  : std::integral_constant<bool, false> {};
 
 template<>
 struct has_bounded_size<tutorial_interfaces::action::MoveRobot_Result>
-  : std::integral_constant<bool, true> {};
+  : std::integral_constant<bool, false> {};
 
 template<>
 struct is_message<tutorial_interfaces::action::MoveRobot_Result>

@@ -1,2 +1,2 @@
 
-float64 proximity
+string answer

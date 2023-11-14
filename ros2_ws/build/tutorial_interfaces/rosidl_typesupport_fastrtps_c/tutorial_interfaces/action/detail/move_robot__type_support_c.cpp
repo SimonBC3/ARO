@@ -35,6 +35,8 @@ extern "C"
 #endif
 
 #include "geometry_msgs/msg/detail/point__functions.h"  // objective_point
+#include "rosidl_runtime_c/string.h"  // command
+#include "rosidl_runtime_c/string_functions.h"  // command
 
 // forward declare type support functions
 ROSIDL_TYPESUPPORT_FASTRTPS_C_IMPORT_tutorial_interfaces
@@ -64,6 +66,20 @@ static bool _MoveRobot_Goal__cdr_serialize(
     return false;
   }
   const _MoveRobot_Goal__ros_msg_type * ros_message = static_cast<const _MoveRobot_Goal__ros_msg_type *>(untyped_ros_message);
+  // Field name: command
+  {
+    const rosidl_runtime_c__String * str = &ros_message->command;
+    if (str->capacity == 0 || str->capacity <= str->size) {
+      fprintf(stderr, "string capacity not greater than size\n");
+      return false;
+    }
+    if (str->data[str->size] != '\0') {
+      fprintf(stderr, "string not null-terminated\n");
+      return false;
+    }
+    cdr << str->data;
+  }
+
   // Field name: objective_point
   {
     const message_type_support_callbacks_t * callbacks =
@@ -90,6 +106,22 @@ static bool _MoveRobot_Goal__cdr_deserialize(
     return false;
   }
   _MoveRobot_Goal__ros_msg_type * ros_message = static_cast<_MoveRobot_Goal__ros_msg_type *>(untyped_ros_message);
+  // Field name: command
+  {
+    std::string tmp;
+    cdr >> tmp;
+    if (!ros_message->command.data) {
+      rosidl_runtime_c__String__init(&ros_message->command);
+    }
+    bool succeeded = rosidl_runtime_c__String__assign(
+      &ros_message->command,
+      tmp.c_str());
+    if (!succeeded) {
+      fprintf(stderr, "failed to assign string into field 'command'\n");
+      return false;
+    }
+  }
+
   // Field name: objective_point
   {
     const message_type_support_callbacks_t * callbacks =
@@ -121,6 +153,10 @@ size_t get_serialized_size_tutorial_interfaces__action__MoveRobot_Goal(
   (void)padding;
   (void)wchar_size;
 
+  // field.name command
+  current_alignment += padding +
+    eprosima::fastcdr::Cdr::alignment(current_alignment, padding) +
+    (ros_message->command.size + 1);
   // field.name objective_point
 
   current_alignment += get_serialized_size_geometry_msgs__msg__Point(
@@ -152,6 +188,18 @@ size_t max_serialized_size_tutorial_interfaces__action__MoveRobot_Goal(
   full_bounded = true;
   is_plain = true;
 
+  // member: command
+  {
+    size_t array_size = 1;
+
+    full_bounded = false;
+    is_plain = false;
+    for (size_t index = 0; index < array_size; ++index) {
+      current_alignment += padding +
+        eprosima::fastcdr::Cdr::alignment(current_alignment, padding) +
+        1;
+    }
+  }
   // member: objective_point
   {
     size_t array_size = 1;
@@ -251,6 +299,10 @@ extern "C"
 {
 #endif
 
+// already included above
+// #include "rosidl_runtime_c/string.h"  // answer
+// already included above
+// #include "rosidl_runtime_c/string_functions.h"  // answer
 
 // forward declare type support functions
 
@@ -266,9 +318,18 @@ static bool _MoveRobot_Result__cdr_serialize(
     return false;
   }
   const _MoveRobot_Result__ros_msg_type * ros_message = static_cast<const _MoveRobot_Result__ros_msg_type *>(untyped_ros_message);
-  // Field name: proximity
+  // Field name: answer
   {
-    cdr << ros_message->proximity;
+    const rosidl_runtime_c__String * str = &ros_message->answer;
+    if (str->capacity == 0 || str->capacity <= str->size) {
+      fprintf(stderr, "string capacity not greater than size\n");
+      return false;
+    }
+    if (str->data[str->size] != '\0') {
+      fprintf(stderr, "string not null-terminated\n");
+      return false;
+    }
+    cdr << str->data;
   }
 
   return true;
@@ -283,9 +344,20 @@ static bool _MoveRobot_Result__cdr_deserialize(
     return false;
   }
   _MoveRobot_Result__ros_msg_type * ros_message = static_cast<_MoveRobot_Result__ros_msg_type *>(untyped_ros_message);
-  // Field name: proximity
+  // Field name: answer
   {
-    cdr >> ros_message->proximity;
+    std::string tmp;
+    cdr >> tmp;
+    if (!ros_message->answer.data) {
+      rosidl_runtime_c__String__init(&ros_message->answer);
+    }
+    bool succeeded = rosidl_runtime_c__String__assign(
+      &ros_message->answer,
+      tmp.c_str());
+    if (!succeeded) {
+      fprintf(stderr, "failed to assign string into field 'answer'\n");
+      return false;
+    }
   }
 
   return true;
@@ -305,12 +377,10 @@ size_t get_serialized_size_tutorial_interfaces__action__MoveRobot_Result(
   (void)padding;
   (void)wchar_size;
 
-  // field.name proximity
-  {
-    size_t item_size = sizeof(ros_message->proximity);
-    current_alignment += item_size +
-      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
-  }
+  // field.name answer
+  current_alignment += padding +
+    eprosima::fastcdr::Cdr::alignment(current_alignment, padding) +
+    (ros_message->answer.size + 1);
 
   return current_alignment - initial_alignment;
 }
@@ -338,12 +408,17 @@ size_t max_serialized_size_tutorial_interfaces__action__MoveRobot_Result(
   full_bounded = true;
   is_plain = true;
 
-  // member: proximity
+  // member: answer
   {
     size_t array_size = 1;
 
-    current_alignment += array_size * sizeof(uint64_t) +
-      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint64_t));
+    full_bounded = false;
+    is_plain = false;
+    for (size_t index = 0; index < array_size; ++index) {
+      current_alignment += padding +
+        eprosima::fastcdr::Cdr::alignment(current_alignment, padding) +
+        1;
+    }
   }
 
   return current_alignment - initial_alignment;

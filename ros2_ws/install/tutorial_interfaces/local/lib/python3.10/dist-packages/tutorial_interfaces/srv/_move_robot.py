@@ -59,14 +59,17 @@ class MoveRobot_Request(metaclass=Metaclass_MoveRobot_Request):
     """Message class 'MoveRobot_Request'."""
 
     __slots__ = [
+        '_command',
         '_objective_point',
     ]
 
     _fields_and_field_types = {
+        'command': 'string',
         'objective_point': 'geometry_msgs/Point',
     }
 
     SLOT_TYPES = (
+        rosidl_parser.definition.UnboundedString(),  # noqa: E501
         rosidl_parser.definition.NamespacedType(['geometry_msgs', 'msg'], 'Point'),  # noqa: E501
     )
 
@@ -74,6 +77,7 @@ class MoveRobot_Request(metaclass=Metaclass_MoveRobot_Request):
         assert all('_' + key in self.__slots__ for key in kwargs.keys()), \
             'Invalid arguments passed to constructor: %s' % \
             ', '.join(sorted(k for k in kwargs.keys() if '_' + k not in self.__slots__))
+        self.command = kwargs.get('command', str())
         from geometry_msgs.msg import Point
         self.objective_point = kwargs.get('objective_point', Point())
 
@@ -106,6 +110,8 @@ class MoveRobot_Request(metaclass=Metaclass_MoveRobot_Request):
     def __eq__(self, other):
         if not isinstance(other, self.__class__):
             return False
+        if self.command != other.command:
+            return False
         if self.objective_point != other.objective_point:
             return False
         return True
@@ -114,6 +120,19 @@ class MoveRobot_Request(metaclass=Metaclass_MoveRobot_Request):
     def get_fields_and_field_types(cls):
         from copy import copy
         return copy(cls._fields_and_field_types)
+
+    @builtins.property
+    def command(self):
+        """Message field 'command'."""
+        return self._command
+
+    @command.setter
+    def command(self, value):
+        if __debug__:
+            assert \
+                isinstance(value, str), \
+                "The 'command' field must be of type 'str'"
+        self._command = value
 
     @builtins.property
     def objective_point(self):
@@ -134,8 +153,6 @@ class MoveRobot_Request(metaclass=Metaclass_MoveRobot_Request):
 
 # already imported above
 # import builtins
-
-import math  # noqa: E402, I100
 
 # already imported above
 # import rosidl_parser.definition
@@ -186,22 +203,22 @@ class MoveRobot_Response(metaclass=Metaclass_MoveRobot_Response):
     """Message class 'MoveRobot_Response'."""
 
     __slots__ = [
-        '_proximity',
+        '_answer',
     ]
 
     _fields_and_field_types = {
-        'proximity': 'double',
+        'answer': 'string',
     }
 
     SLOT_TYPES = (
-        rosidl_parser.definition.BasicType('double'),  # noqa: E501
+        rosidl_parser.definition.UnboundedString(),  # noqa: E501
     )
 
     def __init__(self, **kwargs):
         assert all('_' + key in self.__slots__ for key in kwargs.keys()), \
             'Invalid arguments passed to constructor: %s' % \
             ', '.join(sorted(k for k in kwargs.keys() if '_' + k not in self.__slots__))
-        self.proximity = kwargs.get('proximity', float())
+        self.answer = kwargs.get('answer', str())
 
     def __repr__(self):
         typename = self.__class__.__module__.split('.')
@@ -232,7 +249,7 @@ class MoveRobot_Response(metaclass=Metaclass_MoveRobot_Response):
     def __eq__(self, other):
         if not isinstance(other, self.__class__):
             return False
-        if self.proximity != other.proximity:
+        if self.answer != other.answer:
             return False
         return True
 
@@ -242,19 +259,17 @@ class MoveRobot_Response(metaclass=Metaclass_MoveRobot_Response):
         return copy(cls._fields_and_field_types)
 
     @builtins.property
-    def proximity(self):
-        """Message field 'proximity'."""
-        return self._proximity
+    def answer(self):
+        """Message field 'answer'."""
+        return self._answer
 
-    @proximity.setter
-    def proximity(self, value):
+    @answer.setter
+    def answer(self, value):
         if __debug__:
             assert \
-                isinstance(value, float), \
-                "The 'proximity' field must be of type 'float'"
-            assert not (value < -1.7976931348623157e+308 or value > 1.7976931348623157e+308) or math.isinf(value), \
-                "The 'proximity' field must be a double in [-1.7976931348623157e+308, 1.7976931348623157e+308]"
-        self._proximity = value
+                isinstance(value, str), \
+                "The 'answer' field must be of type 'str'"
+        self._answer = value
 
 
 class Metaclass_MoveRobot(type):

@@ -40,21 +40,39 @@ struct MoveRobot_Request_
   explicit MoveRobot_Request_(rosidl_runtime_cpp::MessageInitialization _init = rosidl_runtime_cpp::MessageInitialization::ALL)
   : objective_point(_init)
   {
-    (void)_init;
+    if (rosidl_runtime_cpp::MessageInitialization::ALL == _init ||
+      rosidl_runtime_cpp::MessageInitialization::ZERO == _init)
+    {
+      this->command = "";
+    }
   }
 
   explicit MoveRobot_Request_(const ContainerAllocator & _alloc, rosidl_runtime_cpp::MessageInitialization _init = rosidl_runtime_cpp::MessageInitialization::ALL)
-  : objective_point(_alloc, _init)
+  : command(_alloc),
+    objective_point(_alloc, _init)
   {
-    (void)_init;
+    if (rosidl_runtime_cpp::MessageInitialization::ALL == _init ||
+      rosidl_runtime_cpp::MessageInitialization::ZERO == _init)
+    {
+      this->command = "";
+    }
   }
 
   // field types and members
+  using _command_type =
+    std::basic_string<char, std::char_traits<char>, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<char>>;
+  _command_type command;
   using _objective_point_type =
     geometry_msgs::msg::Point_<ContainerAllocator>;
   _objective_point_type objective_point;
 
   // setters for named parameter idiom
+  Type & set__command(
+    const std::basic_string<char, std::char_traits<char>, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<char>> & _arg)
+  {
+    this->command = _arg;
+    return *this;
+  }
   Type & set__objective_point(
     const geometry_msgs::msg::Point_<ContainerAllocator> & _arg)
   {
@@ -104,6 +122,9 @@ struct MoveRobot_Request_
   // comparison operators
   bool operator==(const MoveRobot_Request_ & other) const
   {
+    if (this->command != other.command) {
+      return false;
+    }
     if (this->objective_point != other.objective_point) {
       return false;
     }
@@ -149,30 +170,30 @@ struct MoveRobot_Response_
     if (rosidl_runtime_cpp::MessageInitialization::ALL == _init ||
       rosidl_runtime_cpp::MessageInitialization::ZERO == _init)
     {
-      this->proximity = 0.0;
+      this->answer = "";
     }
   }
 
   explicit MoveRobot_Response_(const ContainerAllocator & _alloc, rosidl_runtime_cpp::MessageInitialization _init = rosidl_runtime_cpp::MessageInitialization::ALL)
+  : answer(_alloc)
   {
-    (void)_alloc;
     if (rosidl_runtime_cpp::MessageInitialization::ALL == _init ||
       rosidl_runtime_cpp::MessageInitialization::ZERO == _init)
     {
-      this->proximity = 0.0;
+      this->answer = "";
     }
   }
 
   // field types and members
-  using _proximity_type =
-    double;
-  _proximity_type proximity;
+  using _answer_type =
+    std::basic_string<char, std::char_traits<char>, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<char>>;
+  _answer_type answer;
 
   // setters for named parameter idiom
-  Type & set__proximity(
-    const double & _arg)
+  Type & set__answer(
+    const std::basic_string<char, std::char_traits<char>, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<char>> & _arg)
   {
-    this->proximity = _arg;
+    this->answer = _arg;
     return *this;
   }
 
@@ -218,7 +239,7 @@ struct MoveRobot_Response_
   // comparison operators
   bool operator==(const MoveRobot_Response_ & other) const
   {
-    if (this->proximity != other.proximity) {
+    if (this->answer != other.answer) {
       return false;
     }
     return true;

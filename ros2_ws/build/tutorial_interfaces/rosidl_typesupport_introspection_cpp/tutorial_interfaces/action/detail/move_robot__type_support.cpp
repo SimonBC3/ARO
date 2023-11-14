@@ -37,7 +37,24 @@ void MoveRobot_Goal_fini_function(void * message_memory)
   typed_message->~MoveRobot_Goal();
 }
 
-static const ::rosidl_typesupport_introspection_cpp::MessageMember MoveRobot_Goal_message_member_array[1] = {
+static const ::rosidl_typesupport_introspection_cpp::MessageMember MoveRobot_Goal_message_member_array[2] = {
+  {
+    "command",  // name
+    ::rosidl_typesupport_introspection_cpp::ROS_TYPE_STRING,  // type
+    0,  // upper bound of string
+    nullptr,  // members of sub message
+    false,  // is array
+    0,  // array size
+    false,  // is upper bound
+    offsetof(tutorial_interfaces::action::MoveRobot_Goal, command),  // bytes offset in struct
+    nullptr,  // default value
+    nullptr,  // size() function pointer
+    nullptr,  // get_const(index) function pointer
+    nullptr,  // get(index) function pointer
+    nullptr,  // fetch(index, &value) function pointer
+    nullptr,  // assign(index, value) function pointer
+    nullptr  // resize(index) function pointer
+  },
   {
     "objective_point",  // name
     ::rosidl_typesupport_introspection_cpp::ROS_TYPE_MESSAGE,  // type
@@ -60,7 +77,7 @@ static const ::rosidl_typesupport_introspection_cpp::MessageMember MoveRobot_Goa
 static const ::rosidl_typesupport_introspection_cpp::MessageMembers MoveRobot_Goal_message_members = {
   "tutorial_interfaces::action",  // message namespace
   "MoveRobot_Goal",  // message name
-  1,  // number of fields
+  2,  // number of fields
   sizeof(tutorial_interfaces::action::MoveRobot_Goal),
   MoveRobot_Goal_message_member_array,  // message members
   MoveRobot_Goal_init_function,  // function to initialize message memory (memory has to be allocated)
@@ -158,14 +175,14 @@ void MoveRobot_Result_fini_function(void * message_memory)
 
 static const ::rosidl_typesupport_introspection_cpp::MessageMember MoveRobot_Result_message_member_array[1] = {
   {
-    "proximity",  // name
-    ::rosidl_typesupport_introspection_cpp::ROS_TYPE_DOUBLE,  // type
+    "answer",  // name
+    ::rosidl_typesupport_introspection_cpp::ROS_TYPE_STRING,  // type
     0,  // upper bound of string
     nullptr,  // members of sub message
     false,  // is array
     0,  // array size
     false,  // is upper bound
-    offsetof(tutorial_interfaces::action::MoveRobot_Result, proximity),  // bytes offset in struct
+    offsetof(tutorial_interfaces::action::MoveRobot_Result, answer),  // bytes offset in struct
     nullptr,  // default value
     nullptr,  // size() function pointer
     nullptr,  // get_const(index) function pointer

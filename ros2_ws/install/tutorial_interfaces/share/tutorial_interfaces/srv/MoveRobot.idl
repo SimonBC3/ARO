@@ -7,10 +7,12 @@
 module tutorial_interfaces {
   module srv {
     struct MoveRobot_Request {
+      string command;
+
       geometry_msgs::msg::Point objective_point;
     };
     struct MoveRobot_Response {
-      double proximity;
+      string answer;
     };
   };
 };

@@ -1,0 +1,101 @@
+[1.106s] Invoking command in '/home/simon/Documents/ARO/ros2_ws/src/mi_paquete_python': PYTHONPATH=/home/simon/Documents/ARO/ros2_ws/build/mi_paquete_python/prefix_override:/home/simon/Documents/ARO/ros2_ws/install/mi_paquete_python/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/mi_paquete_python build --build-base /home/simon/Documents/ARO/ros2_ws/build/mi_paquete_python/build install --record /home/simon/Documents/ARO/ros2_ws/build/mi_paquete_python/install.log --single-version-externally-managed
+[1.340s] running egg_info
+[1.340s] creating ../../build/mi_paquete_python/mi_paquete_python.egg-info
+[1.340s] writing ../../build/mi_paquete_python/mi_paquete_python.egg-info/PKG-INFO
+[1.341s] writing dependency_links to ../../build/mi_paquete_python/mi_paquete_python.egg-info/dependency_links.txt
+[1.341s] writing entry points to ../../build/mi_paquete_python/mi_paquete_python.egg-info/entry_points.txt
+[1.341s] writing requirements to ../../build/mi_paquete_python/mi_paquete_python.egg-info/requires.txt
+[1.341s] writing top-level names to ../../build/mi_paquete_python/mi_paquete_python.egg-info/top_level.txt
+[1.341s] writing manifest file '../../build/mi_paquete_python/mi_paquete_python.egg-info/SOURCES.txt'
+[1.342s] reading manifest file '../../build/mi_paquete_python/mi_paquete_python.egg-info/SOURCES.txt'
+[1.343s] writing manifest file '../../build/mi_paquete_python/mi_paquete_python.egg-info/SOURCES.txt'
+[1.343s] running build
+[1.343s] running build_py
+[1.343s] creating /home/simon/Documents/ARO/ros2_ws/build/mi_paquete_python/build
+[1.343s] creating /home/simon/Documents/ARO/ros2_ws/build/mi_paquete_python/build/lib
+[1.343s] creating /home/simon/Documents/ARO/ros2_ws/build/mi_paquete_python/build/lib/mi_paquete_python
+[1.343s] copying mi_paquete_python/move_leonardo.py -> /home/simon/Documents/ARO/ros2_ws/build/mi_paquete_python/build/lib/mi_paquete_python
+[1.343s] copying mi_paquete_python/__init__.py -> /home/simon/Documents/ARO/ros2_ws/build/mi_paquete_python/build/lib/mi_paquete_python
+[1.343s] copying mi_paquete_python/nav2_test.py -> /home/simon/Documents/ARO/ros2_ws/build/mi_paquete_python/build/lib/mi_paquete_python
+[1.343s] copying mi_paquete_python/robot_news_station.py -> /home/simon/Documents/ARO/ros2_ws/build/mi_paquete_python/build/lib/mi_paquete_python
+[1.343s] copying mi_paquete_python/move_turtle_client.py -> /home/simon/Documents/ARO/ros2_ws/build/mi_paquete_python/build/lib/mi_paquete_python
+[1.344s] copying mi_paquete_python/add_three_ints_server.py -> /home/simon/Documents/ARO/ros2_ws/build/mi_paquete_python/build/lib/mi_paquete_python
+[1.344s] copying mi_paquete_python/smartphone.py -> /home/simon/Documents/ARO/ros2_ws/build/mi_paquete_python/build/lib/mi_paquete_python
+[1.344s] copying mi_paquete_python/move_turtle.py -> /home/simon/Documents/ARO/ros2_ws/build/mi_paquete_python/build/lib/mi_paquete_python
+[1.344s] copying mi_paquete_python/turtle_controller.py -> /home/simon/Documents/ARO/ros2_ws/build/mi_paquete_python/build/lib/mi_paquete_python
+[1.344s] copying mi_paquete_python/position_logger.py -> /home/simon/Documents/ARO/ros2_ws/build/mi_paquete_python/build/lib/mi_paquete_python
+[1.344s] copying mi_paquete_python/add_three_ints_client.py -> /home/simon/Documents/ARO/ros2_ws/build/mi_paquete_python/build/lib/mi_paquete_python
+[1.344s] copying mi_paquete_python/move_raphael.py -> /home/simon/Documents/ARO/ros2_ws/build/mi_paquete_python/build/lib/mi_paquete_python
+[1.344s] copying mi_paquete_python/move_donatello.py -> /home/simon/Documents/ARO/ros2_ws/build/mi_paquete_python/build/lib/mi_paquete_python
+[1.344s] copying mi_paquete_python/move_michelangelo.py -> /home/simon/Documents/ARO/ros2_ws/build/mi_paquete_python/build/lib/mi_paquete_python
+[1.344s] copying mi_paquete_python/circle_action_client.py -> /home/simon/Documents/ARO/ros2_ws/build/mi_paquete_python/build/lib/mi_paquete_python
+[1.344s] copying mi_paquete_python/circle_action_server.py -> /home/simon/Documents/ARO/ros2_ws/build/mi_paquete_python/build/lib/mi_paquete_python
+[1.344s] copying mi_paquete_python/safe_zone_controller.py -> /home/simon/Documents/ARO/ros2_ws/build/mi_paquete_python/build/lib/mi_paquete_python
+[1.344s] copying mi_paquete_python/python_parameters_node.py -> /home/simon/Documents/ARO/ros2_ws/build/mi_paquete_python/build/lib/mi_paquete_python
+[1.345s] running install
+[1.345s] running install_lib
+[1.346s] creating /home/simon/Documents/ARO/ros2_ws/install/mi_paquete_python/lib/python3.10/site-packages/mi_paquete_python
+[1.346s] copying /home/simon/Documents/ARO/ros2_ws/build/mi_paquete_python/build/lib/mi_paquete_python/move_leonardo.py -> /home/simon/Documents/ARO/ros2_ws/install/mi_paquete_python/lib/python3.10/site-packages/mi_paquete_python
+[1.346s] copying /home/simon/Documents/ARO/ros2_ws/build/mi_paquete_python/build/lib/mi_paquete_python/__init__.py -> /home/simon/Documents/ARO/ros2_ws/install/mi_paquete_python/lib/python3.10/site-packages/mi_paquete_python
+[1.346s] copying /home/simon/Documents/ARO/ros2_ws/build/mi_paquete_python/build/lib/mi_paquete_python/nav2_test.py -> /home/simon/Documents/ARO/ros2_ws/install/mi_paquete_python/lib/python3.10/site-packages/mi_paquete_python
+[1.346s] copying /home/simon/Documents/ARO/ros2_ws/build/mi_paquete_python/build/lib/mi_paquete_python/robot_news_station.py -> /home/simon/Documents/ARO/ros2_ws/install/mi_paquete_python/lib/python3.10/site-packages/mi_paquete_python
+[1.346s] copying /home/simon/Documents/ARO/ros2_ws/build/mi_paquete_python/build/lib/mi_paquete_python/move_turtle_client.py -> /home/simon/Documents/ARO/ros2_ws/install/mi_paquete_python/lib/python3.10/site-packages/mi_paquete_python
+[1.346s] copying /home/simon/Documents/ARO/ros2_ws/build/mi_paquete_python/build/lib/mi_paquete_python/add_three_ints_server.py -> /home/simon/Documents/ARO/ros2_ws/install/mi_paquete_python/lib/python3.10/site-packages/mi_paquete_python
+[1.346s] copying /home/simon/Documents/ARO/ros2_ws/build/mi_paquete_python/build/lib/mi_paquete_python/smartphone.py -> /home/simon/Documents/ARO/ros2_ws/install/mi_paquete_python/lib/python3.10/site-packages/mi_paquete_python
+[1.346s] copying /home/simon/Documents/ARO/ros2_ws/build/mi_paquete_python/build/lib/mi_paquete_python/move_turtle.py -> /home/simon/Documents/ARO/ros2_ws/install/mi_paquete_python/lib/python3.10/site-packages/mi_paquete_python
+[1.346s] copying /home/simon/Documents/ARO/ros2_ws/build/mi_paquete_python/build/lib/mi_paquete_python/turtle_controller.py -> /home/simon/Documents/ARO/ros2_ws/install/mi_paquete_python/lib/python3.10/site-packages/mi_paquete_python
+[1.347s] copying /home/simon/Documents/ARO/ros2_ws/build/mi_paquete_python/build/lib/mi_paquete_python/position_logger.py -> /home/simon/Documents/ARO/ros2_ws/install/mi_paquete_python/lib/python3.10/site-packages/mi_paquete_python
+[1.347s] copying /home/simon/Documents/ARO/ros2_ws/build/mi_paquete_python/build/lib/mi_paquete_python/add_three_ints_client.py -> /home/simon/Documents/ARO/ros2_ws/install/mi_paquete_python/lib/python3.10/site-packages/mi_paquete_python
+[1.347s] copying /home/simon/Documents/ARO/ros2_ws/build/mi_paquete_python/build/lib/mi_paquete_python/move_raphael.py -> /home/simon/Documents/ARO/ros2_ws/install/mi_paquete_python/lib/python3.10/site-packages/mi_paquete_python
+[1.347s] copying /home/simon/Documents/ARO/ros2_ws/build/mi_paquete_python/build/lib/mi_paquete_python/move_donatello.py -> /home/simon/Documents/ARO/ros2_ws/install/mi_paquete_python/lib/python3.10/site-packages/mi_paquete_python
+[1.347s] copying /home/simon/Documents/ARO/ros2_ws/build/mi_paquete_python/build/lib/mi_paquete_python/move_michelangelo.py -> /home/simon/Documents/ARO/ros2_ws/install/mi_paquete_python/lib/python3.10/site-packages/mi_paquete_python
+[1.347s] copying /home/simon/Documents/ARO/ros2_ws/build/mi_paquete_python/build/lib/mi_paquete_python/circle_action_client.py -> /home/simon/Documents/ARO/ros2_ws/install/mi_paquete_python/lib/python3.10/site-packages/mi_paquete_python
+[1.347s] copying /home/simon/Documents/ARO/ros2_ws/build/mi_paquete_python/build/lib/mi_paquete_python/circle_action_server.py -> /home/simon/Documents/ARO/ros2_ws/install/mi_paquete_python/lib/python3.10/site-packages/mi_paquete_python
+[1.347s] copying /home/simon/Documents/ARO/ros2_ws/build/mi_paquete_python/build/lib/mi_paquete_python/safe_zone_controller.py -> /home/simon/Documents/ARO/ros2_ws/install/mi_paquete_python/lib/python3.10/site-packages/mi_paquete_python
+[1.347s] copying /home/simon/Documents/ARO/ros2_ws/build/mi_paquete_python/build/lib/mi_paquete_python/python_parameters_node.py -> /home/simon/Documents/ARO/ros2_ws/install/mi_paquete_python/lib/python3.10/site-packages/mi_paquete_python
+[1.348s] byte-compiling /home/simon/Documents/ARO/ros2_ws/install/mi_paquete_python/lib/python3.10/site-packages/mi_paquete_python/move_leonardo.py to move_leonardo.cpython-310.pyc
+[1.348s] byte-compiling /home/simon/Documents/ARO/ros2_ws/install/mi_paquete_python/lib/python3.10/site-packages/mi_paquete_python/__init__.py to __init__.cpython-310.pyc
+[1.348s] byte-compiling /home/simon/Documents/ARO/ros2_ws/install/mi_paquete_python/lib/python3.10/site-packages/mi_paquete_python/nav2_test.py to nav2_test.cpython-310.pyc
+[1.349s] byte-compiling /home/simon/Documents/ARO/ros2_ws/install/mi_paquete_python/lib/python3.10/site-packages/mi_paquete_python/robot_news_station.py to robot_news_station.cpython-310.pyc
+[1.349s] byte-compiling /home/simon/Documents/ARO/ros2_ws/install/mi_paquete_python/lib/python3.10/site-packages/mi_paquete_python/move_turtle_client.py to move_turtle_client.cpython-310.pyc
+[1.349s] byte-compiling /home/simon/Documents/ARO/ros2_ws/install/mi_paquete_python/lib/python3.10/site-packages/mi_paquete_python/add_three_ints_server.py to add_three_ints_server.cpython-310.pyc
+[1.349s] byte-compiling /home/simon/Documents/ARO/ros2_ws/install/mi_paquete_python/lib/python3.10/site-packages/mi_paquete_python/smartphone.py to smartphone.cpython-310.pyc
+[1.350s] byte-compiling /home/simon/Documents/ARO/ros2_ws/install/mi_paquete_python/lib/python3.10/site-packages/mi_paquete_python/move_turtle.py to move_turtle.cpython-310.pyc
+[1.350s] byte-compiling /home/simon/Documents/ARO/ros2_ws/install/mi_paquete_python/lib/python3.10/site-packages/mi_paquete_python/turtle_controller.py to turtle_controller.cpython-310.pyc
+[1.350s] byte-compiling /home/simon/Documents/ARO/ros2_ws/install/mi_paquete_python/lib/python3.10/site-packages/mi_paquete_python/position_logger.py to position_logger.cpython-310.pyc
+[1.351s] byte-compiling /home/simon/Documents/ARO/ros2_ws/install/mi_paquete_python/lib/python3.10/site-packages/mi_paquete_python/add_three_ints_client.py to add_three_ints_client.cpython-310.pyc
+[1.351s] byte-compiling /home/simon/Documents/ARO/ros2_ws/install/mi_paquete_python/lib/python3.10/site-packages/mi_paquete_python/move_raphael.py to move_raphael.cpython-310.pyc
+[1.351s] byte-compiling /home/simon/Documents/ARO/ros2_ws/install/mi_paquete_python/lib/python3.10/site-packages/mi_paquete_python/move_donatello.py to move_donatello.cpython-310.pyc
+[1.352s] byte-compiling /home/simon/Documents/ARO/ros2_ws/install/mi_paquete_python/lib/python3.10/site-packages/mi_paquete_python/move_michelangelo.py to move_michelangelo.cpython-310.pyc
+[1.352s] byte-compiling /home/simon/Documents/ARO/ros2_ws/install/mi_paquete_python/lib/python3.10/site-packages/mi_paquete_python/circle_action_client.py to circle_action_client.cpython-310.pyc
+[1.352s] byte-compiling /home/simon/Documents/ARO/ros2_ws/install/mi_paquete_python/lib/python3.10/site-packages/mi_paquete_python/circle_action_server.py to circle_action_server.cpython-310.pyc
+[1.353s] byte-compiling /home/simon/Documents/ARO/ros2_ws/install/mi_paquete_python/lib/python3.10/site-packages/mi_paquete_python/safe_zone_controller.py to safe_zone_controller.cpython-310.pyc
+[1.353s] byte-compiling /home/simon/Documents/ARO/ros2_ws/install/mi_paquete_python/lib/python3.10/site-packages/mi_paquete_python/python_parameters_node.py to python_parameters_node.cpython-310.pyc
+[1.354s] running install_data
+[1.354s] creating /home/simon/Documents/ARO/ros2_ws/install/mi_paquete_python/share/ament_index
+[1.354s] creating /home/simon/Documents/ARO/ros2_ws/install/mi_paquete_python/share/ament_index/resource_index
+[1.354s] creating /home/simon/Documents/ARO/ros2_ws/install/mi_paquete_python/share/ament_index/resource_index/packages
+[1.354s] copying resource/mi_paquete_python -> /home/simon/Documents/ARO/ros2_ws/install/mi_paquete_python/share/ament_index/resource_index/packages
+[1.354s] copying package.xml -> /home/simon/Documents/ARO/ros2_ws/install/mi_paquete_python/share/mi_paquete_python
+[1.354s] creating /home/simon/Documents/ARO/ros2_ws/install/mi_paquete_python/share, package_name
+[1.355s] running install_egg_info
+[1.356s] Copying ../../build/mi_paquete_python/mi_paquete_python.egg-info to /home/simon/Documents/ARO/ros2_ws/install/mi_paquete_python/lib/python3.10/site-packages/mi_paquete_python-0.0.0-py3.10.egg-info
+[1.357s] running install_scripts
+[1.375s] Installing add_three_ints_client script to /home/simon/Documents/ARO/ros2_ws/install/mi_paquete_python/lib/mi_paquete_python
+[1.375s] Installing add_three_ints_server script to /home/simon/Documents/ARO/ros2_ws/install/mi_paquete_python/lib/mi_paquete_python
+[1.375s] Installing circle_action_client script to /home/simon/Documents/ARO/ros2_ws/install/mi_paquete_python/lib/mi_paquete_python
+[1.376s] Installing circle_action_server script to /home/simon/Documents/ARO/ros2_ws/install/mi_paquete_python/lib/mi_paquete_python
+[1.376s] Installing minimal_param_node script to /home/simon/Documents/ARO/ros2_ws/install/mi_paquete_python/lib/mi_paquete_python
+[1.376s] Installing move_donatello script to /home/simon/Documents/ARO/ros2_ws/install/mi_paquete_python/lib/mi_paquete_python
+[1.376s] Installing move_leonardo script to /home/simon/Documents/ARO/ros2_ws/install/mi_paquete_python/lib/mi_paquete_python
+[1.376s] Installing move_michelangelo script to /home/simon/Documents/ARO/ros2_ws/install/mi_paquete_python/lib/mi_paquete_python
+[1.376s] Installing move_turtle script to /home/simon/Documents/ARO/ros2_ws/install/mi_paquete_python/lib/mi_paquete_python
+[1.377s] Installing move_turtle_client script to /home/simon/Documents/ARO/ros2_ws/install/mi_paquete_python/lib/mi_paquete_python
+[1.377s] Installing nav2_test script to /home/simon/Documents/ARO/ros2_ws/install/mi_paquete_python/lib/mi_paquete_python
+[1.377s] Installing position_logger script to /home/simon/Documents/ARO/ros2_ws/install/mi_paquete_python/lib/mi_paquete_python
+[1.377s] Installing robot_news_station script to /home/simon/Documents/ARO/ros2_ws/install/mi_paquete_python/lib/mi_paquete_python
+[1.377s] Installing safe_zone_controller script to /home/simon/Documents/ARO/ros2_ws/install/mi_paquete_python/lib/mi_paquete_python
+[1.377s] Installing smartphone script to /home/simon/Documents/ARO/ros2_ws/install/mi_paquete_python/lib/mi_paquete_python
+[1.377s] Installing turtle_controller script to /home/simon/Documents/ARO/ros2_ws/install/mi_paquete_python/lib/mi_paquete_python
+[1.377s] writing list of installed files to '/home/simon/Documents/ARO/ros2_ws/build/mi_paquete_python/install.log'
+[1.407s] Invoked command in '/home/simon/Documents/ARO/ros2_ws/src/mi_paquete_python' returned '0': PYTHONPATH=/home/simon/Documents/ARO/ros2_ws/build/mi_paquete_python/prefix_override:/home/simon/Documents/ARO/ros2_ws/install/mi_paquete_python/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/mi_paquete_python build --build-base /home/simon/Documents/ARO/ros2_ws/build/mi_paquete_python/build install --record /home/simon/Documents/ARO/ros2_ws/build/mi_paquete_python/install.log --single-version-externally-managed

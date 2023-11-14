@@ -208,6 +208,9 @@ CMakeFiles/tutorial_interfaces__rosidl_generator_py.dir/rosidl_generator_py/tuto
  /usr/include/python3.10/numpy/__multiarray_api.h \
  /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/visibility_control.h \
  /home/simon/Documents/ARO/ros2_ws/build/tutorial_interfaces/rosidl_generator_c/tutorial_interfaces/srv/detail/move_robot__struct.h \
+ /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/string.h \
+ /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/primitives_sequence.h \
  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/point__struct.h \
  /home/simon/Documents/ARO/ros2_ws/build/tutorial_interfaces/rosidl_generator_c/tutorial_interfaces/srv/detail/move_robot__functions.h \
- /home/simon/Documents/ARO/ros2_ws/build/tutorial_interfaces/rosidl_generator_c/tutorial_interfaces/msg/rosidl_generator_c__visibility_control.h
+ /home/simon/Documents/ARO/ros2_ws/build/tutorial_interfaces/rosidl_generator_c/tutorial_interfaces/msg/rosidl_generator_c__visibility_control.h \
+ /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/string_functions.h

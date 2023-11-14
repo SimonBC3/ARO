@@ -12,6 +12,8 @@
 
 
 // Include directives for member types
+// Member `command`
+#include "rosidl_runtime_c/string_functions.h"
 // Member `objective_point`
 #include "geometry_msgs/msg/detail/point__functions.h"
 
@@ -19,6 +21,11 @@ bool
 tutorial_interfaces__action__MoveRobot_Goal__init(tutorial_interfaces__action__MoveRobot_Goal * msg)
 {
   if (!msg) {
+    return false;
+  }
+  // command
+  if (!rosidl_runtime_c__String__init(&msg->command)) {
+    tutorial_interfaces__action__MoveRobot_Goal__fini(msg);
     return false;
   }
   // objective_point
@@ -35,6 +42,8 @@ tutorial_interfaces__action__MoveRobot_Goal__fini(tutorial_interfaces__action__M
   if (!msg) {
     return;
   }
+  // command
+  rosidl_runtime_c__String__fini(&msg->command);
   // objective_point
   geometry_msgs__msg__Point__fini(&msg->objective_point);
 }
@@ -43,6 +52,12 @@ bool
 tutorial_interfaces__action__MoveRobot_Goal__are_equal(const tutorial_interfaces__action__MoveRobot_Goal * lhs, const tutorial_interfaces__action__MoveRobot_Goal * rhs)
 {
   if (!lhs || !rhs) {
+    return false;
+  }
+  // command
+  if (!rosidl_runtime_c__String__are_equal(
+      &(lhs->command), &(rhs->command)))
+  {
     return false;
   }
   // objective_point
@@ -60,6 +75,12 @@ tutorial_interfaces__action__MoveRobot_Goal__copy(
   tutorial_interfaces__action__MoveRobot_Goal * output)
 {
   if (!input || !output) {
+    return false;
+  }
+  // command
+  if (!rosidl_runtime_c__String__copy(
+      &(input->command), &(output->command)))
+  {
     return false;
   }
   // objective_point
@@ -251,13 +272,22 @@ tutorial_interfaces__action__MoveRobot_Goal__Sequence__copy(
 }
 
 
+// Include directives for member types
+// Member `answer`
+// already included above
+// #include "rosidl_runtime_c/string_functions.h"
+
 bool
 tutorial_interfaces__action__MoveRobot_Result__init(tutorial_interfaces__action__MoveRobot_Result * msg)
 {
   if (!msg) {
     return false;
   }
-  // proximity
+  // answer
+  if (!rosidl_runtime_c__String__init(&msg->answer)) {
+    tutorial_interfaces__action__MoveRobot_Result__fini(msg);
+    return false;
+  }
   return true;
 }
 
@@ -267,7 +297,8 @@ tutorial_interfaces__action__MoveRobot_Result__fini(tutorial_interfaces__action_
   if (!msg) {
     return;
   }
-  // proximity
+  // answer
+  rosidl_runtime_c__String__fini(&msg->answer);
 }
 
 bool
@@ -276,8 +307,10 @@ tutorial_interfaces__action__MoveRobot_Result__are_equal(const tutorial_interfac
   if (!lhs || !rhs) {
     return false;
   }
-  // proximity
-  if (lhs->proximity != rhs->proximity) {
+  // answer
+  if (!rosidl_runtime_c__String__are_equal(
+      &(lhs->answer), &(rhs->answer)))
+  {
     return false;
   }
   return true;
@@ -291,8 +324,12 @@ tutorial_interfaces__action__MoveRobot_Result__copy(
   if (!input || !output) {
     return false;
   }
-  // proximity
-  output->proximity = input->proximity;
+  // answer
+  if (!rosidl_runtime_c__String__copy(
+      &(input->answer), &(output->answer)))
+  {
+    return false;
+  }
   return true;
 }
 

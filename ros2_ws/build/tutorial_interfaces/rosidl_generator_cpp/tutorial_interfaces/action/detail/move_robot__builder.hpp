@@ -24,13 +24,29 @@ namespace builder
 class Init_MoveRobot_Goal_objective_point
 {
 public:
-  Init_MoveRobot_Goal_objective_point()
-  : msg_(::rosidl_runtime_cpp::MessageInitialization::SKIP)
+  explicit Init_MoveRobot_Goal_objective_point(::tutorial_interfaces::action::MoveRobot_Goal & msg)
+  : msg_(msg)
   {}
   ::tutorial_interfaces::action::MoveRobot_Goal objective_point(::tutorial_interfaces::action::MoveRobot_Goal::_objective_point_type arg)
   {
     msg_.objective_point = std::move(arg);
     return std::move(msg_);
+  }
+
+private:
+  ::tutorial_interfaces::action::MoveRobot_Goal msg_;
+};
+
+class Init_MoveRobot_Goal_command
+{
+public:
+  Init_MoveRobot_Goal_command()
+  : msg_(::rosidl_runtime_cpp::MessageInitialization::SKIP)
+  {}
+  Init_MoveRobot_Goal_objective_point command(::tutorial_interfaces::action::MoveRobot_Goal::_command_type arg)
+  {
+    msg_.command = std::move(arg);
+    return Init_MoveRobot_Goal_objective_point(msg_);
   }
 
 private:
@@ -48,7 +64,7 @@ template<>
 inline
 auto build<::tutorial_interfaces::action::MoveRobot_Goal>()
 {
-  return tutorial_interfaces::action::builder::Init_MoveRobot_Goal_objective_point();
+  return tutorial_interfaces::action::builder::Init_MoveRobot_Goal_command();
 }
 
 }  // namespace tutorial_interfaces
@@ -63,15 +79,15 @@ namespace action
 namespace builder
 {
 
-class Init_MoveRobot_Result_proximity
+class Init_MoveRobot_Result_answer
 {
 public:
-  Init_MoveRobot_Result_proximity()
+  Init_MoveRobot_Result_answer()
   : msg_(::rosidl_runtime_cpp::MessageInitialization::SKIP)
   {}
-  ::tutorial_interfaces::action::MoveRobot_Result proximity(::tutorial_interfaces::action::MoveRobot_Result::_proximity_type arg)
+  ::tutorial_interfaces::action::MoveRobot_Result answer(::tutorial_interfaces::action::MoveRobot_Result::_answer_type arg)
   {
-    msg_.proximity = std::move(arg);
+    msg_.answer = std::move(arg);
     return std::move(msg_);
   }
 
@@ -90,7 +106,7 @@ template<>
 inline
 auto build<::tutorial_interfaces::action::MoveRobot_Result>()
 {
-  return tutorial_interfaces::action::builder::Init_MoveRobot_Result_proximity();
+  return tutorial_interfaces::action::builder::Init_MoveRobot_Result_answer();
 }
 
 }  // namespace tutorial_interfaces

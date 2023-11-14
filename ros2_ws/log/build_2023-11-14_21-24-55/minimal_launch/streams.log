@@ -1,0 +1,37 @@
+[4.522s] Invoking command in '/home/simon/Documents/ARO/ros2_ws/src/ROS2_examples/rclpy/launch/minimal_launch': PYTHONPATH=/home/simon/Documents/ARO/ros2_ws/build/minimal_launch/prefix_override:/home/simon/Documents/ARO/ros2_ws/install/minimal_launch/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../../../../build/minimal_launch build --build-base /home/simon/Documents/ARO/ros2_ws/build/minimal_launch/build install --record /home/simon/Documents/ARO/ros2_ws/build/minimal_launch/install.log --single-version-externally-managed
+[4.983s] running egg_info
+[4.984s] creating ../../../../../build/minimal_launch/minimal_launch.egg-info
+[4.984s] writing ../../../../../build/minimal_launch/minimal_launch.egg-info/PKG-INFO
+[4.984s] writing dependency_links to ../../../../../build/minimal_launch/minimal_launch.egg-info/dependency_links.txt
+[4.985s] writing entry points to ../../../../../build/minimal_launch/minimal_launch.egg-info/entry_points.txt
+[4.985s] writing requirements to ../../../../../build/minimal_launch/minimal_launch.egg-info/requires.txt
+[4.985s] writing top-level names to ../../../../../build/minimal_launch/minimal_launch.egg-info/top_level.txt
+[4.985s] writing manifest file '../../../../../build/minimal_launch/minimal_launch.egg-info/SOURCES.txt'
+[4.988s] reading manifest file '../../../../../build/minimal_launch/minimal_launch.egg-info/SOURCES.txt'
+[4.989s] writing manifest file '../../../../../build/minimal_launch/minimal_launch.egg-info/SOURCES.txt'
+[4.989s] running build
+[4.990s] running build_py
+[4.990s] creating /home/simon/Documents/ARO/ros2_ws/build/minimal_launch/build
+[4.990s] creating /home/simon/Documents/ARO/ros2_ws/build/minimal_launch/build/lib
+[4.990s] creating /home/simon/Documents/ARO/ros2_ws/build/minimal_launch/build/lib/minimal_launch
+[4.990s] copying minimal_launch/__init__.py -> /home/simon/Documents/ARO/ros2_ws/build/minimal_launch/build/lib/minimal_launch
+[4.990s] running install
+[4.991s] running install_lib
+[4.992s] creating /home/simon/Documents/ARO/ros2_ws/install/minimal_launch/lib/python3.10/site-packages/minimal_launch
+[4.992s] copying /home/simon/Documents/ARO/ros2_ws/build/minimal_launch/build/lib/minimal_launch/__init__.py -> /home/simon/Documents/ARO/ros2_ws/install/minimal_launch/lib/python3.10/site-packages/minimal_launch
+[4.994s] byte-compiling /home/simon/Documents/ARO/ros2_ws/install/minimal_launch/lib/python3.10/site-packages/minimal_launch/__init__.py to __init__.cpython-310.pyc
+[4.994s] running install_data
+[4.996s] creating /home/simon/Documents/ARO/ros2_ws/install/minimal_launch/share/ament_index
+[4.997s] creating /home/simon/Documents/ARO/ros2_ws/install/minimal_launch/share/ament_index/resource_index
+[4.997s] creating /home/simon/Documents/ARO/ros2_ws/install/minimal_launch/share/ament_index/resource_index/packages
+[4.998s] copying resource/minimal_launch -> /home/simon/Documents/ARO/ros2_ws/install/minimal_launch/share/ament_index/resource_index/packages
+[4.998s] copying package.xml -> /home/simon/Documents/ARO/ros2_ws/install/minimal_launch/share/minimal_launch
+[4.998s] creating /home/simon/Documents/ARO/ros2_ws/install/minimal_launch/share/minimal_launch/launch
+[4.998s] copying launch/example_Python.launch.py -> /home/simon/Documents/ARO/ros2_ws/install/minimal_launch/share/minimal_launch/launch
+[4.999s] copying launch/example_XML.launch.xml -> /home/simon/Documents/ARO/ros2_ws/install/minimal_launch/share/minimal_launch/launch
+[4.999s] copying launch/example_YAML.launch.yaml -> /home/simon/Documents/ARO/ros2_ws/install/minimal_launch/share/minimal_launch/launch
+[4.999s] running install_egg_info
+[4.999s] Copying ../../../../../build/minimal_launch/minimal_launch.egg-info to /home/simon/Documents/ARO/ros2_ws/install/minimal_launch/lib/python3.10/site-packages/minimal_launch-0.0.0-py3.10.egg-info
+[5.001s] running install_scripts
+[5.033s] writing list of installed files to '/home/simon/Documents/ARO/ros2_ws/build/minimal_launch/install.log'
+[5.299s] Invoked command in '/home/simon/Documents/ARO/ros2_ws/src/ROS2_examples/rclpy/launch/minimal_launch' returned '0': PYTHONPATH=/home/simon/Documents/ARO/ros2_ws/build/minimal_launch/prefix_override:/home/simon/Documents/ARO/ros2_ws/install/minimal_launch/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../../../../build/minimal_launch build --build-base /home/simon/Documents/ARO/ros2_ws/build/minimal_launch/build install --record /home/simon/Documents/ARO/ros2_ws/build/minimal_launch/install.log --single-version-externally-managed

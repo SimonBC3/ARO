@@ -24,13 +24,29 @@ namespace builder
 class Init_MoveRobot_Request_objective_point
 {
 public:
-  Init_MoveRobot_Request_objective_point()
-  : msg_(::rosidl_runtime_cpp::MessageInitialization::SKIP)
+  explicit Init_MoveRobot_Request_objective_point(::tutorial_interfaces::srv::MoveRobot_Request & msg)
+  : msg_(msg)
   {}
   ::tutorial_interfaces::srv::MoveRobot_Request objective_point(::tutorial_interfaces::srv::MoveRobot_Request::_objective_point_type arg)
   {
     msg_.objective_point = std::move(arg);
     return std::move(msg_);
+  }
+
+private:
+  ::tutorial_interfaces::srv::MoveRobot_Request msg_;
+};
+
+class Init_MoveRobot_Request_command
+{
+public:
+  Init_MoveRobot_Request_command()
+  : msg_(::rosidl_runtime_cpp::MessageInitialization::SKIP)
+  {}
+  Init_MoveRobot_Request_objective_point command(::tutorial_interfaces::srv::MoveRobot_Request::_command_type arg)
+  {
+    msg_.command = std::move(arg);
+    return Init_MoveRobot_Request_objective_point(msg_);
   }
 
 private:
@@ -48,7 +64,7 @@ template<>
 inline
 auto build<::tutorial_interfaces::srv::MoveRobot_Request>()
 {
-  return tutorial_interfaces::srv::builder::Init_MoveRobot_Request_objective_point();
+  return tutorial_interfaces::srv::builder::Init_MoveRobot_Request_command();
 }
 
 }  // namespace tutorial_interfaces
@@ -63,15 +79,15 @@ namespace srv
 namespace builder
 {
 
-class Init_MoveRobot_Response_proximity
+class Init_MoveRobot_Response_answer
 {
 public:
-  Init_MoveRobot_Response_proximity()
+  Init_MoveRobot_Response_answer()
   : msg_(::rosidl_runtime_cpp::MessageInitialization::SKIP)
   {}
-  ::tutorial_interfaces::srv::MoveRobot_Response proximity(::tutorial_interfaces::srv::MoveRobot_Response::_proximity_type arg)
+  ::tutorial_interfaces::srv::MoveRobot_Response answer(::tutorial_interfaces::srv::MoveRobot_Response::_answer_type arg)
   {
-    msg_.proximity = std::move(arg);
+    msg_.answer = std::move(arg);
     return std::move(msg_);
   }
 
@@ -90,7 +106,7 @@ template<>
 inline
 auto build<::tutorial_interfaces::srv::MoveRobot_Response>()
 {
-  return tutorial_interfaces::srv::builder::Init_MoveRobot_Response_proximity();
+  return tutorial_interfaces::srv::builder::Init_MoveRobot_Response_answer();
 }
 
 }  // namespace tutorial_interfaces

@@ -13,6 +13,8 @@
 
 
 // Include directives for member types
+// Member `command`
+#include "rosidl_runtime_c/string_functions.h"
 // Member `objective_point`
 #include "geometry_msgs/msg/point.h"
 // Member `objective_point`
@@ -37,7 +39,24 @@ void tutorial_interfaces__srv__MoveRobot_Request__rosidl_typesupport_introspecti
   tutorial_interfaces__srv__MoveRobot_Request__fini(message_memory);
 }
 
-static rosidl_typesupport_introspection_c__MessageMember tutorial_interfaces__srv__MoveRobot_Request__rosidl_typesupport_introspection_c__MoveRobot_Request_message_member_array[1] = {
+static rosidl_typesupport_introspection_c__MessageMember tutorial_interfaces__srv__MoveRobot_Request__rosidl_typesupport_introspection_c__MoveRobot_Request_message_member_array[2] = {
+  {
+    "command",  // name
+    rosidl_typesupport_introspection_c__ROS_TYPE_STRING,  // type
+    0,  // upper bound of string
+    NULL,  // members of sub message
+    false,  // is array
+    0,  // array size
+    false,  // is upper bound
+    offsetof(tutorial_interfaces__srv__MoveRobot_Request, command),  // bytes offset in struct
+    NULL,  // default value
+    NULL,  // size() function pointer
+    NULL,  // get_const(index) function pointer
+    NULL,  // get(index) function pointer
+    NULL,  // fetch(index, &value) function pointer
+    NULL,  // assign(index, value) function pointer
+    NULL  // resize(index) function pointer
+  },
   {
     "objective_point",  // name
     rosidl_typesupport_introspection_c__ROS_TYPE_MESSAGE,  // type
@@ -60,7 +79,7 @@ static rosidl_typesupport_introspection_c__MessageMember tutorial_interfaces__sr
 static const rosidl_typesupport_introspection_c__MessageMembers tutorial_interfaces__srv__MoveRobot_Request__rosidl_typesupport_introspection_c__MoveRobot_Request_message_members = {
   "tutorial_interfaces__srv",  // message namespace
   "MoveRobot_Request",  // message name
-  1,  // number of fields
+  2,  // number of fields
   sizeof(tutorial_interfaces__srv__MoveRobot_Request),
   tutorial_interfaces__srv__MoveRobot_Request__rosidl_typesupport_introspection_c__MoveRobot_Request_message_member_array,  // message members
   tutorial_interfaces__srv__MoveRobot_Request__rosidl_typesupport_introspection_c__MoveRobot_Request_init_function,  // function to initialize message memory (memory has to be allocated)
@@ -78,7 +97,7 @@ static rosidl_message_type_support_t tutorial_interfaces__srv__MoveRobot_Request
 ROSIDL_TYPESUPPORT_INTROSPECTION_C_EXPORT_tutorial_interfaces
 const rosidl_message_type_support_t *
 ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(rosidl_typesupport_introspection_c, tutorial_interfaces, srv, MoveRobot_Request)() {
-  tutorial_interfaces__srv__MoveRobot_Request__rosidl_typesupport_introspection_c__MoveRobot_Request_message_member_array[0].members_ =
+  tutorial_interfaces__srv__MoveRobot_Request__rosidl_typesupport_introspection_c__MoveRobot_Request_message_member_array[1].members_ =
     ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(rosidl_typesupport_introspection_c, geometry_msgs, msg, Point)();
   if (!tutorial_interfaces__srv__MoveRobot_Request__rosidl_typesupport_introspection_c__MoveRobot_Request_message_type_support_handle.typesupport_identifier) {
     tutorial_interfaces__srv__MoveRobot_Request__rosidl_typesupport_introspection_c__MoveRobot_Request_message_type_support_handle.typesupport_identifier =
@@ -108,6 +127,11 @@ ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(rosidl_typesupport_introspecti
 // #include "tutorial_interfaces/srv/detail/move_robot__struct.h"
 
 
+// Include directives for member types
+// Member `answer`
+// already included above
+// #include "rosidl_runtime_c/string_functions.h"
+
 #ifdef __cplusplus
 extern "C"
 {
@@ -129,14 +153,14 @@ void tutorial_interfaces__srv__MoveRobot_Response__rosidl_typesupport_introspect
 
 static rosidl_typesupport_introspection_c__MessageMember tutorial_interfaces__srv__MoveRobot_Response__rosidl_typesupport_introspection_c__MoveRobot_Response_message_member_array[1] = {
   {
-    "proximity",  // name
-    rosidl_typesupport_introspection_c__ROS_TYPE_DOUBLE,  // type
+    "answer",  // name
+    rosidl_typesupport_introspection_c__ROS_TYPE_STRING,  // type
     0,  // upper bound of string
     NULL,  // members of sub message
     false,  // is array
     0,  // array size
     false,  // is upper bound
-    offsetof(tutorial_interfaces__srv__MoveRobot_Response, proximity),  // bytes offset in struct
+    offsetof(tutorial_interfaces__srv__MoveRobot_Response, answer),  // bytes offset in struct
     NULL,  // default value
     NULL,  // size() function pointer
     NULL,  // get_const(index) function pointer

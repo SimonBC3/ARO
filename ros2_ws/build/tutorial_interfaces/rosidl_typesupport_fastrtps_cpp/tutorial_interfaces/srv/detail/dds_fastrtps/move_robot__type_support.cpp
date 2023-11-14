@@ -56,6 +56,8 @@ cdr_serialize(
   const tutorial_interfaces::srv::MoveRobot_Request & ros_message,
   eprosima::fastcdr::Cdr & cdr)
 {
+  // Member: command
+  cdr << ros_message.command;
   // Member: objective_point
   geometry_msgs::msg::typesupport_fastrtps_cpp::cdr_serialize(
     ros_message.objective_point,
@@ -69,6 +71,9 @@ cdr_deserialize(
   eprosima::fastcdr::Cdr & cdr,
   tutorial_interfaces::srv::MoveRobot_Request & ros_message)
 {
+  // Member: command
+  cdr >> ros_message.command;
+
   // Member: objective_point
   geometry_msgs::msg::typesupport_fastrtps_cpp::cdr_deserialize(
     cdr, ros_message.objective_point);
@@ -89,6 +94,10 @@ get_serialized_size(
   (void)padding;
   (void)wchar_size;
 
+  // Member: command
+  current_alignment += padding +
+    eprosima::fastcdr::Cdr::alignment(current_alignment, padding) +
+    (ros_message.command.size() + 1);
   // Member: objective_point
 
   current_alignment +=
@@ -115,6 +124,19 @@ max_serialized_size_MoveRobot_Request(
   full_bounded = true;
   is_plain = true;
 
+
+  // Member: command
+  {
+    size_t array_size = 1;
+
+    full_bounded = false;
+    is_plain = false;
+    for (size_t index = 0; index < array_size; ++index) {
+      current_alignment += padding +
+        eprosima::fastcdr::Cdr::alignment(current_alignment, padding) +
+        1;
+    }
+  }
 
   // Member: objective_point
   {
@@ -263,8 +285,8 @@ cdr_serialize(
   const tutorial_interfaces::srv::MoveRobot_Response & ros_message,
   eprosima::fastcdr::Cdr & cdr)
 {
-  // Member: proximity
-  cdr << ros_message.proximity;
+  // Member: answer
+  cdr << ros_message.answer;
   return true;
 }
 
@@ -274,8 +296,8 @@ cdr_deserialize(
   eprosima::fastcdr::Cdr & cdr,
   tutorial_interfaces::srv::MoveRobot_Response & ros_message)
 {
-  // Member: proximity
-  cdr >> ros_message.proximity;
+  // Member: answer
+  cdr >> ros_message.answer;
 
   return true;
 }
@@ -293,12 +315,10 @@ get_serialized_size(
   (void)padding;
   (void)wchar_size;
 
-  // Member: proximity
-  {
-    size_t item_size = sizeof(ros_message.proximity);
-    current_alignment += item_size +
-      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
-  }
+  // Member: answer
+  current_alignment += padding +
+    eprosima::fastcdr::Cdr::alignment(current_alignment, padding) +
+    (ros_message.answer.size() + 1);
 
   return current_alignment - initial_alignment;
 }
@@ -321,12 +341,17 @@ max_serialized_size_MoveRobot_Response(
   is_plain = true;
 
 
-  // Member: proximity
+  // Member: answer
   {
     size_t array_size = 1;
 
-    current_alignment += array_size * sizeof(uint64_t) +
-      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint64_t));
+    full_bounded = false;
+    is_plain = false;
+    for (size_t index = 0; index < array_size; ++index) {
+      current_alignment += padding +
+        eprosima::fastcdr::Cdr::alignment(current_alignment, padding) +
+        1;
+    }
   }
 
   return current_alignment - initial_alignment;

@@ -18,12 +18,15 @@ extern "C"
 // Constants defined in the message
 
 // Include directives for member types
+// Member 'command'
+#include "rosidl_runtime_c/string.h"
 // Member 'objective_point'
 #include "geometry_msgs/msg/detail/point__struct.h"
 
 /// Struct defined in action/MoveRobot in the package tutorial_interfaces.
 typedef struct tutorial_interfaces__action__MoveRobot_Goal
 {
+  rosidl_runtime_c__String command;
   geometry_msgs__msg__Point objective_point;
 } tutorial_interfaces__action__MoveRobot_Goal;
 
@@ -40,10 +43,15 @@ typedef struct tutorial_interfaces__action__MoveRobot_Goal__Sequence
 
 // Constants defined in the message
 
+// Include directives for member types
+// Member 'answer'
+// already included above
+// #include "rosidl_runtime_c/string.h"
+
 /// Struct defined in action/MoveRobot in the package tutorial_interfaces.
 typedef struct tutorial_interfaces__action__MoveRobot_Result
 {
-  double proximity;
+  rosidl_runtime_c__String answer;
 } tutorial_interfaces__action__MoveRobot_Result;
 
 // Struct for a sequence of tutorial_interfaces__action__MoveRobot_Result.

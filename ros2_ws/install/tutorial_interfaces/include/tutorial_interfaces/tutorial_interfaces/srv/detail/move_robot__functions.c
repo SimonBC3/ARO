@@ -11,6 +11,8 @@
 #include "rcutils/allocator.h"
 
 // Include directives for member types
+// Member `command`
+#include "rosidl_runtime_c/string_functions.h"
 // Member `objective_point`
 #include "geometry_msgs/msg/detail/point__functions.h"
 
@@ -18,6 +20,11 @@ bool
 tutorial_interfaces__srv__MoveRobot_Request__init(tutorial_interfaces__srv__MoveRobot_Request * msg)
 {
   if (!msg) {
+    return false;
+  }
+  // command
+  if (!rosidl_runtime_c__String__init(&msg->command)) {
+    tutorial_interfaces__srv__MoveRobot_Request__fini(msg);
     return false;
   }
   // objective_point
@@ -34,6 +41,8 @@ tutorial_interfaces__srv__MoveRobot_Request__fini(tutorial_interfaces__srv__Move
   if (!msg) {
     return;
   }
+  // command
+  rosidl_runtime_c__String__fini(&msg->command);
   // objective_point
   geometry_msgs__msg__Point__fini(&msg->objective_point);
 }
@@ -42,6 +51,12 @@ bool
 tutorial_interfaces__srv__MoveRobot_Request__are_equal(const tutorial_interfaces__srv__MoveRobot_Request * lhs, const tutorial_interfaces__srv__MoveRobot_Request * rhs)
 {
   if (!lhs || !rhs) {
+    return false;
+  }
+  // command
+  if (!rosidl_runtime_c__String__are_equal(
+      &(lhs->command), &(rhs->command)))
+  {
     return false;
   }
   // objective_point
@@ -59,6 +74,12 @@ tutorial_interfaces__srv__MoveRobot_Request__copy(
   tutorial_interfaces__srv__MoveRobot_Request * output)
 {
   if (!input || !output) {
+    return false;
+  }
+  // command
+  if (!rosidl_runtime_c__String__copy(
+      &(input->command), &(output->command)))
+  {
     return false;
   }
   // objective_point
@@ -250,13 +271,22 @@ tutorial_interfaces__srv__MoveRobot_Request__Sequence__copy(
 }
 
 
+// Include directives for member types
+// Member `answer`
+// already included above
+// #include "rosidl_runtime_c/string_functions.h"
+
 bool
 tutorial_interfaces__srv__MoveRobot_Response__init(tutorial_interfaces__srv__MoveRobot_Response * msg)
 {
   if (!msg) {
     return false;
   }
-  // proximity
+  // answer
+  if (!rosidl_runtime_c__String__init(&msg->answer)) {
+    tutorial_interfaces__srv__MoveRobot_Response__fini(msg);
+    return false;
+  }
   return true;
 }
 
@@ -266,7 +296,8 @@ tutorial_interfaces__srv__MoveRobot_Response__fini(tutorial_interfaces__srv__Mov
   if (!msg) {
     return;
   }
-  // proximity
+  // answer
+  rosidl_runtime_c__String__fini(&msg->answer);
 }
 
 bool
@@ -275,8 +306,10 @@ tutorial_interfaces__srv__MoveRobot_Response__are_equal(const tutorial_interface
   if (!lhs || !rhs) {
     return false;
   }
-  // proximity
-  if (lhs->proximity != rhs->proximity) {
+  // answer
+  if (!rosidl_runtime_c__String__are_equal(
+      &(lhs->answer), &(rhs->answer)))
+  {
     return false;
   }
   return true;
@@ -290,8 +323,12 @@ tutorial_interfaces__srv__MoveRobot_Response__copy(
   if (!input || !output) {
     return false;
   }
-  // proximity
-  output->proximity = input->proximity;
+  // answer
+  if (!rosidl_runtime_c__String__copy(
+      &(input->answer), &(output->answer)))
+  {
+    return false;
+  }
   return true;
 }
 
