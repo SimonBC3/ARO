@@ -11,7 +11,11 @@ setup.py
 project/__init__.py
 project/service_server.py
 project/test_client.py
+project.egg-info/PKG-INFO
+project.egg-info/SOURCES.txt
+project.egg-info/dependency_links.txt
+project.egg-info/entry_points.txt
+project.egg-info/requires.txt
+project.egg-info/top_level.txt
+project.egg-info/zip-safe
 resource/project
-test/test_copyright.py
-test/test_flake8.py
-test/test_pep257.py
