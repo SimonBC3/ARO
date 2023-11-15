@@ -1,13 +1,18 @@
 from tutorial_interfaces.srv import MoveRobot
 
 import rclpy
+import tf_transformations
+import time
+
 from rclpy.node import Node
 from geometry_msgs.msg import Twist, Point
 from turtlesim.msg import Pose
 from nav2_simple_commander.robot_navigator import BasicNavigator
-from geometry_msgs.msg import PoseStamped
+from geometry_msgs.msg import PoseStamped, Vector3
+from std_msgs.msg import Bool
+from action_msgs.msg import GoalStatus
+from nav2_msgs.action import NavigateToPose
 
-import tf_transformations
 
 
 class ServiceServer(Node):
@@ -22,9 +27,23 @@ class ServiceServer(Node):
         self.nav.setInitialPose(initial_pose)
         self.nav.waitUntilNav2Active()
 
+        self.publisher = self.create_publisher(Bool, '/busquedaTesoro', 10)
+        
+        self.treasure_hunt = Bool()
+        self.treasure_hunt.data = True
+        self.publisher.publish(self.treasure_hunt)
+
+        self.treasure_mode = False
+        self.subscriber = self.create_subscription(Vector3, '/distanciaTesoro', self.treasure_callback, 10)
+        
+
     def service_callback(self, request, response):
         self.get_logger().info(f"Incoming request: {request}")
         response.answer = 'No eligible command'
+
+        if self.treasure_mode:
+            response.answer = 'Service not available, currently looking for treasure. Disconnect treasure_node and try again'
+            return response
 
         if request.command == 'patrol':
             response.answer = self.patrol()
@@ -77,6 +96,43 @@ class ServiceServer(Node):
         goal_pose.pose.orientation.z = q_z
         goal_pose.pose.orientation.w = q_w
         return goal_pose
+
+    def treasure_callback(self, treasure_pos):
+        self.treasure_mode = True
+        
+        goal_treasure_pose = self.create_pose_stamped(self.nav, treasure_pos.x, treasure_pos.y, 0.0)
+        self.nav.goToPose(goal_treasure_pose) # service navigate_to_pose
+
+        time_left = 3
+        while treasure_pos.z >= 0.5 and time_left > 0:
+            time_left -= 1
+            self.get_logger().info(f"\nSearching for the treasure: {treasure_pos.z}")
+            
+            self.get_logger().info(f"\nTime left {time_left}")
+            if time_left == 0:
+                self.get_logger().info(f"\nTime's up treasure not found {treasure_pos.z}")
+                print("\n\n\nDESTROY NODE \n\n\n")
+                self.nav.destroyNode()
+            
+            time.sleep(1)
+
+        if time_left > 0:
+            self.treasure_hunt.data = False
+            self.publisher.publish(self.treasure_hunt)
+        
+        self.nav = BasicNavigator()
+        self.nav.waitUntilNav2Active()
+
+
+
+        return
+    
+    def cancelGoToPose(self):
+        while not self.nav_to_pose_client.wait_for_server(timeout_sec=1.0):
+            self.info("'NavigateToPose' action server not available, waiting...")
+
+        goal_msg = NavigateToPose.Result()
+        return True
 
 
 def main(args=None):
