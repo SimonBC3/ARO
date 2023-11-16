@@ -11,12 +11,15 @@ class TestClient(Node):
         self.request = MoveRobot.Request()
 
         selection = ''
-        while selection != '0' or selection != '1':
-            selection = str(input("\n\r0 to patrol \n\r 1 to go to exit\n\r"))
+        while selection not in ['0','1','2']:
+            selection = input("\n\r0 to patrol \n\r 1 to go to exit\n\r 2 start treasure hunt\n\r")
+            print(type(selection))
             if selection == '0':
                 self.request.command = 'patrol'
             elif selection == '1':
                 self.request.command = 'goToExit'
+            elif selection == '2':
+                self.request.command = 'treasure'
             else:
                 print('Wrong selection...')
 
