@@ -24,7 +24,7 @@ class Subscriber(Node):
             if self.distancia != aux:
                 print("updated")
                 aux = self.distancia
-                rclpy.spin_once(self, timeout_sec=0.5)
+                rclpy.spin(self)
                 time.sleep(1)
             else:
                 time.sleep(0.5)

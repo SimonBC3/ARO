@@ -21,7 +21,6 @@ class ServiceServer(Node):
         self.srv = self.create_service(
             MoveRobot, "robot_service", self.service_callback
         )
-
         # creating navigator & setting initial pose
         self.nav = BasicNavigator()
         initial_pose = self.create_pose_stamped(
@@ -35,9 +34,7 @@ class ServiceServer(Node):
 
         # declaring global variable to control treasure hunt
         self.treasure_mode = False
-        self.treasure_subscriber = self.create_subscription(Vector3, "/distanciaTesoro", self.treasure_callback, 10)
-        self.find_treasure()
-
+        self.treasure_pos = None
 
     def service_callback(self, request, response):
         self.get_logger().info(f"Incoming request: {request}")
@@ -54,7 +51,7 @@ class ServiceServer(Node):
         elif request.command == "goToExit":
             response.answer = self.go_to_exit()
         elif request.command == "treasure":
-            self.find_treasure()
+            response.answer = self.find_treasure()
 
         self.get_logger().info(f"\n Navigation went: {response}")
 
@@ -121,62 +118,45 @@ class ServiceServer(Node):
         goal_pose.pose.orientation.w = q_w
         return goal_pose
 
-    def find_treasure(self):
-        self.treasure_pos = None
-        self.treasure_mode = True
-        self.control_treasure_hunt(True)
+    def treasure_callback(self, treasure_pos):
+        self.treasure_pos = treasure_pos
+        self.get_logger().info(f"Distance to treasure: {treasure_pos.z}")
 
-        self.get_logger().info(f"\nSearching for the treasure: ")
+        if self.iteration == 0:  # if first iteration set goal
+            goal_treasure_pose = self.create_pose_stamped(
+                self.nav, self.treasure_pos.x, self.treasure_pos.y, 0.0
+            )
+            self.nav.goToPose(goal_treasure_pose)
+            self.iteration += 1
 
-        while self.treasure_pos == None:
-            rclpy.spin_once(self, timeout_sec=0.5)
-            time.sleep(0.5)
-
-        # set the goal for the robot
-        goal_treasure_pose = self.create_pose_stamped(
-            self.nav, self.treasure_pos.x, self.treasure_pos.y, 0.0
-        )
-        self.nav.goToPose(goal_treasure_pose)
-
-        # Control time and position
-        time_left = 5
-        while self.treasure_pos.z >= 0.5 and time_left > 0:
-            time_left -= 1
-
-            self.get_logger().info(f"\nSearching for the treasure: {self.treasure_pos.z}")
-            self.get_logger().info(f"\nTime left {time_left}")
-
-            if time_left == 0:
-                self.get_logger().info(
-                    f"\nTime's up treasure not found {self.treasure_pos.z}"
-                )
-                self.nav.destroyNode()  # stop navigation to treasure
-
-            rclpy.spin_once(self, timeout_sec=0.5)
-            time.sleep(1)
-
-        # Robot ran out of time, disconnecting treasure hunt
-        if time_left <= 0:
-            self.get_logger().info(f"\nTime's up, disconnecting treasure hunt")
+        if treasure_pos.z < 0.5:  # check if we're in the goal
+            self.get_logger().info(f"Goal reached!")
             self.control_treasure_hunt(False)
-            self.treasure_mode = False  # allowing other petitions to work
-        else:  # robot found treasure in time
-            self.get_logger().info(f"\n\nFOUND THE TREASURE\n\n")
-            
 
-        # restarting navigation
-        self.nav = BasicNavigator()
-        self.nav.waitUntilNav2Active()
+        if self.timer <= 0:  # check if we ran out of time
+            self.control_treasure_hunt(False)
+            self.nav.clearAllCostmaps
+            self.get_logger().info(f"Time left: {self.timer}")
+
+        self.get_logger().info(f"Time left: {self.timer}")
+
+        self.timer -= 1
+
+    def find_treasure(self):
+        self.timer = 90
+        self.iteration = 0
+        self.control_treasure_hunt(True)
+        self.treasure_subscriber = self.create_subscription(
+            Vector3, "/distanciaTesoro", self.treasure_callback, 10
+        )
+        return "Looking for the treasure"
 
     def control_treasure_hunt(self, control: Bool):
         treasure_hunt = Bool()
         treasure_hunt.data = control
         self.treasure_publisher.publish(treasure_hunt)
-        time.sleep(1)
+        self.get_logger().info(f"Control msg sent: {treasure_hunt}")
 
-    def treasure_callback(self, treasure_pos):
-        self.treasure_pos = treasure_pos
-        self.get_logger().info(f"Updated treasure position: {treasure_pos}")
 
 def main(args=None):
     rclpy.init(args=args)

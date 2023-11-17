@@ -9,9 +9,9 @@ setup.py
 ../../build/project/project.egg-info/top_level.txt
 ../../build/project/project.egg-info/zip-safe
 project/__init__.py
+project/service_client.py
 project/service_server.py
 project/subscriber_test.py
-project/test_client.py
 project.egg-info/PKG-INFO
 project.egg-info/SOURCES.txt
 project.egg-info/dependency_links.txt

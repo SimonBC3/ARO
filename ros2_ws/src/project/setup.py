@@ -23,7 +23,7 @@ setup(
     entry_points={
         'console_scripts': [
             'service_server = project.service_server:main',
-            'test_client = project.test_client:main',
+            'service_client = project.service_client:main',
             'subs_test = project.subscriber_test:main'
         ],
     },
